@@ -43,7 +43,7 @@ query Tag ($id: ID!, $page: Int) {
       }
       edges {
         node {
-          ...on Post {
+          ...on News {
             title
             timeToRead
     	      date (format: "MMMM D, YYYY")

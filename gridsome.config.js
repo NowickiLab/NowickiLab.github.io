@@ -1,46 +1,77 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
-const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
+const path = require('path')
 
 const SITE_URL = 'https://nowickilab.github.io'
 
-const postcssPlugins = [
-  tailwind(),
-]
+const postcssPlugins = []
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
+function addStyleResource(rule) {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+        path.resolve(__dirname, './src/assets/scss/vars.scss'),
+        path.resolve(__dirname, './src/assets/scss/mixins.scss'),
+      ],
+    })
+}
+
+
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
+  siteName: 'Nowicki Science',
   siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
   siteUrl: SITE_URL,
   plugins: [
     {
-      use: '@gridsome/vue-remark',
+      use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Documentation', // Required
-        baseDir: './docs', // Where .md files are located
-        pathPrefix: '/docs', // Add route prefix. Optional
-        template: './src/templates/Documentation.vue', // Optional
-        plugins: [
-          [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-      ],
+        path: './database/news/**/*.md',
+        typeName: 'News',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
+        path: './database/people/**/*.md',
+        typeName: 'Person',
         refs: {
           tags: {
             typeName: 'Tag',
-            create: true
+            create: false
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './database/publications/**/*.md',
+        typeName: 'Publication',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: false
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: './database/projects/**/*.md',
+        typeName: 'Project',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: false
           }
         }
       }
@@ -75,7 +106,11 @@ module.exports = {
     },
   ],
   templates: {
-    Tag: '/tag/:id'
+    Tag: '/tag/:id',
+    News: '/news/:slug',
+    Project: '/projects/:slug',
+    Publication: '/publications/:slug',
+    Person: '/people/:slug'
   },
   transformers: {
     remark: {
@@ -87,11 +122,11 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     }
   },
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
+  chainWebpack (config) {
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+
+    types.forEach(type => {
+      addStyleResource(config.module.rule('scss').oneOf(type))
+    })
+  }
 }
