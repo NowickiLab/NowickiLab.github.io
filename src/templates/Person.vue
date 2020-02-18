@@ -37,7 +37,7 @@ query Person ($path: String!) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.person.title
+      title: `${this.$page.person.title} - people`
     }
   }
 }

@@ -47,7 +47,7 @@ import PublicationPreview from '@/components/PublicationPreview'
 
 export default {
   metaInfo: {
-    title: 'News'
+    title: 'Publications'
   },
   components: {
     PaginationPosts,

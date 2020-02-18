@@ -47,7 +47,7 @@ import ProjectPreview from '@/components/ProjectPreview'
 
 export default {
   metaInfo: {
-    title: 'News'
+    title: 'Projects'
   },
   components: {
     PaginationPosts,

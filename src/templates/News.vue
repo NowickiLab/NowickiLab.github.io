@@ -37,7 +37,7 @@ query News ($path: String!) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.news.title
+      title: `${this.$page.news.title} - news`
     }
   }
 }

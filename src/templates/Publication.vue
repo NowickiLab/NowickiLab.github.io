@@ -37,7 +37,7 @@ query Publication ($path: String) {
 export default {
   metaInfo () {
     return {
-      title: this.$page.publication.title
+      title: `${this.$page.publication.title} - publications`
     }
   }
 }

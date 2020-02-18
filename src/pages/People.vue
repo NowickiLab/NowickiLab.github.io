@@ -47,7 +47,7 @@ import PersonPreview from '@/components/PersonPreview'
 
 export default {
   metaInfo: {
-    title: 'News'
+    title: 'People'
   },
   components: {
     PaginationPosts,
