@@ -1,7 +1,7 @@
 const purgecss = require('@fullhuman/postcss-purgecss')
 const path = require('path')
 
-const SITE_URL = 'https://nowickilab.github.io'
+const SITE_URL = 'https://nowickilab.science/'
 
 const postcssPlugins = []
 
