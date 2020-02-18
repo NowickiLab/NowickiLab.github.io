@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{288:function(e,n,t){"use strict";t.r(n);var i={metaInfo:{title:"Homepage"}},c=t(10),o=Object(c.a)(i,(function(){var e=this.$createElement;return(this._self._c||e)("Layout",[this._v("\n  Nowicki Science\n")])}),[],!1,null,null,null);n.default=o.exports}}]);
