@@ -45,9 +45,30 @@ query Person ($page: Int) {
 import PaginationPosts from '@/components/PaginationPosts'
 import PersonPreview from '@/components/PersonPreview'
 
+const url = 'https://nowickilab.science/people/'
+const title = 'People - NowickiLab'
+const img = ''
+const desc = 'That’s who makes the magic (or is it advanced science?) happen in the Nowicki Lab.'
+
 export default {
   metaInfo: {
-    title: 'People'
+    title: title,
+    titleTemplate: '%s',
+    description: desc,
+    meta: [
+      { name: 'title', content: title },
+      { name: 'description', content: desc },
+      { name: 'og:title', content: title },
+      { name: 'og:description', content: desc },
+      { name: 'og:url', content: url },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:image', content: img },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: url },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: desc },
+      { name: 'twitter:image', content: img },
+   ]
   },
   components: {
     PaginationPosts,

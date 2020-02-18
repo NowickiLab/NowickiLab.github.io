@@ -45,9 +45,30 @@ query Publication ($page: Int) {
 import PaginationPosts from '@/components/PaginationPosts'
 import PublicationPreview from '@/components/PublicationPreview'
 
+const url = 'https://nowickilab.science/publications/'
+const title = 'Publications - NowickiLab'
+const img = ''
+const desc = 'Fresh from the press in the Nowicki Lab!'
+
 export default {
   metaInfo: {
-    title: 'Publications'
+    title: title,
+    titleTemplate: '%s',
+    description: desc,
+    meta: [
+      { name: 'title', content: title },
+      { name: 'description', content: desc },
+      { name: 'og:title', content: title },
+      { name: 'og:description', content: desc },
+      { name: 'og:url', content: url },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:image', content: img },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: url },
+      { name: 'twitter:title', content: title },
+      { name: 'twitter:description', content: desc },
+      { name: 'twitter:image', content: img },
+   ]
   },
   components: {
     PaginationPosts,

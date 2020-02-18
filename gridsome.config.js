@@ -20,8 +20,8 @@ function addStyleResource(rule) {
 
 
 module.exports = {
-  siteName: 'Nowicki Science',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
+  siteName: 'NowickiLab',
+  siteDescription: 'In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plant and their pathogen',
   siteUrl: SITE_URL,
   plugins: [
     {
