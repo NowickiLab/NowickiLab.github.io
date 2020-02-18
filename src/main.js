@@ -4,6 +4,8 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
+import '@/assets/scss/main.scss'
+// import 'prismjs/themes/prism.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -28,7 +30,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700'
+    href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap'
   })
 }
 

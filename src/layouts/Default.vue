@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheNav/>
-    <main>
+    <main class="main">
       <slot/>
     </main>
     <TheFooter/>
@@ -28,4 +28,10 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../assets/scss/main.scss">
+<style lang="scss" scoped>
+  .main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+</style>

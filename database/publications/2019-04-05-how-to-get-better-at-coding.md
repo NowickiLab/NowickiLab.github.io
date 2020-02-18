@@ -10,7 +10,7 @@ Lorem ipsum dolor sit amet, [consectetur adipisicing](https://google.ca) elit. P
 
 > Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil `layout.vue` and then edit the `main.scss` file.
 
-```js
+```html
 <template>
   <Layout>
     <div class="container-inner mx-auto my-16">

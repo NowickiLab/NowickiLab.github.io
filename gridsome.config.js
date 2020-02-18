@@ -13,8 +13,8 @@ function addStyleResource(rule) {
     .options({
       patterns: [
         path.resolve(__dirname, './src/assets/scss/vars.scss'),
-        path.resolve(__dirname, './src/assets/scss/mixins.scss'),
-      ],
+        path.resolve(__dirname, './src/assets/scss/mixins.scss')
+      ]
     })
 }
 
@@ -115,7 +115,10 @@ module.exports = {
   transformers: {
     remark: {
       plugins: [
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+        ['gridsome-plugin-remark-prismjs-all', {
+          showLineNumbers: false,
+          noInlineHighlight: true
+        }]
       ],
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
