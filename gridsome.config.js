@@ -79,7 +79,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-rss',
       options: {
-        contentTypeName: 'Post',
+        contentTypeName: 'News',
         feedOptions: {
           title: 'Gridsome Portfolio Starter Blog',
           feed_url: `${SITE_URL}/rss.xml`,
