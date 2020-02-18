@@ -44,35 +44,33 @@ module.exports = function (api, options) {
     store.addMetadata('pathPrefix', cleanedPathPrefix)
   })
 
-  api.beforeBuild(() => {
+  api.loadSource(actions => {
     const pickValues = post => pick(post, ['title', 'path', 'summary'])
 
-    api.loadSource(actions => {
-      const posts = [
-        ...actions.getCollection('News').collection.data.map(pickValues),
-        ...actions.getCollection('Person').collection.data.map(pickValues),
-        ...actions.getCollection('Publication').collection.data.map(pickValues),
-        ...actions.getCollection('Project').collection.data.map(pickValues)
-      ];
+    const posts = [
+      ...actions.getCollection('News').collection.data.map(pickValues),
+      ...actions.getCollection('Person').collection.data.map(pickValues),
+      ...actions.getCollection('Publication').collection.data.map(pickValues),
+      ...actions.getCollection('Project').collection.data.map(pickValues)
+    ];
 
-      const output = {
-        dir: './static',
-        name: 'search.json',
-        ...options.output
-      }
+    const output = {
+      dir: './static',
+      name: 'search.json',
+      ...options.output
+    }
 
-      const outputPath = path.resolve(process.cwd(), output.dir)
-      const outputPathExists = fs.existsSync(outputPath)
-      const fileName = output.name.endsWith('.json')
-        ? output.name
-        : `${output.name}.json`
+    const outputPath = path.resolve(process.cwd(), output.dir)
+    const outputPathExists = fs.existsSync(outputPath)
+    const fileName = output.name.endsWith('.json')
+      ? output.name
+      : `${output.name}.json`
 
-      if (outputPathExists) {
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
-      } else {
-        fs.mkdirSync(outputPath)
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
-      }
-    });
+    if (outputPathExists) {
+      fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
+    } else {
+      fs.mkdirSync(outputPath)
+      fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
+    }
   });
 }
