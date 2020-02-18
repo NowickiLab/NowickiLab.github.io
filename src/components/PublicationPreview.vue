@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     path () {
-      return `/people/${this.publication.slug}/`
+      return `/publications/${this.publication.slug}/`
     }
   }
 }
