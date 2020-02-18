@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
   .main {
-    max-width: 720px;
+    max-width: $max-width;
     margin: 0 auto;
     padding: 0 10px;
   }
