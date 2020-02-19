@@ -10,6 +10,11 @@ tags: ['news', 'lorem']
 ## a tu zorbimy podtytul testowy
 [Linka do EPP](https://epp.tennessee.edu)
 
+<video controls>
+  <source src="/vids/DC.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is
+     a <a href="myVideo.mp4">link to the video</a> instead.</p>
+</video>
 
 ```js
 <template>
