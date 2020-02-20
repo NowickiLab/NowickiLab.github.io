@@ -30,7 +30,7 @@ export default function (Vue, { router, head, isClient }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap'
+    href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap'
   })
 }
 
