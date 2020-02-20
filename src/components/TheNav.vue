@@ -77,7 +77,7 @@ export default {
 
     transition: all 0.2s;
 
-    &.active {
+    &.active--exact {
       background: #eeeded;
     }
 
