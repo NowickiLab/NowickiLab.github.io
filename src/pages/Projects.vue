@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
       <h1>Projects</h1>
       <ul class="years">
         <li class="year" v-for="year in years" :key="year.year">
@@ -12,7 +12,7 @@
           </ul>
         </li>
       </ul>
-  </Layout>
+  </div>
 </template>
 
 <page-query>

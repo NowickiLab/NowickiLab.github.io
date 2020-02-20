@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div class="container-inner mx-auto my-16">
       <h1 class="">{{ $page.publication.title }}</h1>
       <div class="">{{ $page.publication.date }}</div>
@@ -16,7 +16,7 @@
         <g-link to="/news" class="">Back to News</g-link>
       </div>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <page-query>

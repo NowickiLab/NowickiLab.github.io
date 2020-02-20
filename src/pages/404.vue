@@ -1,10 +1,10 @@
 <template>
-  <Layout>
+  <div>
     <div class="container-inner mx-auto py-16">
       <h1 class="text-4xl font-bold mb-16">Page Not Found</h1>
     </div>
 
-  </Layout>
+  </div>
 </template>
 
 <script>

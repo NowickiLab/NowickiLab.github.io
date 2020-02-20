@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <article>
       <header class="header">
         <h1 v-html="$page.project.title"/>
@@ -22,10 +22,8 @@
       <div class="markdown-body" v-html="$page.project.content"/>
     </article>
 
-    <div>
-      <g-link to="/projects" class="">Back to Projects</g-link>
-    </div>
-  </Layout>
+    <div id="disqus_thread" class="disqus"/>
+  </div>
 </template>
 
 <page-query>
@@ -52,6 +50,20 @@ export default {
   metaInfo () {
     return {
       title: `${this.$page.project.title} - projects`
+    }
+  },
+  mounted () {
+    if (window.DISQUS) {
+      const slug = this.$page.project.slug
+      const url = window.location.origin + window.location.pathname
+      
+      DISQUS.reset({
+        reload: true,
+        config: function () {  
+          this.page.identifier = slug  
+          this.page.url = url
+        }
+      })
     }
   },
   computed: {

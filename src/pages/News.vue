@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div>
       <h1>News</h1>
 
@@ -16,7 +16,7 @@
         :currentPage="$page.news.pageInfo.currentPage"
       />
     </div>
-  </Layout>
+  </div>
 </template>
 
 <page-query>
