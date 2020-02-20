@@ -43,12 +43,13 @@ export default {
     left: 0;
     width: 100%;
     z-index: 1;
-    background: #f4f5f6;
+    background: white;
     border-bottom: 1px solid #d1d1d1;
   }
 
   .nav {
-    max-width: $max-width + 16px;
+    max-width: 1000px;
+    padding: 0 50px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -72,8 +73,16 @@ export default {
     margin: 0;
     padding: 10px 10px 8px;
 
-    font-weight: 300;
+    background: white;
 
-    transition: all 0.2;
+    transition: all 0.2s;
+
+    &.active {
+      background: #eeeded;
+    }
+
+    &--homepage {
+      background: white !important;
+    }
   }
 </style>
