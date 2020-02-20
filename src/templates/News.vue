@@ -1,30 +1,32 @@
 <template>
-  <div>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="">{{ $page.news.title }}</h1>
-      <div class="">{{ $page.news.date }}</div>
-      <div class="">
-        <g-link
-          v-for="tag in $page.news.tags"
-          :to="tag.path"
-          :key="tag.id"
-          v-text="tag.title"
-        />
-      </div>
-      <div class="markdown-body" v-html="$page.news.content"/>
-      <div class="mb-8">
-        <g-link to="/news" class="">Back to News</g-link>
-      </div>
+  <article>
+    <header>
+      <h1>{{ $page.news.title }}</h1>
+      <span class="date">{{ $page.news.date }}</span>
+      <p>{{ $page.news.summary }}</p>
+    </header>
+    <div class="">
+      <g-link
+        v-for="tag in $page.news.tags"
+        :to="tag.path"
+        :key="tag.id"
+        v-text="tag.title"
+      />
     </div>
-  </div>
+    <div class="markdown-body" v-html="$page.news.content"/>
+    <div class="mb-8">
+      <g-link to="/news" class="">Back to News</g-link>
+    </div>
+  </article>
 </template>
 
 <page-query>
 query News ($path: String!) {
   news (path: $path) {
     title
-    date (format: "MMMM D, Y")
+    date (format: "DD MMMM YYYY")
     content
+    summary
     tags {
       title
       path
@@ -44,5 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+  .date {
+    font-size: 14px;
+  }
 </style>
