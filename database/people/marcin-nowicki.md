@@ -15,3 +15,5 @@ I received my Ph.D. at the Technical University Aachen (RWTH Aachen, Germany) un
 My research program at [EPP](https://epp.tennessee.edu) has largely focused on functional, population, and evolutionary studies of plants and their pathogens.
 
 Mentoring is a critical link between my research, teaching, and outreach activities. I have mentored several colleagues both in the formal setting and in the lab (under/graduate students and postdocs). Drawing from my personal history, I am committed to empowering the underrepresented groups in STEM.
+
+|||PICTURE?|||
