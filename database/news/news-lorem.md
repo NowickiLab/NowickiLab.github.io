@@ -1,29 +1,21 @@
 ---
-title: News Lorem ipsum
-slug: design-for-developers
-date: 2019-03-07
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
+title: 30th USA Interagency Research Forum on Invasive Species
+slug: invasive-species-forum
+date: 2020-02-20
+summary: With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD
 tags: ['news', 'lorem']
 ---
 
-# To jest probny tytul.
-## a tu zorbimy podtytul testowy
-[Linka do EPP](https://epp.tennessee.edu)
+## 1st conference attended in 2020
+In January 2020, we attended the [30th USA Interagency Research Forum on Invasive Species](https://www.nrs.fs.fed.us/disturbance/invasive_species/interagency_forum/). It was first time ever to visit Annapolis, MD, and the first time to attend that meeting.
 
-<video controls>
-  <source src="/vids/DC.mp4" type="video/mp4">
-  <p>Your browser doesn't support HTML5 video. Here is
-     a <a href="myVideo.mp4">link to the video</a> instead.</p>
-</video>
 
-```js
-<template>
-  <div>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
-      <div class="text-xl text-gray-600 mb-8">{{ $page.post.date }}</div>
-      <div class="markdown-body" v-html="$page.post.content" />
-    </div>
-  </div>
-</template>
-```
+We were excited to meet almost 200 people, all of which  passionate about preserving biodiversity, and passionate (but in completely different way) about the biological invasions that threaten it.
+
+Shiwani and I proudly presented a poster on the _Pyrus calleryana_ diversity. This invasive callery pear is my main research focus these days. As a fundation for the downstream research, we analyzed the native Asian samples, for assessment of the species invasive potential. We appied _de novo_ developed gSSRs and a series of population genetics tools.
+
+The results are fascinating.
+And scary.
+More soon.
+
+|||PICTURE of Shiwani and poster|||
