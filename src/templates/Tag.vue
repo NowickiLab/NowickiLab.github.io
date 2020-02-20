@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <div>
     <div class="container-inner mx-auto my-16">
       <h2 class="text-4xl font-bold mb-8 border-b">Tag: {{ $page.tag.title }}</h2>
 
@@ -28,7 +28,7 @@
       />
 
     </div>
-  </Layout>
+  </div>
 </template>
 
 <page-query>

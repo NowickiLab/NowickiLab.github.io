@@ -1,40 +1,34 @@
 <template>
-  <Layout>
-    <div>
+  <div>
       <h1>Projects</h1>
-
-      <ProjectPreview
-        v-for="project in $page.projects.edges"
-        :key="project.id"
-        :project="project.node"
-      />
-
-      <pagination-posts
-        v-if="$page.projects.pageInfo.totalPages > 1"
-        base="/projects"
-        :totalPages="$page.projects.pageInfo.totalPages"
-        :currentPage="$page.projects.pageInfo.currentPage"
-      />
-    </div>
-  </Layout>
+      <ul class="years">
+        <li class="year" v-for="year in years" :key="year.year">
+          <span class="year__label">{{ year.year }}</span>
+          <ul class="projects">
+            <li class="project" v-for="project in year.projects" :key="project.id">
+              {{ project.startDate }} - 
+              <g-link :to="`/projects/${project.slug}/`">{{ project.title }}</g-link>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  </div>
 </template>
 
 <page-query>
-query Project ($page: Int) {
-  projects: allProject (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
-    totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
+query {
+  projects: allProject (sortBy: "startDate", order: DESC) {
     edges {
       node {
         id
         title
-        date (format: "MMMM D, Y")
+        startDate (format: "DD MMM YYYY")
+        endDate (format: "DD MMM YYYY")
+        year: startDate (format: "YYYY")
         summary
         timeToRead
-        slug
+        slug,
+        agency
       }
     }
   }
@@ -42,6 +36,7 @@ query Project ($page: Int) {
 </page-query>
 
 <script>
+import groupBy from 'lodash.groupby'
 import PaginationPosts from '@/components/PaginationPosts'
 import ProjectPreview from '@/components/ProjectPreview'
 
@@ -73,6 +68,34 @@ export default {
   components: {
     PaginationPosts,
     ProjectPreview
+  },
+  computed: {
+    years () {
+      const projects = this.$page.projects.edges.map(edge => edge.node)
+      const yearsObj = groupBy(projects, project => project.year)
+
+      return Object.keys(yearsObj).map(key => ({
+        year: key,
+        projects: yearsObj[key]
+      })).sort((a, b) => b.year - a.year)
+    }
   }
 }
 </script>
+
+
+<style lang="scss" scoped>
+  .years {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .year {
+    margin-top: 20px;
+
+    &__label {
+      font-weight: 700;
+    }
+  }
+</style>

@@ -11,13 +11,13 @@ We applied robust sampling and genotyping with [previously developed gSSRs](http
 
 ```html
 <template>
-  <Layout>
+  <div>
     <div class="container-inner mx-auto my-16">
       <h1 class="text-4xl font-bold leading-tight">{{ $page.post.title }}</h1>
       <div class="text-xl text-gray-600 mb-8">{{ $page.post.date }}</div>
       <div class="markdown-body" v-html="$page.post.content" />
     </div>
-  </Layout>
+  </div>
 </template>
 ```
 
