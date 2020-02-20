@@ -75,7 +75,12 @@ export default {
 
     background: white;
 
-    transition: all 0.2s;
+    transition: all 0.15s;
+
+    &:hover {
+      text-decoration: none;
+      background: #eeeded;
+    }
 
     &.active--exact {
       background: #eeeded;
