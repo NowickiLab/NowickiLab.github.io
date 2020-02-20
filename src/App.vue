@@ -29,7 +29,7 @@ export default {
     // DISQUS
     (function() {
       var d = document, s = d.createElement('script');
-      s.src = 'https://strict-mode.disqus.com/embed.js';
+      s.src = 'https://nowickilab.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
