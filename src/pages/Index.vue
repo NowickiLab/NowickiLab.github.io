@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    Nowicki Science
+    <p>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plant and their pathogen</p>
   </Layout>
 </template>
 

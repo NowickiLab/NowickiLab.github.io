@@ -2,7 +2,7 @@
   <Layout>
     <div class="container-inner mx-auto my-16">
       <h1 class="">{{ $page.project.title }}</h1>
-      <div class="">{{ $page.project.date }}</div>
+      <div class="">{{ $page.project.startDate }} - {{ $page.project.endDate }}</div>
       <div class="">
         <g-link
           v-for="tag in $page.project.tags"
@@ -23,7 +23,9 @@
 query Project ($path: String!) {
   project (path: $path) {
     title
-    date (format: "MMMM D, Y")
+    startDate (format: "MMMM D, Y")
+    endDate (format: "MMMM D, Y")
+    agency
     content
     tags {
       title
