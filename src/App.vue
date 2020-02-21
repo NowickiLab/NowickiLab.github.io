@@ -40,6 +40,7 @@ export default {
 <style lang="scss" scoped>
   .main {
     max-width: $max-width;
+    min-height: calc(100vh - 262px);
     margin: 0 auto;
     padding: 0 10px;
   }
