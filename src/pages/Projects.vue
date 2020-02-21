@@ -1,13 +1,19 @@
 <template>
   <div>
       <h1>Projects</h1>
+      <p>What’s cooking in the Nowicki Lab right now?</p>
       <ul class="years">
         <li class="year" v-for="year in years" :key="year.year">
           <span class="year__label">{{ year.year }}</span>
           <ul class="projects">
             <li class="project" v-for="project in year.projects" :key="project.id">
-              {{ project.startDate }} - 
-              <g-link :to="`/projects/${project.slug}/`">{{ project.title }}</g-link>
+              <b>
+                {{ project.startDate }} - 
+                <g-link :to="`/projects/${project.slug}/`">{{ project.title }}</g-link>
+              </b>
+              <p class="project__summary">
+                {{ project.summary }}
+              </p>
             </li>
           </ul>
         </li>
@@ -92,10 +98,17 @@ export default {
   }
 
   .year {
-    margin-top: 20px;
+    margin: 30px 0;
 
     &__label {
       font-weight: 700;
+    }
+  }
+
+  .project {
+    &__summary {
+      font-size: 14px;
+      margin: 2px 0 20px;
     }
   }
 </style>
