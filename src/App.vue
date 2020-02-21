@@ -25,7 +25,7 @@ export default {
     TheNav,
     TheFooter
   },
-  beforeCreate () {
+  beforeMount () {
     // DISQUS
     (function() {
       var d = document, s = d.createElement('script');

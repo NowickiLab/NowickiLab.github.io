@@ -49,7 +49,6 @@ query Project ($path: String!) {
 export default {
    metaInfo () {
     const { title, summary, img } = this.$page.project 
-    const url = window.location.origin + window.location.pathname
 
     return {
       title: title,
@@ -60,11 +59,11 @@ export default {
         { name: 'description', content: summary },
         { name: 'og:title', content: title },
         { name: 'og:description', content: summary },
-        { name: 'og:url', content: url },
+        // { name: 'og:url', content: url },
         { name: 'og:type', content: 'website' },
         { name: 'og:image', content: img },
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:url', content: url },
+        // { name: 'twitter:url', content: url },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: summary },
         { name: 'twitter:image', content: img }
