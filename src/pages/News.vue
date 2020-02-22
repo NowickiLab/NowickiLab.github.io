@@ -10,8 +10,8 @@
 </template>
 
 <page-query>
-query News ($page: Int) {
-  news: allNews (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
+query {
+  news: allNews (sortBy: "date", order: DESC)  {
     totalCount
     pageInfo {
       totalPages
