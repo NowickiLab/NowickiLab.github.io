@@ -4,7 +4,7 @@ slug: asian-callery-pear
 startDate: 2020-01-01
 endDate: 2020-06-30
 agency: 'University of Tennesee'
-summary: In this endeavor, Shiwani (MS student) is evaluating species diversity using *de novo* gSSRs. We accrued samples of non-cultivated *P. calleryana* from Asia. Molecular markers will be tested for cross-amplification to related species as well.
+summary: In this endeavor, Shiwani (MS student) is evaluating species diversity using <em>de novo</em> gSSRs. We accrued samples of non-cultivated <em>P.&nbsp;calleryana</em> from Asia. Molecular markers will be tested for cross-amplification to related species as well.
 tags: ['SFRA2019', 'Shiwani Sapkota', 'callery', 'gSSR', 'SFRA']
 ---
 
