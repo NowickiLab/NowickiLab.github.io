@@ -13,7 +13,7 @@
       </div>
       <div class="markdown-body" v-html="$page.person.content"/>
       <div class="mb-8">
-        <g-link to="/people" class="">Back to person</g-link>
+        <g-link to="/people/" class="">Back to people</g-link>
       </div>
     </div>
   </div>

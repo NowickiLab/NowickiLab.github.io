@@ -15,7 +15,7 @@
     </div>
     <div class="markdown-body" v-html="$page.news.content"/>
     <div class="mb-8">
-      <g-link to="/news" class="">Back to News</g-link>
+      <g-link to="/news/" class="">Back to News</g-link>
     </div>
   </article>
 </template>
