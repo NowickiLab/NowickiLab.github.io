@@ -1,6 +1,6 @@
 ---
 title: Welcome on the Nowicki lab webpage!
-slug: Hello-World
+slug: hello-world
 date: 2020-02-19
 summary: Intro to the Nowicki lab, [Dept. of Entomology and Plant Pathology at University of Tennessee](https://epp.tennessee.edu).
 tags: ['welcome', 'hello']
