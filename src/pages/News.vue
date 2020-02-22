@@ -2,19 +2,8 @@
   <div>
     <div>
       <h1>News</h1>
-
-      <NewsPreview
-        v-for="news in $page.news.edges"
-        :key="news.id"
-        :news="news.node"
-      />
-
-      <pagination-posts
-        v-if="$page.news.pageInfo.totalPages > 1"
-        base="/news"
-        :totalPages="$page.news.pageInfo.totalPages"
-        :currentPage="$page.news.pageInfo.currentPage"
-      />
+      <p>THIS recently happened in the Nowicki Lab!</p>
+      <ArticlesPreview :articles="$page.news.edges" type="news"/>
     </div>
   </div>
 </template>
@@ -31,7 +20,8 @@ query News ($page: Int) {
       node {
         id
         title
-        date (format: "MMMM D, Y")
+        startDate: date (format: "MMMM D, Y")
+        year: date (format: "YYYY")
         summary
         timeToRead
         slug
@@ -42,8 +32,7 @@ query News ($page: Int) {
 </page-query>
 
 <script>
-import PaginationPosts from '@/components/PaginationPosts'
-import NewsPreview from '@/components/NewsPreview'
+import ArticlesPreview from '@/components/ArticlesPreview'
 
 const url = 'https://nowickilab.science/news/'
 const title = 'News - NowickiLab'
@@ -71,8 +60,7 @@ export default {
    ]
   },
   components: {
-    PaginationPosts,
-    NewsPreview
+    ArticlesPreview
   }
 }
 </script>

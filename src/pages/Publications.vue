@@ -2,26 +2,15 @@
   <div>
     <div>
       <h1>Publications</h1>
-
-      <PublicationPreview
-        v-for="publication in $page.publications.edges"
-        :key="publication.id"
-        :publication="publication.node"
-      />
-
-      <pagination-posts
-        v-if="$page.publications.pageInfo.totalPages > 1"
-        base="/publications"
-        :totalPages="$page.publications.pageInfo.totalPages"
-        :currentPage="$page.publications.pageInfo.currentPage"
-      />
+      <p>Fresh from the press in the Nowicki Lab!</p>
+      <ArticlesPreview :articles="$page.publications.edges" type="publications"/>
     </div>
   </div>
 </template>
 
 <page-query>
-query Publication ($page: Int) {
-  publications: allPublication (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
+query {
+  publications: allPublication (sortBy: "date", order: DESC) {
     totalCount
     pageInfo {
       totalPages
@@ -31,7 +20,8 @@ query Publication ($page: Int) {
       node {
         id
         title
-        date (format: "MMMM D, Y")
+        startDate: date (format: "DD MMM YYYY")
+        year: date (format: "YYYY")
         summary
         timeToRead
         slug
@@ -43,7 +33,7 @@ query Publication ($page: Int) {
 
 <script>
 import PaginationPosts from '@/components/PaginationPosts'
-import PublicationPreview from '@/components/PublicationPreview'
+import ArticlesPreview from '@/components/ArticlesPreview'
 
 const url = 'https://nowickilab.science/publications/'
 const title = 'Publications - NowickiLab'
@@ -72,7 +62,7 @@ export default {
   },
   components: {
     PaginationPosts,
-    PublicationPreview
+    ArticlesPreview
   }
 }
 </script>
