@@ -2,7 +2,7 @@
   <div id="app">
     <TheNav/>
     <main class="main">
-      <router-view />
+      <router-view/>
     </main>
     <TheFooter/>
   </div>

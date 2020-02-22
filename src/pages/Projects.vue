@@ -2,22 +2,7 @@
   <div>
       <h1>Projects</h1>
       <p>What’s cooking in the Nowicki Lab right now?</p>
-      <ul class="years">
-        <li class="year" v-for="year in years" :key="year.year">
-          <span class="year__label">{{ year.year }}</span>
-          <ul class="projects">
-            <li class="project" v-for="project in year.projects" :key="project.id">
-              <b>
-                {{ project.startDate }} - 
-                <g-link :to="`/projects/${project.slug}/`">{{ project.title }}</g-link>
-              </b>
-              <p class="project__summary">
-                {{ project.summary }}
-              </p>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <ArticlesPreview :articles="$page.projects.edges" type="projects"/>
   </div>
 </template>
 
@@ -42,9 +27,8 @@ query {
 </page-query>
 
 <script>
-import groupBy from 'lodash.groupby'
 import PaginationPosts from '@/components/PaginationPosts'
-import ProjectPreview from '@/components/ProjectPreview'
+import ArticlesPreview from '@/components/ArticlesPreview'
 
 const url = 'https://nowickilab.science/projects/'
 const title = 'Projects - NowickiLab'
@@ -73,42 +57,12 @@ export default {
   },
   components: {
     PaginationPosts,
-    ProjectPreview
-  },
-  computed: {
-    years () {
-      const projects = this.$page.projects.edges.map(edge => edge.node)
-      const yearsObj = groupBy(projects, project => project.year)
-
-      return Object.keys(yearsObj).map(key => ({
-        year: key,
-        projects: yearsObj[key]
-      })).sort((a, b) => b.year - a.year)
-    }
+    ArticlesPreview
   }
 }
 </script>
 
 
 <style lang="scss" scoped>
-  .years {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
 
-  .year {
-    margin: 30px 0;
-
-    &__label {
-      font-weight: 700;
-    }
-  }
-
-  .project {
-    &__summary {
-      font-size: 14px;
-      margin: 2px 0 20px;
-    }
-  }
 </style>
