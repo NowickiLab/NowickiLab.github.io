@@ -10,16 +10,16 @@
           <search-input />
         </li> -->
         <li class="item">
-          <g-link class="link" to="/news">News</g-link>
+          <g-link class="link" to="/news/">News</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/projects">Projects</g-link>
+          <g-link class="link" to="/projects/">Projects</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/people">People</g-link>
+          <g-link class="link" to="/people/">People</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/publications">Publications</g-link>
+          <g-link class="link" to="/publications/">Publications</g-link>
         </li>
       </ul>
     </nav>
