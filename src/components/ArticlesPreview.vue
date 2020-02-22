@@ -57,6 +57,8 @@ export default {
 
     &__label {
       font-weight: 700;
+      display: block;
+      margin-bottom: 5px;
     }
   }
 
