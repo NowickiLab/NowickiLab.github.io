@@ -9,7 +9,7 @@ tags: ['cpDNA', 'chloroplast DNA', 'haplotype', 'Cercis canadensis']
 ---
 
 Project synopsis
-============
+--------
 
 In plant cells, DNA is found in 3 compartments: cell nucleus (the overhwlming proportion of), mitchondria (cell 'betteries') and chloroplasts (cell 'photovoltaics'). 
 

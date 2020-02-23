@@ -9,7 +9,7 @@ tags: ['Cercis canadensis', 'estern redbud', 'ssr', 'species diversity']
 ---
 
 Project synopsis
-============
+--------
 
 Building on the [previous](https://journals.ashs.org/jashs/view/journals/jashs/137/3/article-p189.xml) [research](https://journals.ashs.org/hortsci/view/journals/hortsci/52/4/article-p498.xml), **Meher A. Ony** (MS student in [Dr. Denita Hadziabdic-Guerry](https://epp.tennessee.edu/people/directory/dr-denita-hadziabdic-guerry/) lab) managed an U.S.-wide collection of non-cultivated estern redbud samples. After genotyping and populaiton genetics analyses, this project will inform the extant species diversity, conservation, and breeding options.
 
