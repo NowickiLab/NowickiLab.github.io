@@ -2,10 +2,102 @@ const purgecss = require('@fullhuman/postcss-purgecss')
 const path = require('path')
 
 const SITE_URL = 'https://nowickilab.science/'
+const GA_ID = 'UA-158880192-1'
+
+const plugins = [
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: './database/news/**/*.md',
+      typeName: 'News',
+      refs: {
+        tags: {
+          typeName: 'Tag',
+          create: true
+        }
+      }
+    }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: './database/people/**/*.md',
+      typeName: 'Person',
+      refs: {
+        tags: {
+          typeName: 'Tag',
+          create: false
+        }
+      }
+    }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: './database/publications/**/*.md',
+      typeName: 'Publication',
+      refs: {
+        tags: {
+          typeName: 'Tag',
+          create: false
+        }
+      }
+    }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: './database/projects/**/*.md',
+      typeName: 'Project',
+      refs: {
+        tags: {
+          typeName: 'Tag',
+          create: false
+        }
+      }
+    }
+  },
+  {
+    use: 'gridsome-plugin-rss',
+    options: {
+      contentTypeName: 'News',
+      feedOptions: {
+        title: 'Gridsome Portfolio Starter Blog',
+        feed_url: `${SITE_URL}/rss.xml`,
+        site_url: SITE_URL
+      },
+      feedItemOptions: node => ({
+        title: node.title,
+        description: node.summary,
+        url: `${SITE_URL}${node.path}`,
+        author: 'Marcin Nowicki',
+        date: node.date
+      }),
+      output: {
+        dir: './static',
+        name: 'rss.xml'
+      }
+    }
+  },
+  {
+    use: '@gridsome/plugin-sitemap',
+    options: {
+      cacheTime: 600000, // default
+    }
+  },
+]
 
 const postcssPlugins = []
 
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+if (process.env.NODE_ENV === 'production') {
+  postcssPlugins.push(purgecss())
+  plugins.push({
+    use: '@gridsome/plugin-google-analytics',
+    options: {
+      id: GA_ID
+    }
+  })
+}
 
 function addStyleResource(rule) {
   rule.use('style-resource')
@@ -23,88 +115,7 @@ module.exports = {
   siteName: 'NowickiLab',
   siteDescription: 'In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plant and their pathogen',
   siteUrl: SITE_URL,
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './database/news/**/*.md',
-        typeName: 'News',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './database/people/**/*.md',
-        typeName: 'Person',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: false
-          }
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './database/publications/**/*.md',
-        typeName: 'Publication',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: false
-          }
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: './database/projects/**/*.md',
-        typeName: 'Project',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: false
-          }
-        }
-      }
-    },
-    {
-      use: 'gridsome-plugin-rss',
-      options: {
-        contentTypeName: 'News',
-        feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: `${SITE_URL}/rss.xml`,
-          site_url: SITE_URL
-        },
-        feedItemOptions: node => ({
-          title: node.title,
-          description: node.summary,
-          url: `${SITE_URL}${node.path}`,
-          author: 'Marcin Nowicki',
-          date: node.date
-        }),
-        output: {
-          dir: './static',
-          name: 'rss.xml'
-        }
-      }
-    },
-    {
-      use: '@gridsome/plugin-sitemap',
-      options: {
-        cacheTime: 600000, // default
-      }
-    },
-  ],
+  plugins,
   templates: {
     Tag: '/tag/:id',
     News: '/news/:slug',
