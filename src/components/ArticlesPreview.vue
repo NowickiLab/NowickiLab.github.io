@@ -8,9 +8,7 @@
             {{ article.startDate }} - 
             <g-link :to="`/${type}/${article.slug}/`">{{ article.title }}</g-link>
           </b>
-          <p class="article__summary">
-            {{ article.summary }}
-          </p>
+          <p class="article__summary" v-html="article.summary"/>
         </li>
       </ul>
     </li>

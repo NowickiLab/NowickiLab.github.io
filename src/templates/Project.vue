@@ -2,16 +2,23 @@
   <div>
     <article>
       <header class="header">
-        <h1 v-html="$page.project.title"/>
-        <span class="date">{{ period }}</span>
+        <h1 v-html="$page.article.title"/>
+        <time class="date" :datetime="$page.article.startDateRaw">
+          {{ $page.article.startDate }}
+        </time>
+        <span v-if="isPeriod">
+          -
+          <time class="date" :datetime="$page.article.endDateRaw">
+            {{ $page.article.endDate }}
+          </time>
+        </span>
 
-        <p>
-          {{ $page.project.summary }}
-        </p>
+
+        <p v-html="$page.article.summary"/>
 
         <div class="">
           <g-link
-            v-for="tag in $page.project.tags"
+            v-for="tag in $page.article.tags"
             :to="tag.path"
             :key="tag.id"
           >
@@ -19,7 +26,7 @@
           </g-link>
         </div>
       </header>
-      <div class="markdown-body" v-html="$page.project.content"/>
+      <div v-html="$page.article.content"/>
     </article>
 
     <div id="disqus_thread" class="disqus"/>
@@ -28,7 +35,7 @@
 
 <page-query>
 query Project ($path: String!) {
-  project (path: $path) {
+  article: project (path: $path) {
     title
     startDate (format: "DD MMMM YYYY")
     startDateRaw: startDate
@@ -46,64 +53,21 @@ query Project ($path: String!) {
 </page-query>
 
 <script>
+import disqusMixin from '@/mixins/disqus.mixin.js'
+import metaMixin from '@/mixins/meta.mixin.js'
+
 export default {
-   metaInfo () {
-    const { title, summary, img } = this.$page.project 
-
-    return {
-      title: title,
-      titleTemplate: '%s',
-      description: summary,
-      meta: [
-        { name: 'title', content: title },
-        { name: 'description', content: summary },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: summary },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: img },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: title },
-        { name: 'twitter:description', content: summary },
-        { name: 'twitter:image', content: img }
-      ]
-    }
-  },
-  mounted () {
-    if (window.DISQUS) {
-      const slug = this.$page.project.slug
-      const url = window.location.origin + window.location.pathname
-      
-      DISQUS.reset({
-        reload: true,
-        config: function () {  
-          this.page.identifier = slug  
-          this.page.url = url
-        }
-      })
-    }
-  },
+  mixins: [disqusMixin, metaMixin(' - Projects - NowickiLab')],
   computed: {
-    period () {
-      const { 
-        startDate,
-        startDateRaw,
-        endDate,
-        endDateRaw,
-      } = this.$page.project
-
+    isPeriod () {
+      const { startDateRaw, endDateRaw } = this.$page.article
       return +new Date(startDateRaw) >= +new Date(endDateRaw)
-        ? startDate
-        : `${startDate} - ${endDate}`
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .header {
-    margin-bottom: 2em;
-  }
-
   .date {
     font-size: 14px;
   }

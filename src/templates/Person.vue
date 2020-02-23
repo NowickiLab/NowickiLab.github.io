@@ -1,30 +1,25 @@
 <template>
   <div>
-    <div class="container-inner mx-auto my-16">
-      <h1 class="">{{ $page.person.title }}</h1>
-      <div class="">{{ $page.person.date }}</div>
-      <div class="">
-        <g-link
-          v-for="tag in $page.person.tags"
-          :to="tag.path"
-          :key="tag.id"
-          v-text="tag.title"
-        />
-      </div>
-      <div class="markdown-body" v-html="$page.person.content"/>
-      <div class="mb-8">
-        <g-link to="/people/" class="">Back to people</g-link>
-      </div>
+    <h1>{{ $page.article.title }}</h1>
+    <div class="">
+      <g-link
+        v-for="tag in $page.article.tags"
+        :to="tag.path"
+        :key="tag.id"
+        v-text="tag.title"
+      />
     </div>
+    <div v-html="$page.article.content"/>
   </div>
 </template>
 
 <page-query>
 query Person ($path: String!) {
-  person (path: $path) {
+  article: person (path: $path) {
     title
     date (format: "MMMM D, Y")
     content
+    summary
     tags {
       title
       path
@@ -34,12 +29,10 @@ query Person ($path: String!) {
 </page-query>
 
 <script>
+import metaMixin from '@/mixins/meta.mixin.js'
+
 export default {
-  metaInfo () {
-    return {
-      title: `${this.$page.person.title} - people`
-    }
-  }
+  mixins: [metaMixin(' - NowickiLab')]
 }
 </script>
 

@@ -1,30 +1,36 @@
 <template>
-  <article>
-    <header>
-      <h1>{{ $page.news.title }}</h1>
-      <span class="date">{{ $page.news.date }}</span>
-      <p>{{ $page.news.summary }}</p>
-    </header>
-    <div class="">
-      <g-link
-        v-for="tag in $page.news.tags"
-        :to="tag.path"
-        :key="tag.id"
-        v-text="tag.title"
-      />
-    </div>
-    <div class="markdown-body" v-html="$page.news.content"/>
-    <div class="mb-8">
-      <g-link to="/news/" class="">Back to News</g-link>
-    </div>
-  </article>
+  <div>
+    <article>
+      <header>
+        <h1>{{ $page.article.title }}</h1>
+        <time class="date" :datetime="$page.article.validDateString">
+          {{ $page.article.date }}
+        </time>
+        <p v-html="$page.article.summary"/>
+      </header>
+
+      <div>
+        <g-link
+          v-for="tag in $page.article.tags"
+          :to="tag.path"
+          :key="tag.id"
+          v-text="tag.title"
+        />
+      </div>
+
+      <div v-html="$page.article.content"/>
+    </article>
+
+    <div id="disqus_thread" class="disqus"/>
+  </div>
 </template>
 
 <page-query>
 query News ($path: String!) {
-  news (path: $path) {
+  article: news (path: $path) {
     title
     date (format: "DD MMMM YYYY")
+    validDateString: date
     content
     summary
     tags {
@@ -36,12 +42,11 @@ query News ($path: String!) {
 </page-query>
 
 <script>
+import disqusMixin from '@/mixins/disqus.mixin.js'
+import metaMixin from '@/mixins/meta.mixin.js'
+
 export default {
-  metaInfo () {
-    return {
-      title: `${this.$page.news.title} - news`
-    }
-  }
+  mixins: [disqusMixin, metaMixin(' - News - NowickiLab')],
 }
 </script>
 

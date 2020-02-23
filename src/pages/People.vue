@@ -21,7 +21,7 @@
 
 <page-query>
 query Person ($page: Int) {
-  people: allPerson (sortBy: "date", order: DESC, perPage: 1, page: $page) @paginate {
+  people: allPerson (sortBy: "date", order: DESC, perPage: 10, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
