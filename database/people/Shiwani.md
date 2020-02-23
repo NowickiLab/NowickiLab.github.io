@@ -8,6 +8,6 @@ tags: ['Shiwani', 'Nowicki lab']
 
 Shiwani joined the [Department of Entomology and Plant Pathology](https://epp.tennessee.edu) in 2019 to work on her MS thesis. 
 
-The focus is, to lay the foundation for the molecular diversity of the invasive [callery pear](database\projects\Pyrus-calleryana-SFRA-2019.md). Thus far, Shiwani has confirmed *de&nbsp;novo* gSSRs on the specimens of Asia-native *P.&nbsp;calleryana* and other *Pyrus* spp., and [presented a poster](database\news\30thUSDAforum.md) on her findings.
+The focus is, to lay the foundation for the molecular diversity of the invasive [callery pear](/projects/asian-callery-pear/). Thus far, Shiwani has confirmed *de&nbsp;novo* gSSRs on the specimens of Asia-native *P.&nbsp;calleryana* and other *Pyrus* spp., and [presented a poster](/news/invasive-species-forum/) on her findings.
 
 Shiwani's MS Proposal Seminar is coming up soon - so stay tuned!
