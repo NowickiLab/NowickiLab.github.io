@@ -19,4 +19,5 @@ And scary.
 
 More soon.
 
-|||PICTURE of Shiwani and poster|||
+![Shiwani Sapkota](database\news\images\Shiwani.jpg "Proudly presenting: Shiwani's poster")
+![Yours truly](database\news\images\mnowAnnapolis.jpg "mnow")
