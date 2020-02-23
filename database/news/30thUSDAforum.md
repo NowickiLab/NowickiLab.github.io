@@ -11,7 +11,7 @@ In January 2020, we attended the [30th USDA Interagency Research Forum on Invasi
 
 We were excited to meet almost 200 people, all of them passionate about preserving the biodiversity, and passionate (but in completely different way) about the biological invasions that threaten it.
 
-Shiwani and I proudly presented a poster on the _Pyrus calleryana_ diversity. This invasive callery pear is my main research focus these days. As a fundation for the downstream studies, we analyzed the native Asian samples, for an assessment of the species invasiveness potential. We appied _de novo_ developed gSSRs and a series of population genetics tools.
+Shiwani and I proudly presented a poster on the _Pyrus calleryana_ diversity. This invasive callery pear is my main research focus these days. As a fundation for the downstream studies, we analyzed the native Asian samples, for an assessment of the species invasiveness potential. We applied _de novo_ developed gSSRs and a series of population genetics tools.
 
 The results are fascinating.
 
