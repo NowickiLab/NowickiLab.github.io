@@ -11,3 +11,5 @@ Shiwani Sapkota joined the [Department of Entomology and Plant Pathology](https:
 The focus is, to lay the foundation for the molecular diversity of the invasive [callery pear](/projects/asian-callery-pear/). Thus far, Shiwani has confirmed *de&nbsp;novo* gSSRs on the specimens of Asia-native *P.&nbsp;calleryana* and other *Pyrus* spp., and [presented a poster](/news/invasive-species-forum/) on her findings.
 
 Shiwani's MS Proposal Seminar is coming up soon - so stay tuned!
+
+![Shiwani-in-lab](static\pics\nowicki17.jpg)
