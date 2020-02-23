@@ -19,5 +19,5 @@ And scary.
 
 More soon.
 
-![Shiwani Sapkota](database\news\images\Shiwani.jpg "Proudly presenting: Shiwani's poster")
-![Yours truly](database\news\images\mnowAnnapolis.jpg "mnow")
+![Shiwani Sapkota](./images/Shiwani.jpg "Proudly presenting: Shiwani's poster")
+![Yours truly](./images/mnowAnnapolis.jpg "mnow")
