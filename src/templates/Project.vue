@@ -57,13 +57,11 @@ export default {
       meta: [
         { name: 'title', content: title },
         { name: 'description', content: summary },
-        { name: 'og:title', content: title },
-        { name: 'og:description', content: summary },
-        // { name: 'og:url', content: url },
-        { name: 'og:type', content: 'website' },
-        { name: 'og:image', content: img },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: summary },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: img },
         { name: 'twitter:card', content: 'summary_large_image' },
-        // { name: 'twitter:url', content: url },
         { name: 'twitter:title', content: title },
         { name: 'twitter:description', content: summary },
         { name: 'twitter:image', content: img }
