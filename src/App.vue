@@ -42,6 +42,6 @@ export default {
     max-width: $max-width;
     min-height: calc(100vh - 224px);
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 </style>

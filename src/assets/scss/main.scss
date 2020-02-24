@@ -31,6 +31,12 @@ a {
   }
 }
 
+ul {
+  @include mq($until: tablet) {
+    padding-left: 30px;
+  }
+}
+
 .disqus {
   margin-top: 4em;
 }
