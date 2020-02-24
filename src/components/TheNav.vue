@@ -5,8 +5,8 @@
         <g-link class="link link--homepage" to="/">NowickiLab</g-link>
       </div>
   
-      <ul class="list">
-        <li>
+      <ul class="list" :class="{ 'list--open': isOpen }">
+        <li class="search-item">
           <search-input/>
         </li>
         <li class="item">
@@ -22,16 +22,30 @@
           <g-link class="link" to="/publications/">Publications</g-link>
         </li>
       </ul>
+
+      <MenuButton :isOpen="isOpen" @click.native="isOpen = !isOpen"/>
     </nav>
   </header>
 </template>
 
 <script>
 import SearchInput from '@/components/SearchInput'
+import MenuButton from '@/components/MenuButton'
 
 export default {
   components: {
-    SearchInput
+    SearchInput,
+    MenuButton
+  },
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  watch: {
+    '$route.path' () {
+      this.isOpen = false
+    }
   }
 }
 </script>
@@ -50,7 +64,7 @@ export default {
   .nav {
     max-width: 1000px;
     height: 43px;
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -61,11 +75,37 @@ export default {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    @include mq($until: tablet) {
+      position: absolute;
+      right: 0;
+      top: 43px;
+      width: 140px;
+      flex-wrap: wrap;
+      border: 1px solid #d1d1d1;
+      transition: all 0.2s;
+
+      transform: translateX(100%);
+
+      &--open {
+        transform: translateX(0);
+      }
+    }
   }
 
   .item {
     display: block;
     margin: 0;
+
+    @include mq($until: tablet) {
+      width: 100%;
+    }
+  }
+
+  .search-item {
+    @include mq($until: tablet) {
+      display: none;
+    }
   }
 
   .link {
@@ -88,8 +128,15 @@ export default {
       background: #eeeded;
     }
 
+    @include mq($until: tablet) {
+      padding: 10px 15px;
+    }
+
     &--homepage {
       background: white !important;
+      @include mq($until: tablet) {
+        padding: 10px 10px 0;
+      }
     }
   }
 </style>
