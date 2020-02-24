@@ -12,11 +12,6 @@
 <page-query>
 query {
   publications: allPublication (sortBy: "date", order: DESC) {
-    totalCount
-    pageInfo {
-      totalPages
-      currentPage
-    }
     edges {
       node {
         id
