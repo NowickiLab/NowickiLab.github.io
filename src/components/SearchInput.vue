@@ -1,12 +1,10 @@
 <template>
-  <div class="relative">
-    <search-focus @keyup="focusSearch"></search-focus>
-
-    <div class="relative w-80">
+  <div class="wrap">
+    <div>
       <input
-        type="text"
-        placeholder="Search (Press  &quot;/&quot; to focus)"
-        class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-80"
+        type="search"
+        placeholder="Search..."
+        class="input"
         v-model="query"
         @input="softReset"
         @keyup="performSearch"
@@ -18,43 +16,34 @@
         @focus="searchResultsVisible = true"
         ref="search"
       >
-      <div class="absolute top-0 ml-3" style="top:10px">
-        <svg fill="currentColor" class="text-gray-500 h-5 w-5" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path></svg>
-      </div>
-      <div
-        v-if="query.length > 0"
-        class="absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-gray-600 hover:text-gray-800"
-        style="top:2px;"
-        @click="reset"
-      >
-        &times;
-      </div>
+      <!-- <svg fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path>
+      </svg> -->
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto" style="max-height: 32rem">
-        <div class="flex flex-col" ref="results">
-          <a
+      <div v-if="query.length > 0 && searchResultsVisible" class="output-wrap">
+        <ul class="result-list" ref="results">
+          <li
             v-for="(post, index) in results"
             :key="index"
             :href="post.item.path"
             @click="reset"
-            class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
-            :class="{ 'search-highlighted' : index === highlightedIndex }"
+            class="result"
+            :class="{ 'result--highlighted' : index === highlightedIndex }"
           >
-            {{ post.item.title }}
-
-            <span class="block font-normal text-copy-primary text-sm my-1">{{ post.item.summary }}</span>
-          </a>
-
-          <div v-if="results.length === 0" class="bg-background-form font-normal w-full border-b cursor-pointer p-4">
-            <p class="my-0">No results for '<strong>{{ query }}</strong>'</p>
-          </div>
+            <g-link :to="post.item.path" class="result__link" tabindex="-1">
+              <span class="result__title" v-html="post.item.title"/>
+              <span class="result__summary" v-html="post.item.summary"/>
+            </g-link>
+          </li>
+        </ul>
+        <div v-if="results.length === 0" class="no-results">
+          No results for <strong>{{ query }}</strong>
         </div>
       </div>
     </transition>
   </div>
 </template>
-
 
 <static-query>
   {
@@ -66,21 +55,16 @@
 
 <script>
 import axios from 'axios'
-import SearchFocus from './SearchFocus'
 
 export default {
-  components: {
-    SearchFocus,
-  },
-  created() {
-    axios(this.$static.metadata.pathPrefix + "/search.json").then(response => {
-      this.posts = response.data
-    })
-    .catch(error => {
-      console.log(error);
+  created () {
+    axios.get(`${this.$static.metadata.pathPrefix}/search.json`).then(res => {
+      this.posts = res.data
+    }).catch(error => {
+      console.log(error)
     })
   },
-  data() {
+  data () {
     return {
       query: '',
       results: [],
@@ -100,54 +84,144 @@ export default {
     }
   },
   methods: {
-    reset() {
+    reset () {
       this.query = ''
       this.highlightedIndex = 0
     },
-    softReset() {
+    softReset () {
       this.highlightedIndex = 0
       this.searchResultsVisible = true
     },
-    performSearch() {
+    performSearch () {
       this.$search(this.query, this.posts, this.options).then(results => {
         this.results = results
       })
     },
-    highlightPrev() {
+    highlightPrev () {
       if (this.highlightedIndex > 0) {
         this.highlightedIndex = this.highlightedIndex - 1
         this.scrollIntoView()
       }
     },
-    highlightNext() {
+    highlightNext () {
       if (this.highlightedIndex < this.results.length - 1) {
         this.highlightedIndex = this.highlightedIndex + 1
         this.scrollIntoView()
       }
     },
-    scrollIntoView() {
-      this.$refs.results.children[this.highlightedIndex].scrollIntoView({ block: 'nearest' })
+    scrollIntoView () {
+      this.$refs.results.children[this.highlightedIndex].scrollIntoView({
+        block: 'nearest',
+        behavior: 'smooth'
+      })
     },
-    gotoLink() {
-      if (this.results[this.highlightedIndex]) {
-        window.location = this.results[this.highlightedIndex].item.path
-      }
-    },
-    focusSearch(e) {
-      if (e.key === '/') {
-        this.$refs.search.focus()
+    gotoLink () {
+      const destPath = this.results[this.highlightedIndex].item.path
+      const currentPath = this.$route.path
+
+      if (destPath === currentPath) {
+        this.reset()
+        this.$refs.search.blur()
+      } else if (destPath) {
+        this.$router.push(destPath).then(() => {
+          this.reset()
+          this.$refs.search.blur()
+        })
       }
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .fade-enter-active, .fade-leave-active {
     transition: opacity .2s;
   }
   .fade-enter, .fade-leave-to {
     opacity: 0;
   }
-</style>
 
+  .wrap {
+    position: relative;
+  }
+
+  .output-wrap {
+    position: absolute;
+    width: 100%;
+    top: 100%; left: 0;
+    background: white;
+    border: 1px solid #d1d1d1;
+  }
+
+
+  .input {
+    padding: 10px;
+    height: 43px;
+    width: 340px;
+    border: 1px solid #d1d1d1;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .result-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    max-height: 420px;
+    overflow-y: scroll;
+
+    &:hover {
+      .result--highlighted {
+        background: none;
+      }
+    }
+  }
+
+  .result {
+    line-height: 1.4em;
+    border-bottom: 1px solid #d1d1d1;
+    position: relative;
+    transition: background-color 0.1s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: #f2f2f2 !important;
+      border-bottom-color: #ccc !important;
+    }
+
+    &__link {
+      display: block;
+      padding: 6px 15px 8px;
+      color: $smokey;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__title {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    &__summary {
+      display: block;
+      font-size: 12px;
+      line-height: 1.4em;
+    }
+
+    &--highlighted {
+      background: #f2f2f2;
+      border-bottom-color: #ccc;
+    }
+  }
+
+  .no-results {
+    padding: 10px;
+  }
+</style>

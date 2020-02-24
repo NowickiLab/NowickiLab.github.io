@@ -6,9 +6,9 @@
       </div>
   
       <ul class="list">
-        <!-- <li>
-          <search-input />
-        </li> -->
+        <li>
+          <search-input/>
+        </li>
         <li class="item">
           <g-link class="link" to="/news/">News</g-link>
         </li>
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import SearchInput from '../components/SearchInput'
+import SearchInput from '@/components/SearchInput'
 
 export default {
   components: {
@@ -49,7 +49,8 @@ export default {
 
   .nav {
     max-width: 1000px;
-    padding: 0 50px;
+    height: 43px;
+    padding: 0 20px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -71,7 +72,8 @@ export default {
     color: #333;
     display: block;
     margin: 0;
-    padding: 10px 10px 8px;
+    padding: 10px 10px 0;
+    height: 100%;
 
     background: white;
 

@@ -2,6 +2,10 @@
 @import './md';
 @import './prism';
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: $smokey;
