@@ -58,25 +58,47 @@ const plugins = [
     }
   },
   {
-    use: 'gridsome-plugin-rss',
+    use: 'gridsome-plugin-feed',
     options: {
-      contentTypeName: 'News',
+      // Required: array of `GraphQL` type names you wish to include
+      contentTypes: ['News', 'Project', 'Publication', 'Person'],
+      // Optional: any properties you wish to set for `Feed()` constructor
+      // See https://www.npmjs.com/package/feed#example for available properties
       feedOptions: {
-        title: 'Gridsome Portfolio Starter Blog',
-        feed_url: `${SITE_URL}/rss.xml`,
-        site_url: SITE_URL
+        title: 'Nowicki Lab',
+        description: 'In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens'
       },
-      feedItemOptions: node => ({
+      // === All options after this point show their default values ===
+      // Optional; opt into which feeds you wish to generate, and set their output path
+      rss: {
+        enabled: true,
+        output: '/rss.xml'
+      },
+      atom: {
+        enabled: false,
+        output: '/feed.atom'
+      },
+      json: {
+        enabled: false,
+        output: '/feed.json'
+      },
+      // Optional: an array of properties passed to `Feed.addItem()` that will be parsed for
+      // URLs in HTML (ensures that URLs are full `http` URLs rather than site-relative).
+      // To disable this functionality, set to `null`.
+      htmlFields: ['description', 'content'],
+      // Optional: if you wish to enforce trailing slashes for site URLs
+      enforceTrailingSlashes: true,
+      // Optional: a method that accepts a node and returns true (include) or false (exclude)
+      // Example: only past-dated nodes: `filterNodes: (node) => node.date <= new Date()`
+      filterNodes: (node) => true,
+      // Optional: a method that accepts a node and returns an object for `Feed.addItem()`
+      // See https://www.npmjs.com/package/feed#example for available properties
+      // NOTE: `date` field MUST be a Javascript `Date` object
+      nodeToFeedItem: (node) => ({
         title: node.title,
-        description: node.summary,
-        url: `${SITE_URL}${node.path}`,
-        author: 'Marcin Nowicki',
-        date: node.date
-      }),
-      output: {
-        dir: './static',
-        name: 'rss.xml'
-      }
+        date: node.date || node.startDate,
+        description: node.summary.replace(/(<([^>]+)>)/ig, '')
+      })
     }
   },
   {
