@@ -1,6 +1,6 @@
 ---
 title: Eastern Redbud chlorotyping and diversity assessment 
-slug: redbud-chlorotypuing
+slug: redbud-chlorotyping
 startDate: 2019-08-01
 endDate: 2019-03-03
 agency: ''

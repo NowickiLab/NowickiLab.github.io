@@ -1,6 +1,6 @@
 ---
 title: Redbud haplotyping - Trinity Hamm proposal seminar
-slug: trinity-cpDNA-seminar
+slug: trinity-cpdna-seminar
 date: 2020-02-21
 summary: Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar
 tags: ['welcome', 'hello']
