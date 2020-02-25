@@ -94,11 +94,13 @@ const plugins = [
       // Optional: a method that accepts a node and returns an object for `Feed.addItem()`
       // See https://www.npmjs.com/package/feed#example for available properties
       // NOTE: `date` field MUST be a Javascript `Date` object
-      nodeToFeedItem: (node) => ({
-        title: node.title,
-        date: node.date || node.startDate,
-        description: node.summary.replace(/(<([^>]+)>)/ig, '')
-      })
+      nodeToFeedItem: (node) => {
+        return {
+          title: node.title,
+          date: node.date || node.startDate,
+          description: node.summary.replace(/(<([^>]+)>)/ig, '')
+        }
+      }
     }
   },
   {

@@ -2,7 +2,9 @@ export default function (titleSuffix = '') {
   return {
     metaInfo() {
       const { title, summary, img } = this.$page.article
-      const strippedSummary = summary.replace(/(<([^>]+)>)/ig, '')
+      const strippedSummary = summary
+        ? summary.replace(/(<([^>]+)>)/ig, '')
+        : ''
 
       const meta = [
         { name: 'title', content: title },
@@ -12,7 +14,7 @@ export default function (titleSuffix = '') {
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: title },
-        { name: 'twitter:description', content: summary }
+        { name: 'twitter:description', content: strippedSummary }
       ]
 
       if (img) meta.push(
@@ -23,7 +25,7 @@ export default function (titleSuffix = '') {
       return {
         title: `${title}${titleSuffix}`,
         titleTemplate: '%s',
-        description: summary,
+        description: strippedSummary,
         meta
       }
     }
