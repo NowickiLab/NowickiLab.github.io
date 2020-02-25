@@ -29,6 +29,10 @@ export default {
     position: relative;
     outline: none;
 
+    @include mq($from: tablet) {
+      display: none;
+    }
+
     &--open {
       .svg--close {
         opacity: 0;
