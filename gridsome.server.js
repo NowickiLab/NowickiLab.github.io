@@ -55,7 +55,7 @@ module.exports = function (api, options) {
     ];
 
     const output = {
-      dir: './static',
+      dir: './dist',
       name: 'search.json',
       ...options.output
     }
