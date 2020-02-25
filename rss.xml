@@ -4,13 +4,13 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Tue, 25 Feb 2020 01:07:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 25 Feb 2020 23:50:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <item>
             <title><![CDATA[Redbud haplotyping - Trinity Hamm proposal seminar]]></title>
-            <link>https://nowickilab.science/news/trinity-cp-dna-seminar/</link>
-            <guid>https://nowickilab.science/news/trinity-cp-dna-seminar/</guid>
+            <link>https://nowickilab.science/news/trinity-cpdna-seminar/</link>
+            <guid>https://nowickilab.science/news/trinity-cpdna-seminar/</guid>
             <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar]]></description>
         </item>
@@ -58,8 +58,8 @@
         </item>
         <item>
             <title><![CDATA[Eastern Redbud chlorotyping and diversity assessment]]></title>
-            <link>https://nowickilab.science/projects/redbud-chlorotypuing/</link>
-            <guid>https://nowickilab.science/projects/redbud-chlorotypuing/</guid>
+            <link>https://nowickilab.science/projects/redbud-chlorotyping/</link>
+            <guid>https://nowickilab.science/projects/redbud-chlorotyping/</guid>
             <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.]]></description>
         </item>
