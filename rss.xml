@@ -1,1 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gridsome Portfolio Starter Blog]]></title><description><![CDATA[Gridsome Portfolio Starter Blog]]></description><link>https://nowickilab.science/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 25 Feb 2020 00:00:31 GMT</lastBuildDate><atom:link href="https://nowickilab.science//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Welcome on the Nowicki lab webpage!]]></title><description><![CDATA[Intro to the Nowicki lab, [Dept. of Entomology and Plant Pathology at University of Tennessee](https://epp.tennessee.edu).]]></description><link>https://nowickilab.science//news/hello-world/</link><guid isPermaLink="true">https://nowickilab.science//news/hello-world/</guid><dc:creator><![CDATA[Marcin Nowicki]]></dc:creator><pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate></item><item><title><![CDATA[30th USDA Interagency Research Forum on Invasive Species]]></title><description><![CDATA[With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD]]></description><link>https://nowickilab.science//news/invasive-species-forum/</link><guid isPermaLink="true">https://nowickilab.science//news/invasive-species-forum/</guid><dc:creator><![CDATA[Marcin Nowicki]]></dc:creator><pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate></item><item><title><![CDATA[Redbud haplotyping - Trinity Hamm proposal seminar]]></title><description><![CDATA[Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar]]></description><link>https://nowickilab.science//news/trinity-cp-dna-seminar/</link><guid isPermaLink="true">https://nowickilab.science//news/trinity-cp-dna-seminar/</guid><dc:creator><![CDATA[Marcin Nowicki]]></dc:creator><pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Nowicki Lab</title>
+        <link>https://nowickilab.science/</link>
+        <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
+        <lastBuildDate>Tue, 25 Feb 2020 01:07:09 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Gridsome Feed Plugin</generator>
+        <item>
+            <title><![CDATA[Redbud haplotyping - Trinity Hamm proposal seminar]]></title>
+            <link>https://nowickilab.science/news/trinity-cp-dna-seminar/</link>
+            <guid>https://nowickilab.science/news/trinity-cp-dna-seminar/</guid>
+            <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar]]></description>
+        </item>
+        <item>
+            <title><![CDATA[30th USDA Interagency Research Forum on Invasive Species]]></title>
+            <link>https://nowickilab.science/news/invasive-species-forum/</link>
+            <guid>https://nowickilab.science/news/invasive-species-forum/</guid>
+            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Marcin Nowicki]]></title>
+            <link>https://nowickilab.science/people/marcin-nowicki/</link>
+            <guid>https://nowickilab.science/people/marcin-nowicki/</guid>
+            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Short introduction about the PI]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Welcome on the Nowicki lab webpage!]]></title>
+            <link>https://nowickilab.science/news/hello-world/</link>
+            <guid>https://nowickilab.science/news/hello-world/</guid>
+            <pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Intro to the Nowicki lab, [Dept. of Entomology and Plant Pathology at University of Tennessee](https://epp.tennessee.edu).]]></description>
+        </item>
+        <item>
+            <title><![CDATA[The effect of habitat fragmentation on genetic diversity and differentiation; fine-scale population structure of Cercis canadensis (Eastern Redbud)]]></title>
+            <link>https://nowickilab.science/publications/redbud-fine-scale/</link>
+            <guid>https://nowickilab.science/publications/redbud-fine-scale/</guid>
+            <pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Fine-scale genetic diversity study of Eastern redbud indicates two distinct genetic clusters in the Southern Appalachia.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Evaluation of genetic diversity of Asian callery pear]]></title>
+            <link>https://nowickilab.science/projects/asian-callery-pear/</link>
+            <guid>https://nowickilab.science/projects/asian-callery-pear/</guid>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[In this endeavor, Shiwani (MS student) is evaluating species diversity using de novo gSSRs. We accrued samples of non-cultivated P.&nbsp;calleryana from Asia. Molecular markers will be tested for cross-amplification to related species as well.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Road trips for redbuds; An assessment of the genetic diversity and spatial distribution of Cercis canadensis in the US]]></title>
+            <link>https://nowickilab.science/publications/redbud-big-scale-poster/</link>
+            <guid>https://nowickilab.science/publications/redbud-big-scale-poster/</guid>
+            <pubDate>Wed, 07 Aug 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Genetic diversity study of Eastern redbud indicates two distinct genetic clusters across the species native range in the US.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Eastern Redbud chlorotyping and diversity assessment]]></title>
+            <link>https://nowickilab.science/projects/redbud-chlorotypuing/</link>
+            <guid>https://nowickilab.science/projects/redbud-chlorotypuing/</guid>
+            <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Shiwani Sapkota]]></title>
+            <link>https://nowickilab.science/people/shiwani-sapkota/</link>
+            <guid>https://nowickilab.science/people/shiwani-sapkota/</guid>
+            <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Short introduction about my 1t MS student]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Diversity of Eastern Redbud, Cercis canadensis, native to US]]></title>
+            <link>https://nowickilab.science/projects/redbud-diversity/</link>
+            <guid>https://nowickilab.science/projects/redbud-diversity/</guid>
+            <pubDate>Wed, 01 Aug 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[MS thesis project of Meher A. Ony. Includes two major objectives, (1) gSSR selection and redbud fine-scale study, and (2) genetic diversity assessment across the species native range.]]></description>
+        </item>
+    </channel>
+</rss>
