@@ -14,6 +14,6 @@ If you are not sure what haplotyping is, do not know the importance of redbuds, 
 
 Trinity delivered a great seminar.
 
-![showy-redbuds](static\pics\Trinity_2020-02-21_11-02-45.jpg)
-![haplotying-explained](static\pics\Trinity_2020-02-21_11-02-46.jpg)
-![research-strategy](static\pics\Trinity_2020-02-21_11-02-47.jpg)
+![showy-redbuds](database\news\images\Trinity_2020-02-21_11-02-45.jpg)
+![haplotying-explained](database\news\images\Trinity_2020-02-21_11-02-46.jpg)
+![research-strategy](database\news\images\Trinity_2020-02-21_11-02-47.jpg)

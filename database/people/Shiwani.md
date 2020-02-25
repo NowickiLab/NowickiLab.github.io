@@ -12,4 +12,4 @@ The focus is, to lay the foundation for the molecular diversity of the invasive 
 
 Shiwani's MS Proposal Seminar is coming up soon - so stay tuned!
 
-![Shiwani-in-lab](static\pics\nowicki17.jpg)
+![Shiwani-in-lab](database\news\images\nowicki17.jpg)

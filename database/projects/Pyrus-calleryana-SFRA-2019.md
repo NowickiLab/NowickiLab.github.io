@@ -43,3 +43,5 @@ We are thankful to several institutions, for sharing with us their living (Arbor
   * Morris Arboretum (Philadelphia, PA)
   * The Morton Arboretum (Lisle, IL)
   * U.S. National Arboretum (USDA-ARS, Washington, DC)
+
+![Shiwani busy genotyping](database\news\images\nowicki15.jpg)

@@ -19,4 +19,4 @@ One efficient way to assess the mutations in the cpDNA is, to PCR the intergenic
 
 Trinity Hamm's MS project in [Dr. Robert N. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/)'s lab intends to build on [our previous research](database\projects\Redbud-SSRs.md) in redbuds. Assessment of cpDNA diversity will complement the SSR studies, but with new vantage point.
 
-![Trinity-in-lab](static\pics\trigiano32.jpg)
+![Trinity-in-lab](database\news\images\trigiano32.jpg)
