@@ -3,7 +3,7 @@ title: Redbud haplotyping - Trinity Hamm proposal seminar
 slug: trinity-cpdna-seminar
 date: 2020-02-21
 summary: Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar
-tags: ['welcome', 'hello']
+tags: ['redbud', 'cpDNA']
 ---
 
 ## Well done, Trinity!
@@ -14,6 +14,6 @@ If you are not sure what haplotyping is, do not know the importance of redbuds, 
 
 Trinity delivered a great seminar.
 
-![showy-redbuds](database\news\images\Trinity_2020-02-21_11-02-45.jpg)
-![haplotying-explained](database\news\images\Trinity_2020-02-21_11-02-46.jpg)
-![research-strategy](database\news\images\Trinity_2020-02-21_11-02-47.jpg)
+![showy-redbuds](database\news\images\TrinityRedbuds.jpg)
+![haplotying-explained](database\news\images\TrinityHaplotyping.jpg)
+![research-strategy](database\news\images\TrinityMethods.jpg)
