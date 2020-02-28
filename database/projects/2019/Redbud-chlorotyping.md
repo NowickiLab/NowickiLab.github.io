@@ -17,6 +17,6 @@ Both mtDNA and cpDNA are inherited from one parent only. In plants - from the ma
 
 One efficient way to assess the mutations in the cpDNA is, to PCR the intergenic region of cpDNA, sequence few individuals, and look for base changes that would result in changes in the restriction patterns. (see [here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205407) for a similar project).
 
-Trinity Hamm's MS project in [Dr. Robert N. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/)'s lab intends to build on [our previous research](database\projects\Redbud-SSRs.md) in redbuds. Assessment of cpDNA diversity will complement the SSR studies, but with new vantage point.
+Trinity Hamm's MS project in [Dr. Robert N. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/)'s lab intends to build on [our previous research](/projects/redbud-diversity/) in redbuds. Assessment of cpDNA diversity will complement the SSR studies, but with new vantage point.
 
-![Trinity-in-lab](database\news\images\trigiano32.jpg)
+![Trinity in lab](./trigiano32.jpg)
