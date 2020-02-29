@@ -2,7 +2,7 @@
 title: Eastern Redbud chlorotyping and diversity assessment 
 slug: redbud-chlorotyping
 startDate: 2019-08-01
-endDate: 2019-03-03
+endDate: 0
 agency: ''
 summary: Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.
 tags: ['cpDNA', 'chloroplast DNA', 'haplotype', 'Cercis canadensis']

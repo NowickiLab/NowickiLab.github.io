@@ -34,6 +34,7 @@ query News ($path: String!) {
     validDateString: date
     content
     summary
+    img
     tags {
       title
       path

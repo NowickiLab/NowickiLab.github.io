@@ -6,7 +6,7 @@
         <time class="date" :datetime="$page.article.startDateRaw">
           {{ $page.article.startDate }}
         </time>
-        <span v-if="isPeriod">
+        <span v-if="$page.article.endDateRaw">
           -
           <time class="date" :datetime="$page.article.endDateRaw">
             {{ $page.article.endDate }}
@@ -58,13 +58,7 @@ import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
 
 export default {
-  mixins: [disqusMixin, metaMixin(' - Projects - NowickiLab')],
-  computed: {
-    isPeriod () {
-      const { startDateRaw, endDateRaw } = this.$page.article
-      return +new Date(startDateRaw) >= +new Date(endDateRaw)
-    }
-  }
+  mixins: [disqusMixin, metaMixin(' - Projects - NowickiLab')]
 }
 </script>
 
