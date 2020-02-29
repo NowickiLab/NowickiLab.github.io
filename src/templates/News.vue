@@ -14,8 +14,9 @@
           v-for="tag in $page.article.tags"
           :to="tag.path"
           :key="tag.id"
-          v-text="tag.title"
-        />
+        >
+          #{{ tag.title }}
+        </g-link>
       </div>
 
       <div v-html="$page.article.content"/>
@@ -47,6 +48,9 @@ import metaMixin from '@/mixins/meta.mixin.js'
 
 export default {
   mixins: [disqusMixin, metaMixin(' - News - NowickiLab')],
+  created () {
+    console.log(this.$page)
+  }
 }
 </script>
 

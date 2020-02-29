@@ -6,6 +6,7 @@ endDate: 2019-03-03
 agency: ''
 summary: Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.
 tags: ['cpDNA', 'chloroplast DNA', 'haplotype', 'Cercis canadensis']
+img: ''
 ---
 
 Project synopsis

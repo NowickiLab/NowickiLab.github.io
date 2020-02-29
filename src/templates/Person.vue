@@ -20,6 +20,7 @@ query Person ($path: String!) {
     date (format: "MMMM D, Y")
     content
     summary
+    img
     tags {
       title
       path

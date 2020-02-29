@@ -6,6 +6,7 @@ endDate: 2018-03-03
 agency: 'USDA'
 summary: MS thesis project of Meher A. Ony. Includes two major objectives, (1) gSSR selection and redbud fine-scale study, and (2) genetic diversity assessment across the species native range.
 tags: ['Cercis canadensis', 'estern redbud', 'ssr', 'species diversity']
+img: ''
 ---
 
 Project synopsis

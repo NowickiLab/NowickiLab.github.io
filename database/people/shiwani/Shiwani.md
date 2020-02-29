@@ -4,6 +4,7 @@ slug: shiwani-sapkota
 date: 2019-08-01
 summary: Short introduction about my 1t MS student
 tags: ['Shiwani', 'Nowicki lab']
+img: ./nowicki17.jpg
 ---
 
 Shiwani Sapkota joined the [Department of Entomology and Plant Pathology](https://epp.tennessee.edu) in 2019 to work on her MS thesis. 

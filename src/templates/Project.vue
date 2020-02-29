@@ -42,8 +42,9 @@ query Project ($path: String!) {
     endDate (format: "DD MMMM YYYY")
     endDateRaw: endDate
     agency
-    content,
+    content
     summary
+    img
     tags {
       title
       path 

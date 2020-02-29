@@ -32,6 +32,7 @@ query Publication ($path: String) {
     date (format: "DD MMMM YYYY")
     content
     validDateString: date
+    img
     tags {
       title
       path

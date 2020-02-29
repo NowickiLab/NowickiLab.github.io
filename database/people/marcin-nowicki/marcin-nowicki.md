@@ -4,6 +4,7 @@ slug: marcin-nowicki
 date: 2020-02-20
 summary: Short introduction about the PI
 tags: ['Marcin Nowicki', 'intro']
+img: ./3M4A9809.jpg
 ---
 
 I joined the [Department of Entomology and Plant Pathology](https://epp.tennessee.edu) in October 2016 to work as postdoctoral Research Associate in [Dr. Robert N. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/)’s laboratory. I came to [UTIA](https://ag.tennessee.edu/Pages/default.aspx) from the [Research Institute of Horticulture (Skierniewice, Poland)](http://www.inhort.pl) where I spent six years (2010-2016) studying molecular background of (a)biotic stress responses in economically important plants. 

@@ -17,10 +17,14 @@ export default function (titleSuffix = '') {
         { name: 'twitter:description', content: strippedSummary }
       ]
 
-      if (img) meta.push(
-        { property: 'og:image', content: img },
-        { name: 'twitter:image', content: img }
-      )
+      if (img) {
+        const src = 'https://nowickilab.science' + img.srcset[1].split(' ')[0]
+
+        meta.push(
+          { property: 'og:image', content: src },
+          { name: 'twitter:image', content: src }
+        )
+      }
 
       return {
         title: `${title}${titleSuffix}`,
