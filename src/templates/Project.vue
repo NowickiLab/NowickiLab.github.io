@@ -22,7 +22,7 @@
             :to="tag.path"
             :key="tag.id"
           >
-            {{ tag }}
+            #{{ tag.title }}
           </g-link>
         </div>
       </header>

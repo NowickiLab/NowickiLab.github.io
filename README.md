@@ -43,7 +43,7 @@ Zdjęcia do artykułu należy umieścić w nowo powstałym folderze obok pliku `
 Dla podstrony `project` pojawiają się dodatkowe pola:
 - `agency` - Krótki teskst bez znaczników HTML i markdownu
 - `startDate` - Data w formacie `YYYY-MM-DD`
-- `endDate` -  Data w formacie `YYYY-MM-DD`. Aby nie wyświetlać daty końcowej, należy ustawić jej wartość na `0`
+- `endDate` -  Data w formacie `YYYY-MM-DD`. Aby nie wyświetlać daty końcowej, należy ustawić jej wartość na `null`
 - ~`date`~ - Znika pole `date`
 
 ### Wzory meta inforamcji
