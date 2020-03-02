@@ -23,6 +23,11 @@ export default function (Vue, { router, head, isClient }) {
     content: 'Marcin Nowicki'
   })
 
+  head.meta.push({
+    name: 'theme-color',
+    content: '#6fb228'
+  })
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap'
