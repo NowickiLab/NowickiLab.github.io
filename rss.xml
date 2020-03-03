@@ -4,9 +4,16 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Mon, 02 Mar 2020 20:51:11 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Mar 2020 17:41:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
+        <item>
+            <title><![CDATA[Shiwani Sapkota's MS proposal seminar]]></title>
+            <link>https://nowickilab.science/news/caller-pear-proposal-seminar/</link>
+            <guid>https://nowickilab.science/news/caller-pear-proposal-seminar/</guid>
+            <pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Shiwani Sapkota delivered her MS proposal seminar at the EPP Department.]]></description>
+        </item>
         <item>
             <title><![CDATA[Redbud haplotyping - Trinity Hamm proposal seminar]]></title>
             <link>https://nowickilab.science/news/trinity-cpdna-seminar/</link>
