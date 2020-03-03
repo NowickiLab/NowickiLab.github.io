@@ -3,7 +3,7 @@ title: Shiwani Sapkota's MS proposal seminar
 slug: caller-pear-proposal-seminar
 date: 2020-02-28
 summary: Shiwani Sapkota delivered her MS proposal seminar at the EPP Department.
-tags: ['invasive species', 'student', 'seminar']
+tags: ['invasive-species', 'student', 'seminar']
 img:
 ---
 
@@ -19,6 +19,6 @@ The presentation was a group effort, with several version and many hours of our 
 > I look forward to seeing the rest of your results.
 
 Very well done, Shiwani!
-![diversity-partitioning](database\news\2020\Shiwani-Proposal-seminar\amova.jpg)
-![conclusions](database\news\2020\Shiwani-Proposal-seminar\obj1.jpg)
-![last-slide](database\news\2020\Shiwani-Proposal-seminar\nepal.jpg)
+![diversity-partitioning](./amova.jpg)
+![conclusions](./obj1.jpg)
+![last-slide](./nepal.jpg)
