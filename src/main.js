@@ -29,6 +29,42 @@ export default function (Vue, { router, head, isClient }) {
   })
 
   head.link.push({
+    rel: 'apple-touch-icon',
+    sizes: '180x180',
+    href: '/favicon/apple-touch-icon.png'
+  })
+
+  head.link.push({
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '16x16',
+    href: '/favicon/favicon-16x16.png'
+  })
+
+  head.link.push({
+    rel: 'icon',
+    type: 'image/png',
+    sizes: '32x32',
+    href: '/favicon/favicon-32x32.png'
+  })
+
+  head.link.push({
+    rel: 'manifest',
+    href: '/favicon/site.webmanifest'
+  })
+
+  head.link.push({
+    rel: 'mask-icon',
+    href: '/favicon/safari-pinned-tab.svg',
+    color: '#5bbad5'
+  })
+
+  head.link.push({
+    rel: 'shortcut icon',
+    href: '/favicon/favicon.ico'
+  })
+
+  head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap'
   })
