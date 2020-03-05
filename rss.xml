@@ -4,13 +4,13 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Thu, 05 Mar 2020 03:20:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Mar 2020 15:29:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <item>
             <title><![CDATA[Shiwani Sapkota's MS proposal seminar]]></title>
-            <link>https://nowickilab.science/news/caller-pear-proposal-seminar/</link>
-            <guid>https://nowickilab.science/news/caller-pear-proposal-seminar/</guid>
+            <link>https://nowickilab.science/news/callery-pear-proposal-seminar/</link>
+            <guid>https://nowickilab.science/news/callery-pear-proposal-seminar/</guid>
             <pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Shiwani Sapkota delivered her MS proposal seminar at the EPP Department.]]></description>
         </item>
@@ -34,13 +34,6 @@
             <guid>https://nowickilab.science/people/marcin-nowicki/</guid>
             <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Short introduction about the PI]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Welcome on the Nowicki lab webpage!]]></title>
-            <link>https://nowickilab.science/news/hello-world/</link>
-            <guid>https://nowickilab.science/news/hello-world/</guid>
-            <pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Intro to the Nowicki lab, [Dept. of Entomology and Plant Pathology at University of Tennessee](https://epp.tennessee.edu).]]></description>
         </item>
         <item>
             <title><![CDATA[The effect of habitat fragmentation on genetic diversity and differentiation; fine-scale population structure of Cercis canadensis (Eastern Redbud)]]></title>
