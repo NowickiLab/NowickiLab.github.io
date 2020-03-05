@@ -83,7 +83,7 @@ export default {
   metaInfo () {
     const url = 'https://nowickilab.science/'
     const title = 'NowickiLab'
-    const img = 'https://nowickilab.science/img/mn_header.svg'
+    const img = 'https://nowickilab.science/img/mn_header.png'
     const desc = 'In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens'
     
     return {
@@ -98,6 +98,8 @@ export default {
         { property: 'og:url', content: url },
         { property: 'og:type', content: 'website' },
         { property: 'og:image', content: img },
+        { property: 'og:image:width', content: '960' },
+        { property: 'og:image:height', content: '480' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:url', content: url },
         { name: 'twitter:title', content: title },
