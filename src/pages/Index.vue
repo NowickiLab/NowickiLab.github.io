@@ -83,7 +83,7 @@ export default {
   metaInfo () {
     const url = 'https://nowickilab.science/'
     const title = 'NowickiLab'
-    const img = ''
+    const img = 'https://nowickilab.science/img/mn_header.svg'
     const desc = 'In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens'
     
     return {
