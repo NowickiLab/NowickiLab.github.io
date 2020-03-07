@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="page-title">
-      <svg class="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="254mm" height="50.7998mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 25400 5079.98" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+      <svg role="img" class="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="254mm" height="50.7998mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 25400 5079.98" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
         <title>Projects</title>
         <defs>
         <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="25400" y1="2540" x2="-0" y2="2540">
@@ -102,8 +102,6 @@ export default {
 
 <style lang="scss" scoped>
   .svg {
-    width: 100%;
-
     .fil3 {fill:#179A00;fill-rule:nonzero}
     .fil2 {fill:#179A00;fill-opacity:0.250980}
     .fil1 {fill:#179A00;fill-rule:nonzero;fill-opacity:0.250980}

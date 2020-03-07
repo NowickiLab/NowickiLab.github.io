@@ -1,8 +1,8 @@
 <template>
   <div>
     <section class="section">
-      <h1>
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="254mm" height="127mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 25400 12700" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+      <h1 class="page-title">
+        <svg role="img" class="svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="254mm" height="127mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 25400 12700" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
           <title>Welcome to the Nowicki Lab page</title>
           <g id="Layer_x0020_1">
             <metadata id="CorelCorpID_0Corel-Layer"/>
@@ -169,7 +169,7 @@ export default {
 
 <style lang="scss" scoped>
   .svg {
-    margin: 30px auto 40px;
+    margin: 0 auto 40px;
     display: block;
   }
 
