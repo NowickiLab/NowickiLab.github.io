@@ -35,15 +35,16 @@ export default {
         }, 150)
       })
     }
-  },
-  mounted () {
+
     // DISQUS
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://nowickilab.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
+    if (process.env.NODE_ENV === 'production') {
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://nowickilab.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    }
   }
 }
 </script>
