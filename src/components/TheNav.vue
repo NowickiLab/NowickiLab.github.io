@@ -10,16 +10,16 @@
           <search-input/>
         </li>
         <li class="item">
-          <g-link class="link" to="/news/">News</g-link>
+          <g-link class="link link--news" to="/news/">News</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/projects/">Projects</g-link>
+          <g-link class="link link--projects" to="/projects/">Projects</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/people/">People</g-link>
+          <g-link class="link link--people" to="/people/">People</g-link>
         </li>
         <li class="item">
-          <g-link class="link" to="/publications/">Publications</g-link>
+          <g-link class="link link--publications" to="/publications/">Publications</g-link>
         </li>
       </ul>
 
@@ -126,6 +126,26 @@ export default {
 
     &.active--exact {
       background: #eeeded;
+    }
+
+    &--news.active--exact {
+      color: rgb(0, 165, 165);
+      background: rgb(177, 255, 255);
+    }
+
+    &--projects.active--exact {
+      color: rgb(22, 145, 0);
+      background: rgb(196, 252, 186);
+    }
+
+    &--people.active--exact {
+      color: rgb(196, 78, 0);
+      background: rgb(255, 223, 200);
+    }
+
+    &--publications.active--exact {
+      color: rgb(23, 151, 1);
+      background: rgb(221, 255, 194);
     }
 
     @include mq($until: tablet) {
