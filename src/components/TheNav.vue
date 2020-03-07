@@ -55,7 +55,7 @@ export default {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     background: white;
     border-bottom: 1px solid #d1d1d1;
