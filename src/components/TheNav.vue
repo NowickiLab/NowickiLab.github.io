@@ -2,7 +2,10 @@
   <header class="header">
     <nav class="nav">
       <div class="item">
-        <g-link class="link link--homepage" to="/">NowickiLab</g-link>
+        <g-link class="link link--homepage" to="/">
+         <img class="logo-img" src="/favicon/favicon-32x32.png" alt="">
+         Nowicki Lab
+        </g-link>
       </div>
   
       <ul class="list" :class="{ 'list--open': isOpen }">
@@ -124,10 +127,6 @@ export default {
       background: #eeeded;
     }
 
-    &.active--exact {
-      background: #eeeded;
-    }
-
     &--news.active--exact {
       color: rgb(0, 165, 165);
       background: rgb(177, 255, 255);
@@ -153,10 +152,17 @@ export default {
     }
 
     &--homepage {
-      background: white !important;
       @include mq($until: tablet) {
         padding: 10px 10px 0;
       }
     }
+  }
+
+  .logo-img {
+    width: 27px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 6px;
   }
 </style>
