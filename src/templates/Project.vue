@@ -58,7 +58,7 @@ import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
 
 export default {
-  mixins: [disqusMixin, metaMixin(' - Projects - NowickiLab')]
+  mixins: [disqusMixin, metaMixin(' - Projects - Nowicki Lab')]
 }
 </script>
 

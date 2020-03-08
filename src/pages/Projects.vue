@@ -69,7 +69,7 @@ import PaginationPosts from '@/components/PaginationPosts'
 import ArticlesPreview from '@/components/ArticlesPreview'
 
 const url = 'https://nowickilab.science/projects/'
-const title = 'Projects - NowickiLab'
+const title = 'Projects - Nowicki Lab'
 const img = ''
 const desc = 'What’s cooking in the Nowicki Lab right now?'
 

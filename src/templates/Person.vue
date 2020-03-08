@@ -33,7 +33,7 @@ query Person ($path: String!) {
 import metaMixin from '@/mixins/meta.mixin.js'
 
 export default {
-  mixins: [metaMixin(' - NowickiLab')]
+  mixins: [metaMixin(' - Nowicki Lab')]
 }
 </script>
 

@@ -71,7 +71,7 @@ query {
 import ArticlesPreview from '@/components/ArticlesPreview'
 
 const url = 'https://nowickilab.science/news/'
-const title = 'News - NowickiLab'
+const title = 'News - Nowicki Lab'
 const img = ''
 const desc = 'THIS recently happened in the Nowicki Lab!'
 

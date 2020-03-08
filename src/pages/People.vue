@@ -81,7 +81,7 @@ import PaginationPosts from '@/components/PaginationPosts'
 import PersonPreview from '@/components/PersonPreview'
 
 const url = 'https://nowickilab.science/people/'
-const title = 'People - NowickiLab'
+const title = 'People - Nowicki Lab'
 const img = ''
 const desc = 'That’s who makes the magic (or is it advanced science?) happen in the Nowicki Lab.'
 
