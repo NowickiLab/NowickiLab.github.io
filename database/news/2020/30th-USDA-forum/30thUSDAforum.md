@@ -2,7 +2,7 @@
 title: 30th USDA Interagency Research Forum on Invasive Species
 slug: invasive-species-forum
 date: 2020-02-20
-summary: With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD
+summary: With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD.
 tags: ['invasive species', 'USDA forum']
 img:
 ---

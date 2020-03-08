@@ -38,7 +38,7 @@ Zdjęcia do artykułu należy umieścić w nowo powstałym folderze obok pliku `
 - `date` - Data w formacie `YYYY-MM-DD`
 - `summary` - Krótki opis artykułu - może zawierać znaczniki HTML. Powinien zawierać więcej niż 120 znaków
 - `tags` - Słowa kluczowe, po których można wyszukać dany artykuł. **Tag nie może zawierać wielkich liter ani spacji!**
-- `img` - Obraz do artykułu. Będzie wyświetlany przy wstawianiu linku w mediach społecznościowych i komunikatorach. Należy podać względy adres obrazu względem danego dokumentu. Aby pominąć obraz należy wstawić pustą wartość. 
+- `img` - Obraz do artykułu. Będzie wyświetlany przy wstawianiu linku w mediach społecznościowych i komunikatorach. Należy podać względny adres obrazu względem danego dokumentu. Aby pominąć obraz należy wstawić pustą wartość. 
 
 Dla podstrony `project` pojawiają się dodatkowe pola:
 - `agency` - Krótki teskst bez znaczników HTML i markdownu
