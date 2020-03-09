@@ -66,9 +66,6 @@ export default {
     return {
       title: 'Tag: ' + this.$page.tag.title
     }
-  },
-  mounted () {
-    console.log(this.$page.tag.belongsTo.edges)
   }
 }
 </script>
