@@ -66,19 +66,19 @@
     <section class="section">
       <h2 class="title">News</h2>
       <p class="desc">THIS recently happened in the Lab!</p>
-      <SimpleArticlesPreview :articles="$page.news.edges" type="news"/>
+      <SimpleArticlesPreview :articles="$page.news.edges" link-to="news"/>
     </section>
 
     <section class="section">
       <h2 class="title">Projects</h2>
       <p class="desc">What’s cooking in the Lab right now?!</p>
-      <SimpleArticlesPreview :articles="$page.projects.edges" type="projects"/>
+      <SimpleArticlesPreview :articles="$page.projects.edges" link-to="projects"/>
     </section>
   
     <section class="section">
       <h2 class="title">Publications</h2>
       <p class="desc">Fresh from the press!</p>
-      <SimpleArticlesPreview :articles="$page.publications.edges" type="publications"/>
+      <SimpleArticlesPreview :articles="$page.publications.edges" link-to="publications"/>
     </section>
   </div>
 </template>
@@ -88,9 +88,10 @@ query {
   news: allNews (sortBy: "date", order: DESC, limit: 3) {
     edges {
       node {
+        __typename
         id
         title
-        startDate: date (format: "MMMM D, Y")
+        startDate: date (format: "DD MMM YYYY")
         year: date (format: "YYYY")
         summary
         timeToRead
@@ -101,6 +102,7 @@ query {
   projects: allProject (sortBy: "startDate", order: DESC, limit: 3) {
     edges {
       node {
+        __typename
         id
         title
         startDate (format: "DD MMM YYYY")
@@ -116,6 +118,7 @@ query {
   publications: allPublication (sortBy: "date", order: DESC, limit: 3) {
     edges {
       node {
+        __typename
         id
         title
         startDate: date (format: "DD MMM YYYY")
