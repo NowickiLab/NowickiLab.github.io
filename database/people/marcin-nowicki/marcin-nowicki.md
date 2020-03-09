@@ -7,6 +7,8 @@ tags: ['Marcin Nowicki', 'intro']
 img: ./3M4A9809.jpg
 ---
 
+Curriculum Vitae: [CV-FULL-jan2020.pdf](./CV-FULL-Jan2020.pdf)
+
 I joined the [Department of Entomology and Plant Pathology](https://epp.tennessee.edu) in October 2016 to work as postdoctoral Research Associate in [Dr. Robert N. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/)’s laboratory. I came to [UTIA](https://ag.tennessee.edu/Pages/default.aspx) from the [Research Institute of Horticulture (Skierniewice, Poland)](http://www.inhort.pl) where I spent six years (2010-2016) studying molecular background of (a)biotic stress responses in economically important plants. 
 
 I held one post-doctoral position before that (joint Max-Planck Institute for [Molecular Plant Physiology [Golm, Germany]](https://www.mpimp-golm.mpg.de/2168/en) and [Michigan State University](https://prl.natsci.msu.edu) in 2006-2009). My primary teaching responsibilities in the past were Cell Biology and Biochemistry and lab mentoring of the students.
