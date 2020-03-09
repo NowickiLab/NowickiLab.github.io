@@ -112,7 +112,8 @@ Przykład
 ```
 
 ### Dodawanie plików
-Identyczne zasady jak przy dodawniu obrazów
+Identyczne zasady jak przy dodawniu obrazów.
+(Ściąganie plików będzie działać dopiero na `nowickilab.science`)
 
 Przykład:
 ```markdown
