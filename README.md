@@ -120,7 +120,7 @@ Przykład:
 ```
 
 ### Dodawanie wykresów
-Do rysowania wykresów używana jest biblioteka [Chart.js][https://www.chartjs.org/docs/latest/]. Tworzenie wykresów na stronie `nowickilab` nieznacznie różni się od dokumentacji.
+Do rysowania wykresów używana jest biblioteka [Chart.js](https://www.chartjs.org/docs/latest/). Tworzenie wykresów na stronie `nowickilab` nieznacznie różni się od dokumentacji.
 
 Elementem na którym będzie rysowany wykres jest `canvas`, któremu należy nadać `id` (może składać się tylko z małych liter, cyfr i myślników - musi zaczynać się literą)
 ```html
