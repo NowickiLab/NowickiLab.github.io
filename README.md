@@ -118,3 +118,66 @@ Przykład:
 ```markdown
 [CV-FULL-jan2020.pdf](./CV-FULL-Jan2020.pdf)
 ```
+
+### Dodawanie wykresów
+Do rysowania wykresów używana jest biblioteka [Chart.js][https://www.chartjs.org/docs/latest/]. Tworzenie wykresów na stronie `nowickilab` nieznacznie różni się od dokumentacji.
+
+Elementem na którym będzie rysowany wykres jest `canvas`, któremu należy nadać `id` (może składać się tylko z małych liter, cyfr i myślników - musi zaczynać się literą)
+```html
+<canvas id="unikalna-nazwa"></canvas>
+```
+
+Konfiguracja wykresu umieszczana jest w tagu `script`. W atrybucie `data-canvas` należy podać wcześniejsze `id` 
+```html
+<script data-canvas="unikalna-nazwa">
+({
+  type: 'line',
+  datasets: [],
+  options: {}
+})
+</script>
+```
+(tag `script` można umieścić w dowolnym miejscu - na przykład na samym dole - żeby nie przeszkadzał wizualnie podczas pisania artykułu)
+
+Przykładowy wykres:
+```html
+<canvas id="chart-1"></canvas>
+<script data-canvas="chart-1">
+({
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+})
+</script>
+```

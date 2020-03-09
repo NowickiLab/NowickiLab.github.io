@@ -56,9 +56,14 @@ query Project ($path: String!) {
 <script>
 import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
+import chartMixin from '@/mixins/chart.mixin.js'
 
 export default {
-  mixins: [disqusMixin, metaMixin(' - Projects - Nowicki Lab')]
+  mixins: [
+    disqusMixin,
+    chartMixin,
+    metaMixin(' - Projects - Nowicki Lab')
+  ]
 }
 </script>
 

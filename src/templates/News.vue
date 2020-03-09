@@ -19,7 +19,7 @@
         </g-link>
       </div>
 
-      <div v-html="$page.article.content"/>
+      <div ref="content" v-html="$page.article.content"/>
     </article>
 
     <div id="disqus_thread" class="disqus"/>
@@ -46,9 +46,14 @@ query News ($path: String!) {
 <script>
 import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
+import chartMixin from '@/mixins/chart.mixin.js'
 
 export default {
-  mixins: [disqusMixin, metaMixin(' - News - Nowicki Lab')]
+  mixins: [
+    disqusMixin,
+    chartMixin,
+    metaMixin(' - News - Nowicki Lab')
+  ] 
 }
 </script>
 
