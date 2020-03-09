@@ -2,6 +2,19 @@
 
 (`Artykuł` to nazwa pomocniczna dla pojedynczego `news`, `person`, `project` albo `publication`)
 
+## Dostępne komendy
+Git (wszystkie komendy z `git *` można wyklikać w Visual Studio Code)
+
+  - `git pull` - Ściąga najnowsze pliki z GitHuba
+  - `git add .` - Dodaje wszystkie nowe/zmienione pliki do commita
+  - `git commit -m "commit message"` - Tworzy commita
+  - `git push` - Wysyła commity na GitHuba
+
+npm
+  - `npm run dev` - Startuje stronę w wersji dewepolerskiej pod adresem [locahost:8080](http://localhost:8080)
+  - `npm run deploy` - Buduje stronę z aktualnych plików na komputerze i wysyła ją na serwer
+
+
 ## Struktura bazy danych
 
 - Baza podzielona jest na 4 sekcje:
@@ -89,11 +102,19 @@ Przykład:
 [Redbud haplotyping](/news/trinity-cpdna-seminar/)
 ```
 
-### Linkowanie do obrazów
+### Dodawanie obrazów
 - Elementy ścieżki rozdzielane są znakiem `/`
 - Należy podać względną ścieżkę do obrazu względem danego dokumentu
 
 Przykład
 ```markdown
 ![Trinity in lab](./trigiano32.jpg)
+```
+
+### Dodawanie plików
+Identyczne zasady jak przy dodawniu obrazów
+
+Przykład:
+```markdown
+[CV-FULL-jan2020.pdf](./CV-FULL-Jan2020.pdf)
 ```
