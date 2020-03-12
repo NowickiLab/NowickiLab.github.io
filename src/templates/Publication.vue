@@ -6,17 +6,9 @@
         <time class="date" :datetime="$page.article.validDateString">
           {{ $page.article.date }}
         </time>
+        <tags :tags="$page.article.tags"/>
         <p v-html="$page.article.summary"/>
       </header>
-
-      <div class="">
-        <g-link
-          v-for="tag in $page.article.tags"
-          :to="tag.path"
-          :key="tag.id"
-          v-text="tag.title"
-        />
-      </div>
 
       <div v-html="$page.article.content"/>
     </article>
@@ -42,11 +34,15 @@ query Publication ($path: String) {
 </page-query>
 
 <script>
+import Tags from '@/components/Tags'
 import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
 import chartMixin from '@/mixins/chart.mixin.js'
 
 export default {
+  components: {
+    Tags
+  },
   mixins: [
     disqusMixin,
     chartMixin,

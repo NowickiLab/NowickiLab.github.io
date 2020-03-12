@@ -12,19 +12,8 @@
             {{ $page.article.endDate }}
           </time>
         </span>
-
-
+        <tags :tags="$page.article.tags"/>
         <p v-html="$page.article.summary"/>
-
-        <div class="">
-          <g-link
-            v-for="tag in $page.article.tags"
-            :to="tag.path"
-            :key="tag.id"
-          >
-            #{{ tag.title }}
-          </g-link>
-        </div>
       </header>
       <div v-html="$page.article.content"/>
     </article>
@@ -54,11 +43,15 @@ query Project ($path: String!) {
 </page-query>
 
 <script>
+import Tags from '@/components/Tags'
 import disqusMixin from '@/mixins/disqus.mixin.js'
 import metaMixin from '@/mixins/meta.mixin.js'
 import chartMixin from '@/mixins/chart.mixin.js'
 
 export default {
+  components: {
+    Tags
+  },
   mixins: [
     disqusMixin,
     chartMixin,
