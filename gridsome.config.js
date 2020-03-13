@@ -166,5 +166,10 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
+  },
+  configureWebpack: {
+    output: {
+      chunkFilename: 'assets/js/[contenthash:10].js'
+    }
   }
 }
