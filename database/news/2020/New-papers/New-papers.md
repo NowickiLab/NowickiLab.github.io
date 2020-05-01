@@ -21,4 +21,3 @@ But, you really need to read all that yourselves!
 
 ![redbud](./redbud.jpg "Meher's Eastern Redbud in bloom. Author: M. Ony")
 ![highlight](./DAPC.jpg "Results highlight - fine scale genetic clusters. Author: M. Ony")
->>>>>>> da7f6412e97b272051b07a2a257dca5efb43418b
