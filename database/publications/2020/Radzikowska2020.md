@@ -15,4 +15,4 @@ We tested 7 seed treatments, and they differed in their impacts on the vigor par
 
  I'm way beyond excited for this collaborative project hitting the press.
 
-  ![accepted](database\images\agronomy-10-00731-ag.png "Our paper's gist (a.k.a. graphical abstract). ")
+  ![accepted](database\publications\2020\agronomy-10-00731-ag.png "Our paper's gist (a.k.a. graphical abstract). ")
