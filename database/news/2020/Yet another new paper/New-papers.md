@@ -1,7 +1,7 @@
 ---
 title: New paper about barley germination
 slug: barley-mortars
-date: 2020-05-01
+date: 2020-05-19
 summary: Our barley germination paper highlights the physiological background of barley seed reaction to drought.
 tags: ['barley', 'seed mortars', 'drought', 'seed physiology', 'photosynthesis']
 img:
