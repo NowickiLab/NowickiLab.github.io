@@ -2,18 +2,22 @@
   <div>
     <h2>{{ title }}</h2>
     <hr>
+    <AddSong @songAdded="songAdded"/>
+    <hr>
     <SongPreview v-for="song in songs" :song="song" :key="song.id"/>
   </div>
 </template>
 
 <script>
 import daysInfo from '@/assets/js/daysInfo'
-import SongPreview from '@/components/SongPreview'
+import SongPreview from '@/components/music-challenge/SongPreview'
+import AddSong from '@/components/music-challenge/AddSong'
 import axios from 'axios'
 
 export default {
   components: {
-    SongPreview
+    SongPreview,
+    AddSong
   },
   data () {
     return {
@@ -27,8 +31,8 @@ export default {
     }
 
     const inRange = (min, nr, max) => nr >= min && nr <= max
-    const nr = window.parseInt(this.$route.query.nr)
-    if (!inRange(1, nr, 30)) {
+    const nr = window.parseFloat(this.$route.query.nr)
+    if (!inRange(1, nr, 30) || nr !== Math.floor(nr)) {
       this.$router.replace('/music-challenge/')
       return
     }
@@ -38,6 +42,11 @@ export default {
 
 
     this.title = daysInfo[nr]
+  },
+  methods: {
+    songAdded (song) {
+      this.songs.push(song)
+    }
   }
 }
 </script>
