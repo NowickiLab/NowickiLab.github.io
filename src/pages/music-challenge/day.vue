@@ -9,6 +9,7 @@
 <script>
 import daysInfo from '@/assets/js/daysInfo'
 import SongPreview from '@/components/SongPreview'
+import axios from 'axios'
 
 export default {
   components: {
@@ -21,12 +22,20 @@ export default {
     }
   },
   async mounted () {
-    const inRange = (min, max) => nr => nr >= min && nr <= max
+    if (!localStorage.getItem('likedSongs')) {
+      localStorage.setItem('likedSongs', JSON.stringify([]))
+    }
+
+    const inRange = (min, nr, max) => nr >= min && nr <= max
     const nr = window.parseInt(this.$route.query.nr)
-    if (!inRange(1, 30)(nr)) {
+    if (!inRange(1, nr, 30)) {
       this.$router.replace('/music-challenge/')
       return
     }
+
+    const { data } = await axios.get(`/songs/${ nr }`)
+    this.songs = data
+
 
     this.title = daysInfo[nr]
   }
