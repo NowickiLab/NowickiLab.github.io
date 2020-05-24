@@ -53,6 +53,7 @@ export default {
         this.comments.push(comment)
       }).finally(() => {
         this.isLoading = false
+        this.text = ''
       })
     }
   }
