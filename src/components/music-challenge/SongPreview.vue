@@ -19,6 +19,7 @@
 
 <script>
 import CommentsPreview from './CommentsPreview'
+import fetchToken from '@/assets/js/fetchRecaptchaToken'
 import axios from 'axios'
 
 export default {
@@ -54,8 +55,8 @@ export default {
       localStorage.setItem('likedSongs', JSON.stringify(likedSongs))
       this.isLiked = true
 
-      axios.post('/likes', {
-        songId: this.song.id
+      fetchToken().then(token => {
+        return axios.post('/likes', { songId: this.song.id, token })
       }).then(res => {
         const likesNumber = res.data.likes
         this.song.likes = likesNumber

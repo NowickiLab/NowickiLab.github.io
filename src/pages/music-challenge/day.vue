@@ -18,6 +18,13 @@ import AddSong from '@/components/music-challenge/AddSong'
 import axios from 'axios'
 
 export default {
+  metaInfo: {
+    script: [
+      { src: `https://www.google.com/recaptcha/api.js?render=${process.env.GRIDSOME_RECAPTCHA_KEY}` }
+    ],
+    title: '30-Day Music Challenge - Nowicki Lab',
+    titleTemplate: '%s'
+  },
   components: {
     SongPreview,
     AddSong

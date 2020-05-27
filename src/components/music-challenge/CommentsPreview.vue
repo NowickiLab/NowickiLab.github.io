@@ -29,6 +29,7 @@
 
 <script>
 import axios from 'axios'
+import fetchToken from '@/assets/js/fetchRecaptchaToken'
 
 export default {
   props: ['comments', 'songId'],
@@ -44,10 +45,13 @@ export default {
       if (this.isLoading) return
 
       this.isLoading = true
-      axios.post('/comments', {
-        songId: this.songId,
-        text: this.text,
-        creator: this.creator
+      fetchToken().then(token => {
+        return axios.post('/comments', {
+          songId: this.songId,
+          text: this.text,
+          creator: this.creator,
+          token
+        })
       }).then(res => {
         const comment = res.data
         this.comments.push(comment)

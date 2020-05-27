@@ -25,6 +25,7 @@
 
 <script>
 import axios from 'axios'
+import fetchToken from '@/assets/js/fetchRecaptchaToken'
 
 export default {
   data () {
@@ -40,12 +41,15 @@ export default {
     onSubmit () {
       if (this.isLoading) return
 
-      axios.post('/songs', {
-        title: this.title,
-        link: this.link,
-        description: this.description,
-        creator: this.creator,
-        day: this.$route.query.nr
+      fetchToken().then(token => {
+        return axios.post('/songs', {
+          title: this.title,
+          link: this.link,
+          description: this.description,
+          creator: this.creator,
+          day: this.$route.query.nr,
+          token
+        })
       }).then(res => {
         const song = res.data
         this.$emit('songAdded', song)
