@@ -1,18 +1,21 @@
 <template lang="html">
-  <div>
-    <h3 class="title">{{ song.title }}</h3>
-    <div class="name">{{ song.creator }}</div>
-    <button v-if="videoId" @click="showIframe = !showIframe">Show youtube video</button> (<a target="_blank" :href="song.link">{{ song.link }}</a>)
-    
-    <iframe v-if="showIframe && videoId" width="560" height="315" :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p class="desc">{{ song.description }}</p>
-
-    <button @click="likeSong">
-      Like ({{ song.likes }})
-      {{ isLiked }}
-    </button>
-
-    <CommentsPreview :comments="song.comments" :songId="song.id"/>
+  <div class="song">
+    <div class="song-card">
+      <h3 class="title">{{ song.title }}</h3>
+      <div class="name">{{ song.creator }}</div>
+      <div class="buttons">
+      <button class="like" @click="likeSong">
+        Like ({{ song.likes }})
+        <!--{{ isLiked }}-->
+      </button>    
+      <button class="show-video" v-if="videoId" @click="showIframe = !showIframe">Show youtube video</button> <!--(<a target="_blank" :href="song.link">{{ song.link }}</a>)-->
+      </div>
+      <!-- <div class="video-link"> -->
+      <iframe class="video" v-if="showIframe && videoId" width="560" height="315" :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- </div> -->
+      <p class="description">{{ song.description }}</p>
+    </div>
+    <CommentsPreview class="comments" :comments="song.comments" :songId="song.id"/>
 
   </div>
 </template>
@@ -69,12 +72,98 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .title {
-    margin-bottom: 0;
-  }
+$blue1: #09b6d1;
+$blue2: #91dce7;
+$green1: #c2df64;
+$green2: #d6e997;
+$orange1: #fdb06d;
+$orange2: #fdbb81;
 
-  .name {
-    color: darkgray;
-    font-size: 12px;
-  }
+// * {
+//   border: 1px solid red;
+// }
+
+.song {
+  display:grid;
+  grid-template:
+    'song-card song-card'
+    'comments comments';
+  background: $green2;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: #494949;
+}
+
+.song-card {
+  grid-area: song-card;
+  display: grid;
+  grid-template:
+    'title title'
+    'creator video-link'
+    'buttons video-link'
+    'description description';
+  grid-template-columns: 5fr 6fr;
+  grid-gap: 10px 5px;
+  grid-template-rows: minmax(10px, auto) minmax(10px, auto);
+  align-items: center;
+  justify-items: center;
+  background: $green1;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.title {
+  grid-area: title;
+  margin: 0;
+  font-size: 20px;
+  width: 100%;
+  height: max-content;
+  padding: 0 10px;
+  background: white;
+  border-radius: 10px;
+}
+
+.name {
+  grid-area: creator;
+  width: 100%;
+  font-size: 15px;
+  height: max-content;
+  padding: 0 10px;
+}
+
+.buttons {
+  grid-area: buttons;
+  width: 90%;
+  align-self: start;
+  justify-self: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.like, .show-video {
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: $orange2;
+  align-self: start;
+}
+
+.video {
+  grid-area: video-link;
+  width: 350px;
+  height: 250px;
+  border-radius: 12px;
+}
+
+.description {
+  grid-area: description;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.comments {
+  grid-area: comments;
+}
 </style>
