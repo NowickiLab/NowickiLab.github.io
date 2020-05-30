@@ -1,16 +1,17 @@
 <template lang="html">
   <div class="comments">
+    <span class="comments-title">Comments:</span>
     <ul class="posted">
       <li class="single" v-for="comment in comments" :key="comment.id">
+        <span class="creator">{{ comment.creator }}:</span>
         {{ comment.text }}
-        <span class="creator">~{{ comment.creator }}</span>
       </li>
     </ul>
 
     <form class="add-new" @submit.prevent="onSubmit">
       <label>
         <!-- Comment <br> -->
-        <textarea class="comment-content" cols="30" rows="4" v-model.trim="text" placeholder="Write a comment..." required min="3"/>
+        <textarea class="comment-content" cols="30" rows="1" v-model.trim="text" placeholder="Write a comment..." required min="3"/>
       </label>
       <label>
         <!-- Your name <br> -->
@@ -62,13 +63,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$green: #179a00;
+$blue: #166fa3;
+$orange: #dc5800;
+$blue-border: #214f69;
+
 // * {
 //   border: 1px solid blue;
 // }
-
-$blue1: #09b6d1;
-$green1: #c2df64;
-$orange1: #fdb06d;
 
 .posted {
   list-style: none;
@@ -76,51 +78,71 @@ $orange1: #fdb06d;
 }
 
 .single {
-  background: white;
-  border-radius: 10px;
+  border-radius: 4px;
+  border: 2px solid lightgrey;
   padding: 10px;
   margin: 4px 0;
 }
 
-.creator {
-  color: $blue1;
-  font-style: italic;
+.comments-title {
+  margin-top: 100px;
 }
 
-.add-new {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap;
-  background: $green1;
-  padding: 8px;
-  border-radius: 10px;
-  width: 100%;
+.creator {
+  color: $orange;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px){
+  .add-new {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .creator-name, .comment-content, .add-comment {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .add-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .comments {
   width: 100%;
-}
-
-.creator-name, .comment-content, .add-comment {
-  padding: 5px 8px;
-  border-radius: 10px;
-  border: none;
-  height: 40px;
-  margin-top: 5px;
-  background: white;
-}
-
-.add-comment {
-  background: $orange1;
+  margin: 10px 0;
 }
 
 .comment-content {
-  // margin-top: 5px;
   transition: all 0.5s ease;
   padding-top: 12px;
   &:focus {
     height: 7em;
   }
 }
+.creator-name, .comment-content {
+  padding: 10px 8px;
+  border: 2px solid darkgrey;
+  border-radius: 4px;
+  margin-top: 5px;
+  background: white;
+}
+
+.add-comment { // button
+  padding: 10px;
+  height: 40px;
+  border: 2px solid $blue-border;
+  border-radius: 4px;
+  background: $blue;
+  color: white;
+  margin-top: 5px;
+}
+
 </style>

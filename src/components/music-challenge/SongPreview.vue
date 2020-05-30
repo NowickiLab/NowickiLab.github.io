@@ -2,19 +2,20 @@
   <div class="song">
     <div class="song-card">
       <h3 class="title">{{ song.title }}</h3>
-      <div class="name">{{ song.creator }}</div>
+      <div class="name">Sender: {{ song.creator }}</div>
+
       <div class="buttons">
       <button class="like" @click="likeSong">
         Like ({{ song.likes }})
         <!--{{ isLiked }}-->
       </button>    
-      <button class="show-video" v-if="videoId" @click="showIframe = !showIframe">Show youtube video</button> <!--(<a target="_blank" :href="song.link">{{ song.link }}</a>)-->
+      <button class="show-video" v-if="videoId" @click="showIframe = !showIframe">Show YouTube video</button> <!--(<a target="_blank" :href="song.link">{{ song.link }}</a>)-->
       </div>
-      <!-- <div class="video-link"> -->
+
       <iframe class="video" v-if="showIframe && videoId" width="560" height="315" :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- </div> -->
       <p class="description">{{ song.description }}</p>
     </div>
+
     <CommentsPreview class="comments" :comments="song.comments" :songId="song.id"/>
 
   </div>
@@ -72,98 +73,101 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue1: #09b6d1;
-$blue2: #91dce7;
-$green1: #c2df64;
-$green2: #d6e997;
-$orange1: #fdb06d;
-$orange2: #fdbb81;
+
+$green: #179a00;
+$blue: #166fa3;
+$orange: #dc5800;
+$blue-border: #214f69;
 
 // * {
 //   border: 1px solid red;
 // }
 
 .song {
-  display:grid;
-  grid-template:
-    'song-card song-card'
-    'comments comments';
-  background: $green2;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  color: #494949;
-}
-
-.song-card {
-  grid-area: song-card;
   display: grid;
   grid-template:
-    'title title'
-    'creator video-link'
-    'buttons video-link'
-    'description description';
-  grid-template-columns: 5fr 6fr;
-  grid-gap: 10px 5px;
-  grid-template-rows: minmax(10px, auto) minmax(10px, auto);
-  align-items: center;
-  justify-items: center;
-  background: $green1;
-  padding: 7px;
-  border-radius: 10px;
+    'song-card'
+    'comments';
+}
+
+@media screen and (max-width: 650px){
+  .song-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .song-card {
+    grid-area: song-card;
+    display: grid;
+    grid-template:
+      'title title'
+      'creator creator'
+      'buttons video-link'
+      'description description';
+    grid-template-columns: 5fr 6fr;
+    grid-template-rows: minmax(10px, auto) minmax(10px, auto);
+  }
+
+  .buttons {
+    margin-right: 10px;
+  }
 }
 
 .title {
   grid-area: title;
-  margin: 0;
   font-size: 20px;
   width: 100%;
-  height: max-content;
-  padding: 0 10px;
-  background: white;
-  border-radius: 10px;
+  color: $green;
+  margin: 20px 0 10px;
 }
 
 .name {
   grid-area: creator;
   width: 100%;
   font-size: 15px;
-  height: max-content;
-  padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .buttons {
-  grid-area: buttons;
-  width: 90%;
-  align-self: start;
-  justify-self: start;
   display: flex;
+  align-items: start;
+  align-content: flex-start;
   justify-content: space-between;
 }
 
-.like, .show-video {
+.like,
+.show-video {
   padding: 10px;
   height: 40px;
-  border-radius: 10px;
-  border: none;
-  background: $orange2;
-  align-self: start;
+  border: 2px solid #2b678a;
+  border-radius: 4px;
+  background: $blue;
+  color: white;
 }
 
 .video {
   grid-area: video-link;
-  width: 350px;
+  width: 100%;
   height: 250px;
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .description {
   grid-area: description;
   padding: 0 10px;
-  margin: 5px 0;
+  margin: 14px 0;
+  font-style: italic;
+  border-left: 10px solid darkgrey;
 }
 
 .comments {
   grid-area: comments;
 }
+
 </style>

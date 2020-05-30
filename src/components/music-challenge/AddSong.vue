@@ -66,18 +66,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue2: #91dce7;
-$orange2: #fdbb81;
+$green: #179a00;
+$blue: #166fa3;
+$orange: #dc5800;
+$blue-border: #214f69;
 
 // * {
 //   border: 1px solid green;
 // }
 
+@media screen and (max-width: 650px){
+  .send {
+    width: 100%;
+  }
+}
+
 .add-song {
   width: 100%;
-  background: $blue2;
   border-radius: 10px;
-  padding: 10px 17px;
+  padding: 10px 0;
   margin-bottom: 10px;
   color: #494949;
 }
@@ -92,18 +99,19 @@ $orange2: #fdbb81;
 
 .title-input, .link-input, .description-input, .name-input {
   width: 100%;
-  border: none;
-  border-radius: 10px;
+  border: 2px solid darkgrey;
+  border-radius: 4px;
   padding: 10px;
   margin: 5px 0;
 }
 
-.send {
+.send { // button
   padding: 10px;
   height: 40px;
-  border-radius: 10px;
-  border: none;
-  background: $orange2;
+  border: 2px solid $blue-border;
+  border-radius: 4px;
+  background: $blue;
+  color: white;
   margin-top: 4px;
 }
 </style>
