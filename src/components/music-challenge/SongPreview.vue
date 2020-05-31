@@ -4,16 +4,17 @@
       <h3 class="title">{{ song.title }}</h3>
       <div class="name">Sender: {{ song.creator }}</div>
 
-      <div class="buttons">
-      <button class="like" @click="likeSong">
-        Like ({{ song.likes }})
-        <!--{{ isLiked }}-->
-      </button>    
-      <button class="show-video" v-if="videoId" @click="showIframe = !showIframe">Show YouTube video</button> <!--(<a target="_blank" :href="song.link">{{ song.link }}</a>)-->
-      </div>
-
-      <iframe class="video" v-if="showIframe && videoId" width="560" height="315" :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <button class="show-video" v-if="videoId" @click="showIframe = !showIframe">Show YouTube video</button> (<a target="_blank" :href="song.link">{{ song.link }}</a>) -->
       <p class="description">{{ song.description }}</p>
+      
+      <iframe class="video" v-if="videoId" width="560" height="315" :src="`https://www.youtube.com/embed/${videoId}`" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="display-likes">
+        {{ displayLikes() }}
+      </div>
+      <button class="like" @click="likeSong">
+        <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/></svg>
+        <span class="button-text">Love it!</span>
+      </button>
     </div>
 
     <CommentsPreview class="comments" :comments="song.comments" :songId="song.id"/>
@@ -67,6 +68,9 @@ export default {
       }).finally(() => {
         this.isLikesLoading = false
       })
+    },
+    displayLikes () {
+      return this.song.likes === 1 ? `${this.song.likes} person loves this`: `${this.song.likes} people love this`
     }
   }
 }
@@ -90,37 +94,37 @@ $blue-border: #214f69;
     'comments';
 }
 
-@media screen and (max-width: 650px){
-  .song-card {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 650px){
+  .like {
+    width: 48%;
+  }
+
+  .button-text {
+    margin-left: 10px;
   }
 
   .video {
-    margin: 10px 0;
+    height: 250px;
   }
 }
 
-@media screen and (min-width: 650px) {
-  .song-card {
-    grid-area: song-card;
-    display: grid;
-    grid-template:
-      'title title'
-      'creator creator'
-      'buttons video-link'
-      'description description';
-    grid-template-columns: 5fr 6fr;
-    grid-template-rows: minmax(10px, auto) minmax(10px, auto);
+@media (min-width: 650px) {
+  .like {
+    width: 130px;
+    justify-content: space-around;
   }
 
-  .buttons {
-    margin-right: 10px;
+  .video {
+    height: 300px;
   }
+}
+
+.song-card {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  grid-area: title;
   font-size: 20px;
   width: 100%;
   color: $green;
@@ -128,46 +132,53 @@ $blue-border: #214f69;
 }
 
 .name {
-  grid-area: creator;
   width: 100%;
   font-size: 15px;
   margin-bottom: 10px;
 }
 
-.buttons {
-  display: flex;
-  align-items: start;
-  align-content: flex-start;
-  justify-content: space-between;
-}
-
-.like,
-.show-video {
+.like {
+  position: relative;
+  top: 41px;
   padding: 10px;
-  height: 40px;
-  border: 2px solid #2b678a;
+  height: 41px;
+  border: 2px solid $blue-border;
   border-radius: 4px;
   background: $blue;
   color: white;
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    background: $blue-border;
+  }
+  &:active {
+    background: purple;
+  }
+}
+
+.heart {
+  height: 20px;
+  width: auto;
+  fill: white;
 }
 
 .video {
-  grid-area: video-link;
   width: 100%;
-  height: 250px;
   border-radius: 4px;
+  margin-top: 8px;
+}
+
+.display-likes {
+  position: relative;
+  top: 20px;
 }
 
 .description {
-  grid-area: description;
   padding: 0 10px;
   margin: 14px 0;
   font-style: italic;
-  border-left: 10px solid darkgrey;
-}
-
-.comments {
-  grid-area: comments;
+  border-left: 7px solid darkgrey;
 }
 
 </style>

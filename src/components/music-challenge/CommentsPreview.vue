@@ -1,6 +1,22 @@
 <template lang="html">
   <div class="comments">
-    <span class="comments-title">Comments:</span>
+    <!-- <span class="comments-title">Comments:</span> -->
+    <button class="add-comment" @click="addComment = !addComment">
+      <svg class="comment-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 1h-24v16.981h4v5.019l7-5.019h13z"/></svg>
+      <span class="button-text">Comment</span>
+    </button> 
+    <form class="add-new" v-if="addComment" @submit.prevent="onSubmit">
+      <label>
+        <textarea class="comment-content" cols="30" rows="1" v-model.trim="text" placeholder="Write a comment..." required min="3"/>
+      </label>
+      <label>
+        <input class="creator-name" type="text" v-model.trim="creator" placeholder="Your name" required min="3">
+      </label>
+
+      <button class="post-comment" type="submit" :disabled="isLoading">
+        Add comment
+      </button>
+    </form>
     <ul class="posted">
       <li class="single" v-for="comment in comments" :key="comment.id">
         <span class="creator">{{ comment.creator }}:</span>
@@ -8,20 +24,6 @@
       </li>
     </ul>
 
-    <form class="add-new" @submit.prevent="onSubmit">
-      <label>
-        <!-- Comment <br> -->
-        <textarea class="comment-content" cols="30" rows="1" v-model.trim="text" placeholder="Write a comment..." required min="3"/>
-      </label>
-      <label>
-        <!-- Your name <br> -->
-        <input class="creator-name" type="text" v-model.trim="creator" placeholder="Your name" required min="3">
-      </label>
-
-      <button class="add-comment" type="submit" :disabled="isLoading">
-        Add comment
-      </button>
-    </form>
   </div>
 </template>
 
@@ -35,7 +37,8 @@ export default {
     return {
       creator: '',
       text: '',
-      isLoading: false
+      isLoading: false,
+      addComment: false
     }
   },
   methods: {
@@ -93,31 +96,59 @@ $blue-border: #214f69;
   font-weight: bold;
 }
 
-@media screen and (max-width: 650px){
+@media (max-width: 650px) {
   .add-new {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .creator-name, .comment-content, .add-comment {
+  .creator-name, .comment-content, .post-comment {
     width: 100%;
+  }
+
+  .post-comment {
+    margin-top: 10px;
+  }
+
+  .add-comment {
+    width: 48%;
+    padding: 0 16px;
+    align-self: flex-end;
+  }
+
+  .button-text {
+    margin-left: 10px;
   }
 }
 
-@media screen and (min-width: 650px) {
+@media (min-width: 650px) {
   .add-new {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 10px;
+  }
+
+  .post-comment {
+    margin-top: 5px;
+  }
+
+  .add-comment {
+    width: 155px;
+    margin-left: 150px;    
+    justify-content: space-around;
   }
 }
 
 .comments {
+  display: flex;
+  flex-flow: column wrap;
   width: 100%;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .comment-content {
@@ -127,6 +158,7 @@ $blue-border: #214f69;
     height: 7em;
   }
 }
+
 .creator-name, .comment-content {
   padding: 10px 8px;
   border: 2px solid darkgrey;
@@ -135,14 +167,27 @@ $blue-border: #214f69;
   background: white;
 }
 
-.add-comment { // button
+.add-comment {
+  display: flex;
+  align-items: center;
+}
+
+.comment-icon {
+  width: auto;
+  height: 20px;
+  fill: white;
+}
+
+.post-comment, .add-comment { // button
   padding: 10px;
-  height: 40px;
+  height: 41px;
   border: 2px solid $blue-border;
   border-radius: 4px;
   background: $blue;
   color: white;
-  margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+    background: $blue-border;
+  }
 }
-
 </style>
