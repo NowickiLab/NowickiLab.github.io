@@ -4,7 +4,6 @@
   </div>
   <div v-else>
     <h2>{{ title }}</h2>
-    <hr>
     <AddSong @songAdded="songAdded"/>
     <hr>
     <SongPreview v-for="song in songs" :song="song" :key="song.id"/>
