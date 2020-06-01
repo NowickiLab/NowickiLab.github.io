@@ -8,8 +8,6 @@
 
 <script>
 import daysInfo from '@/assets/js/daysInfo'
-import fetchDayInfo from '@/assets/js/fetchDayInfo'
-import fetchSpreadSheet from '@/assets/js/fetchSpreadSheets'
 import SongPreview from '@/components/SongPreview'
 
 export default {
@@ -30,17 +28,7 @@ export default {
       return
     }
 
-    const sheetsNames = await fetchSpreadSheet()
-
-    const hasDayNumber = name => parseInt(name.split(' ')[2]) === nr
-
-    if (!sheetsNames.some(hasDayNumber)) {
-      this.$router.replace('/music-challenge/')
-      return
-    }
-
     this.title = daysInfo[nr]
-    this.songs = await fetchDayInfo(nr)
   }
 }
 </script>
