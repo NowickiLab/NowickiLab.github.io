@@ -4,9 +4,16 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Tue, 19 May 2020 16:29:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jun 2020 16:01:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
+        <item>
+            <title><![CDATA[New paper about clonal regenaration by tissue culture]]></title>
+            <link>https://nowickilab.science/news/hvert-tc01/</link>
+            <guid>https://nowickilab.science/news/hvert-tc01/</guid>
+            <pubDate>Mon, 01 Jun 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Our paper on endangered *Helianthus verticillatus* tissue culture was accepted to MDPI Plants, special issue Plant Tissue Culture.]]></description>
+        </item>
         <item>
             <title><![CDATA[New paper about barley germination]]></title>
             <link>https://nowickilab.science/news/barley-mortars/</link>
