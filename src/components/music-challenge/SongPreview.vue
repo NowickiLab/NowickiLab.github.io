@@ -152,9 +152,6 @@ $blue-border: #214f69;
     cursor: pointer;
     background: $blue-border;
   }
-  &:active {
-    background: purple;
-  }
 }
 
 .heart {
