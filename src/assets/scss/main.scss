@@ -52,3 +52,21 @@ ul {
     margin: 0 -15px;
   }
 }
+
+.music-challenge-btn {
+  padding: 10px;
+  height: 40px;
+  border: 1px solid #214f69;;
+  border-radius: 4px;
+  background: #166fa3;
+  color: white;
+  margin-top: 4px;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    background: #214f69;
+  }
+}

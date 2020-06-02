@@ -6,13 +6,13 @@
     <h2>{{ title }}</h2>
     <AddSong @songAdded="songAdded"/>
     <hr>
-    <SongPreview v-for="song in songs" :song="song" :key="song.id"/>
+    <Song v-for="song in songs" :song="song" :key="song.id"/>
   </div>
 </template>
 
 <script>
 import daysInfo from '@/assets/js/daysInfo'
-import SongPreview from '@/components/music-challenge/SongPreview'
+import Song from '@/components/music-challenge/Song'
 import AddSong from '@/components/music-challenge/AddSong'
 import axios from 'axios'
 
@@ -25,7 +25,7 @@ export default {
     titleTemplate: '%s'
   },
   components: {
-    SongPreview,
+    Song,
     AddSong
   },
   data () {
@@ -67,7 +67,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
