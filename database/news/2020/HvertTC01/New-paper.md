@@ -3,7 +3,7 @@ title: New paper about sunflower clonal regenaration by tissue culture
 slug: hverttc01
 date: 2020-06-01
 summary: Our paper on an endangered sunflower tissue culture was accepted to MDPI Plants.
-tags: ['whorled sunflower', 'axillary buds', 'tissue culture', 'clonal regeneration', 'endangered species']
+tags: ['tissue culture', 'phytohormones', '*Helianthus verticillatus*', 'endangered species', 'whorled sunflower', 'axillary buds', 'clonal regeneration']
 img:
 ---
 
