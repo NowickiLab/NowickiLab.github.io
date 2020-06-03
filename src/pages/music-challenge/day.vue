@@ -3,7 +3,9 @@
     Loading...
   </div>
   <div v-else>
-    <h2>{{ title }}</h2>
+    <div class="title-wrap">
+      <h2 class="title">{{ title }}</h2>
+    </div>
     <AddSong @songAdded="songAdded"/>
     <Song v-for="song in sortedSongs" :song="song" :key="song.id"/>
   </div>
@@ -71,3 +73,23 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@include mq($from: tablet) {
+  .title-wrap {
+    position: fixed;
+    top: 43px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  .title {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+}
+</style>

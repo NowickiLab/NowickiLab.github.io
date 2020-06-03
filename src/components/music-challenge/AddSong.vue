@@ -1,5 +1,5 @@
 <template lang="html">
-  <form class="add-song" @submit.prevent="onSubmit">
+  <form class="form" @submit.prevent="onSubmit">
     <label class="label">
       Song title:
       <input class="input" type="text" required min="3" v-model="title" placeholder="Enter song's title"> <br>
@@ -67,10 +67,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.add-song {
+.form {
   padding: 10px 0;
-  margin-bottom: 10px;
+  margin: 110px 0 10px;
   color: #494949;
+
+  @include mq($until: tablet) {
+    margin: 10px 0;
+  }
 }
 
 .label {
