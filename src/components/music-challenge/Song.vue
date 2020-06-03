@@ -14,7 +14,7 @@
     />
 
     <Comments :comments="song.comments"/>
-    <AddComment :songId="song.id"/>
+    <AddComment :songId="song.id" @comment="onComment"/>
 
     <!-- <button class="music-challenge-btn" @click="likeSong">
       <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -47,7 +47,7 @@ export default {
     return {
       showIframe: false,
       isLikesLoading: false,
-      isLiked: JSON.parse(localStorage.getItem('likedSongs')).includes(this.song.id)
+      isLiked: JSON.parse(localStorage.getItem('likedSongs')).includes(this.song.id),
     }
   },
   computed: {
@@ -81,6 +81,9 @@ export default {
       }).finally(() => {
         this.isLikesLoading = false
       })
+    },
+    onComment (comment) {
+      this.song.comments.push(comment)
     }
   }
 }
@@ -92,29 +95,9 @@ $blue: #166fa3;
 $orange: #dc5800;
 $blue-border: #214f69;
 
-@media (max-width: 650px){
-  .like {
-    width: 48%;
-  }
-
-  .button-text {
-    margin-left: 10px;
-  }
-
-  .video {
-    height: 250px;
-  }
-}
-
-@media (min-width: 650px) {
-  .like {
-    width: 130px;
-    justify-content: space-around;
-  }
-
-  .video {
-    height: 300px;
-  }
+.song {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
 }
 
 .title {
@@ -128,16 +111,12 @@ $blue-border: #214f69;
   margin: -10px 0 10px;
 }
 
-.heart {
-  height: 20px;
-  width: auto;
-  fill: white;
-}
-
 .video {
+  display: block;
   width: 100%;
+  height: 325px;
   border-radius: 4px;
-  margin: 12px 0;
+  margin: 12px 0 8px;
 }
 
 </style>

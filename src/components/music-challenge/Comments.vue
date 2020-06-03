@@ -27,6 +27,7 @@ export default {
 .comments {
   list-style: none;
   padding-left: 0;
+  margin: 0 0 5px;
 }
 
 .comment {

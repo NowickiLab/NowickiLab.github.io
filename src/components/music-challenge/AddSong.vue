@@ -14,12 +14,14 @@
     </label>
     <label class="label">
       Your name:
-      <input class="input" type="text" v-model="creator" required min="3" placeholder="Your name"> <br>
+      <input class="input" type="text" v-model="$store.state.yourName" required min="3" placeholder="Your name"> <br>
     </label>
 
-    <button class="music-challenge-btn" type="submit">
-      Send your song
-    </button>
+    <div class="btn-wrap">
+      <button class="music-challenge-btn" type="submit">
+        Send your song
+      </button>
+    </div>
   </form>
 </template>
 
@@ -82,5 +84,9 @@ export default {
   border-radius: 4px;
   padding: 8px 10px;
   margin: 5px 0;
+}
+
+.btn-wrap {
+  text-align: right;
 }
 </style>

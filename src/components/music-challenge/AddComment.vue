@@ -1,26 +1,29 @@
 <template lang="html">
-  <form class="add-new" @submit.prevent="onSubmit">
+  <form class="form" @submit.prevent="onSubmit">
     <label>
+      <div class="visually-hidden">Your comment:</div>
       <textarea
         v-model.trim="text"
-        class="comment-content"
+        class="input input--textarea"
         cols="30"
         rows="1"
         placeholder="Write a comment..."
-        required min="3"
+        required
+        min="3"
       />
     </label>
     <label>
+      <div class="visually-hidden">Your name:</div>
       <input
-        v-model.trim="creator"
-        class="creator-name"
+        v-model.trim="$store.state.yourName"
+        class="input input--text"
         type="text"
         placeholder="Your name"
         required
         min="3"
       >
     </label>
-    <button class="music-challenge-btn" type="submit" :disabled="isLoading">
+    <button class="music-challenge-btn btn" type="submit" :disabled="isLoading">
       Add comment
     </button>
   </form>
@@ -31,10 +34,9 @@ import axios from 'axios'
 import fetchToken from '@/assets/js/fetchRecaptchaToken'
 
 export default {
-  props: ['songId'],
+  props: ['songId', 'yourName'],
   data () {
     return {
-      creator: '',
       text: '',
       isLoading: false,
     }
@@ -52,8 +54,7 @@ export default {
           token
         })
       }).then(res => {
-        const comment = res.data
-        this.comments.push(comment)
+        this.$emit('comment', res.data)
       }).finally(() => {
         this.isLoading = false
         this.text = ''
@@ -64,68 +65,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media (max-width: 650px) {
-  .add-new {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+.form {
+  display: grid;
+  grid-template-columns: 8fr 4fr 3fr;
+  grid-gap: 5px;
 
-  .creator-name, .comment-content, .post-comment {
-    width: 100%;
-  }
-
-  .post-comment {
-    margin-top: 10px;
-  }
-
-  .add-comment {
-    width: 48%;
-    padding: 0 16px;
-    align-self: flex-end;
-  }
-
-  .button-text {
-    margin-left: 10px;
+  @include mq($until: tablet) {
+    display: block;
   }
 }
 
-@media (min-width: 650px) {
-  .add-new {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .post-comment {
-    margin-top: 5px;
-  }
-
-  .add-comment {
-    width: 155px;
-    margin-left: 150px;    
-    justify-content: space-around;
-  }
-}
-
-.comment-content {
-  transition: all 0.5s ease;
-  padding-top: 12px;
-  height: 42px;
-
-  &:focus {
-    height: 7em;
-  }
-}
-
-.creator-name, .comment-content {
+.input {
+  width: 100%;
   padding: 10px 8px;
   border: 2px solid #ddd;
   border-radius: 4px;
   background: white;
+
+  &--textarea {
+    transition: height 0.2s;
+    height: 42px;
+
+    &:focus {
+      height: 5em;
+    }
+  }
+}
+
+.btn {
+  @include mq($until: tablet) {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
 </style>

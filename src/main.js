@@ -4,11 +4,21 @@ import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
 import '@/assets/scss/main.scss'
 import axios from 'axios'
+import Vuex from 'vuex'
+
 // import 'prismjs/themes/prism.css'
 
 axios.defaults.baseURL = process.env.GRIDSOME_API_URL
 
-export default function (Vue, { router, head, isClient }) {
+export default function (Vue, { router, head, isClient, appOptions }) {
+  Vue.use(Vuex)
+
+  appOptions.store = new Vuex.Store({
+    state: {
+      yourName: window.localStorage.getItem('yourName') || ''
+    }
+  })
+
   Vue.use(VueScrollTo, {
     duration: 500,
     easing: "ease",

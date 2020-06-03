@@ -5,8 +5,7 @@
   <div v-else>
     <h2>{{ title }}</h2>
     <AddSong @songAdded="songAdded"/>
-    <hr>
-    <Song v-for="song in songs" :song="song" :key="song.id"/>
+    <Song v-for="song in sortedSongs" :song="song" :key="song.id"/>
   </div>
 </template>
 
@@ -33,6 +32,11 @@ export default {
       isLoading: true,
       title: '',
       songs: []
+    }
+  },
+  computed: {
+    sortedSongs () {
+      return this.songs.sort((a, b) => new Date(a.date) - new Date(b.date) < 0 ? 1 : -1)
     }
   },
   async mounted () {
