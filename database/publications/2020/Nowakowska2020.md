@@ -2,8 +2,8 @@
 title: In vitro propagation of an endangered Helianthus verticillatus by axillary bud proliferation
 slug: hverttc01
 date: 2020-06-03
-summary: Simple tissue culture protocl for clonal multiplication of an endangered sunflower.
-tags: ['tissue culture', 'phytohormones', 'Helianthus verticillatus', 'endangered species', 'whorled sunflower', 'axillary buds', 'clonal regeneration']
+summary: Simple tissue culture protocol for clonal multiplication of an endangered sunflower.
+tags: ['tissue culture', 'phytohormones', 'Helianthus verticillatus', 'endangered species', 'whorled sunflower']
 img: ''
 ---
 
