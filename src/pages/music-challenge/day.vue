@@ -84,6 +84,7 @@ export default {
     margin: 0 auto;
     background: white;
     border-bottom: 1px solid #d1d1d1;
+    z-index: 1;
   }
 
   .title {

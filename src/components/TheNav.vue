@@ -59,7 +59,7 @@ export default {
     top: 0;
     left: 0;
     width: 100vw;
-    z-index: 1;
+    z-index: 2;
     background: white;
     border-bottom: 1px solid #d1d1d1;
   }
