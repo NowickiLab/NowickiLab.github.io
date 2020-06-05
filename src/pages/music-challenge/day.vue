@@ -15,14 +15,14 @@
 import daysInfo from '@/assets/js/daysInfo'
 import Song from '@/components/music-challenge/Song'
 import AddSong from '@/components/music-challenge/AddSong'
-import axios from 'axios'
+import axios from '@/assets/js/music-axios'
 
 export default {
   metaInfo: {
     script: [
       { src: `https://www.google.com/recaptcha/api.js?render=${process.env.GRIDSOME_RECAPTCHA_KEY}` }
     ],
-    title: '30-Day Music Challenge - Nowicki Lab',
+    title: 'Music Challenge - Nowicki Lab',
     titleTemplate: '%s'
   },
   components: {

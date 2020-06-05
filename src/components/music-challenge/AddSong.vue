@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from '@/assets/js/music-axios'
 import fetchToken from '@/assets/js/fetchRecaptchaToken'
 
 export default {

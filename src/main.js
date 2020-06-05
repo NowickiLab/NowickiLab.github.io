@@ -8,8 +8,6 @@ import Vuex from 'vuex'
 
 // import 'prismjs/themes/prism.css'
 
-axios.defaults.baseURL = process.env.GRIDSOME_API_URL
-
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(Vuex)
 

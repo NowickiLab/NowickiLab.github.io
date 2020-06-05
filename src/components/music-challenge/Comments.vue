@@ -9,10 +9,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-import fetchToken from '@/assets/js/fetchRecaptchaToken'
-
-
 export default {
   props: ['comments'],
   computed: {

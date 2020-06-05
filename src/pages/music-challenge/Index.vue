@@ -9,10 +9,14 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from '@/assets/js/music-axios'
 import daysInfo from '@/assets/js/daysInfo'
 
 export default {
+  metaInfo: {
+    title: 'Music Challenge - Nowicki Lab',
+    titleTemplate: '%s'
+  },
   data () {
     return {
       availableDays: 0,
