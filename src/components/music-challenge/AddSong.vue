@@ -9,7 +9,7 @@
       <input class="input" type="url" v-model="link" placeholder="Add a YouTube link to your song"> <br>
     </label>
     <label class="label">
-      Why did you choose that song?
+      Why did you choose this song?
       <textarea class="input " v-model="description" cols="40" rows="5" placeholder="Provide a short explanation"/> <br>
     </label>
     <label class="label">
