@@ -16,7 +16,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
   appOptions.store = new Vuex.Store({
     state: {
       yourName: process.isClient
-        ? process.window.localStorage.getItem('yourName') || ''
+        ? window.localStorage.getItem('yourName') || ''
         : ''
     }
   })
