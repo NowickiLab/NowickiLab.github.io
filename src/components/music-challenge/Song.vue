@@ -4,6 +4,19 @@
     <div class="name">Sender: <b>{{ song.creator }}</b> ({{ date }})</div>
     <p class="description">{{ song.description }}</p>
 
+    <div class="like-wrap">
+      <span class="display-likes">
+        {{ displayLikes }}
+      </span>
+      <button class="music-challenge-btn like" @click="likeSong">
+        <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
+        </svg>
+      <span class="like-text">
+        {{ isLiked ? 'Liked!' : 'Like' }}
+      </span>
+      </button>
+    </div>
     <iframe
       v-if="videoId"
       class="video"
@@ -16,20 +29,7 @@
     <Comments :comments="song.comments"/>
     <AddComment :songId="song.id" @comment="onComment"/>
     
-    <div class="like-wrap">
-      <button class="music-challenge-btn like" @click="likeSong">
-        <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
-        </svg>
-      </button>
-      <span class="like-text">
-        {{ isLiked ? 'Liked!' : 'Love it!' }}
-      </span>
-    </div>
 
-    <!-- <span class="display-likes">
-      {{ displayLikes }}
-    </span> -->
   </div>
 </template>
 
@@ -57,8 +57,9 @@ export default {
       return (this.song.link.match(/v=([^&|$|#]+)/) || [])[1]
     },
     displayLikes () {
-      const s = this.song.likes === 1 ? '' : 's'
-      return `${this.song.likes} person${s} loves this`
+      const ppl = this.song.likes === 1 ? 'person likes' : 'people like'
+      if (this.song.likes) return `${this.song.likes} ${ppl} this`
+      return `No one has liked this yet!`
     },
     date () {
       return new Date(this.song.date).toLocaleString()
@@ -110,6 +111,10 @@ export default {
   margin: -10px 0 10px;
 }
 
+.description {
+  margin-bottom: 10px;
+}
+
 .video {
   display: block;
   width: 100%;
@@ -120,32 +125,45 @@ export default {
 
 .like-wrap {
   display: flex;
-  align-content: center;
-  flex-direction: column;
-  position: absolute;
-  top: 20px;
-  left: -70px;
+  flex-direction: row;
+  justify-content: space-between;
+  // @include mq($from: tablet) {  
+  // display: flex;
+  // align-content: center;
+  // flex-direction: column;
+  // position: absolute;
+  // top: 20px;
+  // left: -70px;
+  // }
+}
 
-  @include mq($until: tablet) {
-    visibility: hidden;
-  }
+.display-likes {
+  align-self: center;
 }
 
 .like {
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
   fill: white;
-  background: #ec3030;
+  background: #e44747;
   border-color: #bb2e2e;
 
   &:hover {
     background: #bb2e2e;
   }
+
+  // @include mq($from: tablet) {
+  //   border-radius: 50%;
+  //   width: 45px;
+  //   height: 45px;
+  // }
 }
 
-.like-text {
-  text-align: center;
-  color: #58595B;
+.heart {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
 }
 </style>
