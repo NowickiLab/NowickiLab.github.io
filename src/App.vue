@@ -45,6 +45,11 @@ export default {
         (d.head || d.body).appendChild(s);
       })();
     }
+  },
+  watch: {
+    '$store.state.yourName' (name) {
+      window.localStorage.setItem('yourName', name)
+    }
   }
 }
 </script>

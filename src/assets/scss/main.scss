@@ -52,3 +52,32 @@ ul {
     margin: 0 -15px;
   }
 }
+
+.music-challenge-btn {
+  padding: 10px;
+  height: 42px;
+  border: 1px solid #214f69;;
+  border-radius: 4px;
+  background: #166fa3;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    background: #214f69;
+  }
+
+  &--with-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.visually-hidden { 
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}

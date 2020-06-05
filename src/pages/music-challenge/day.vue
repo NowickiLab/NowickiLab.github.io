@@ -1,38 +1,96 @@
 <template lang="html">
-  <div>
-    <h2>{{ title }}</h2>
-    <hr>
-    <SongPreview v-for="song in songs" :song="song" :key="song.id"/>
+  <div v-if="isLoading">
+    Loading...
+  </div>
+  <div v-else>
+    <div class="title-wrap">
+      <h2 class="title">{{ title }}</h2>
+    </div>
+    <AddSong @songAdded="songAdded"/>
+    <Song v-for="song in sortedSongs" :song="song" :key="song.id"/>
   </div>
 </template>
 
 <script>
 import daysInfo from '@/assets/js/daysInfo'
-import SongPreview from '@/components/SongPreview'
+import Song from '@/components/music-challenge/Song'
+import AddSong from '@/components/music-challenge/AddSong'
+import axios from 'axios'
 
 export default {
+  metaInfo: {
+    script: [
+      { src: `https://www.google.com/recaptcha/api.js?render=${process.env.GRIDSOME_RECAPTCHA_KEY}` }
+    ],
+    title: '30-Day Music Challenge - Nowicki Lab',
+    titleTemplate: '%s'
+  },
   components: {
-    SongPreview
+    Song,
+    AddSong
   },
   data () {
     return {
-      title: 'Loading...',
+      isLoading: true,
+      title: '',
       songs: []
     }
   },
+  computed: {
+    sortedSongs () {
+      return this.songs.sort((a, b) => new Date(a.date) - new Date(b.date) < 0 ? 1 : -1)
+    }
+  },
   async mounted () {
-    const inRange = (min, max) => nr => nr >= min && nr <= max
-    const nr = window.parseInt(this.$route.query.nr)
-    if (!inRange(1, 30)(nr)) {
+    if (!localStorage.getItem('likedSongs')) {
+      localStorage.setItem('likedSongs', JSON.stringify([]))
+    }
+
+    const inRange = (min, nr, max) => nr >= min && nr <= max
+    const nr = window.parseFloat(this.$route.query.nr)
+
+    if (!inRange(1, nr, 30) || nr !== Math.floor(nr)) {
       this.$router.replace('/music-challenge/')
       return
     }
 
+    const { availableDays } = await axios.get('/available-days').then(res => res.data)
+
+    if (nr > availableDays) {
+      this.$router.replace('/music-challenge/')
+      return
+    }
+
+    const { data } = await axios.get(`/songs/${ nr }`)
+    this.songs = data
     this.title = daysInfo[nr]
+    this.isLoading = false
+  },
+  methods: {
+    songAdded (song) {
+      this.songs.push(song)
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@include mq($from: tablet) {
+  .title-wrap {
+    position: fixed;
+    top: 43px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-bottom: 1px solid #d1d1d1;
+    z-index: 1;
+  }
 
+  .title {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+}
 </style>
