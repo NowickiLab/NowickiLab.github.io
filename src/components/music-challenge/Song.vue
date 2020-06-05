@@ -8,7 +8,7 @@
       <span class="display-likes">
         {{ displayLikes }}
       </span>
-      <button class="music-challenge-btn like" @click="likeSong">
+      <button class="music-challenge-btn like" @click="likeSong" :class="{ 'like--liked': isLiked }">
         <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
         </svg>
@@ -28,8 +28,6 @@
 
     <Comments :comments="song.comments"/>
     <AddComment :songId="song.id" @comment="onComment"/>
-    
-
   </div>
 </template>
 
@@ -57,9 +55,15 @@ export default {
       return (this.song.link.match(/v=([^&|$|#]+)/) || [])[1]
     },
     displayLikes () {
-      const ppl = this.song.likes === 1 ? 'person likes' : 'people like'
-      if (this.song.likes) return `${this.song.likes} ${ppl} this`
-      return `No one has liked this yet!`
+      const { likes } = this.song
+
+      const ppl = likes === 1
+        ? 'person likes'
+        : 'people like'
+  
+      return likes > 0
+        ? `${likes} ${ppl} this`
+        : `No one has liked this yet!`
     },
     date () {
       return new Date(this.song.date).toLocaleString()
@@ -93,7 +97,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .song {
   border-top: 1px solid #ccc;
   margin-top: 30px;
@@ -127,14 +130,6 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  // @include mq($from: tablet) {  
-  // display: flex;
-  // align-content: center;
-  // flex-direction: column;
-  // position: absolute;
-  // top: 20px;
-  // left: -70px;
-  // }
 }
 
 .display-likes {
@@ -152,6 +147,13 @@ export default {
 
   &:hover {
     background: #bb2e2e;
+  }
+
+  &--liked {
+    &:hover {
+      background: #e44747;
+      cursor: auto;
+    }
   }
 
   // @include mq($from: tablet) {
