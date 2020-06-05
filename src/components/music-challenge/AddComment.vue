@@ -50,7 +50,7 @@ export default {
         return axios.post('/comments', {
           songId: this.songId,
           text: this.text,
-          creator: this.creator,
+          creator: this.$store.state.yourName,
           token
         })
       }).then(res => {
