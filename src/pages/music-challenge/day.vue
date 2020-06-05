@@ -91,6 +91,7 @@ export default {
     max-width: $max-width;
     margin: 0 auto;
     padding: 10px 10px;
+    font-size: 22px;
   }
 }
 </style>
