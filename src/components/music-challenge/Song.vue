@@ -37,7 +37,7 @@
 import Comments from './Comments'
 import AddComment from './AddComment'
 import fetchToken from '@/assets/js/fetchRecaptchaToken'
-import axios from 'axios'
+import axios from '@/assets/js/music-axios'
 
 export default {
   props: ['song'],
