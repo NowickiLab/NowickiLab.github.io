@@ -35,8 +35,7 @@ export default {
       isLoading: false,
       title: '',
       description: '',
-      link: '',
-      creator: ''
+      link: ''
     }
   },
   methods: {
@@ -48,7 +47,7 @@ export default {
           title: this.title,
           link: this.link,
           description: this.description,
-          creator: this.creator,
+          creator: this.$store.state.yourName,
           day: this.$route.query.nr,
           token
         })
