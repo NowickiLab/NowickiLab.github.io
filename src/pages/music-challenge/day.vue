@@ -8,7 +8,7 @@
     </div>
 
     <div v-if="day.isPast" class="past">
-      <p>Past</p>
+      <p>This is a past daily challenge. Posting for this topic is closed, but browsing and interacting with the archive is possible.</p>
     </div>
     <AddSong v-else @songAdded="songAdded"/>
 
