@@ -17,7 +17,7 @@
       <Song v-for="song in day.songs" :song="song" :key="song.id"/>
     </div>
     <p v-else class="no-songs">
-      <span v-if="day.isPast">Unfortunetly, there are <b>no songs</b> for day {{ day.day }}</span>
+      <span v-if="day.isPast">Unfortunately, there are <b>no songs</b> for day {{ day.day }}.</span>
       <span v-else>There are <b>no songs</b> for day {{ day.day }} yet. Be the first one and send your song!</span>
     </p>
 
@@ -28,7 +28,7 @@
         Previous day
       </a>
       <router-link to="/music-challenge" class="music-challenge-btn back">
-        Back to days list
+        Back to day list
       </router-link>
       <button class="music-challenge-btn navigate">
         Next day
