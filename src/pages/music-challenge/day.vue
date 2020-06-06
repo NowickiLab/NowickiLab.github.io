@@ -8,6 +8,20 @@
     </div>
     <AddSong @songAdded="songAdded"/>
     <Song v-for="song in sortedSongs" :song="song" :key="song.id"/>
+    
+    <hr>
+
+    <div class="buttons">
+      <button class="music-challenge-btn navigate">
+        <svg class="icon left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+        Previous day
+      </button>
+      <button class="music-challenge-btn back">Back to days list</button>
+      <button class="music-challenge-btn navigate">
+        Next day
+        <svg class="icon right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -94,4 +108,41 @@ export default {
     font-size: 22px;
   }
 }
+
+.music-challenge-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  @include mq($until: tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+@include mq($until: tablet) {
+  .back {
+    order: 1;
+    width: 100%;
+  }
+
+  .navigate {
+    width: 49%;
+    margin-bottom: 8px;
+  }
+}
+
+.left {
+  margin-right: 20px;
+}
+
+.right {
+  margin-left: 20px;
+}
+
 </style>
