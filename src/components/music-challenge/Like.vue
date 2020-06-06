@@ -4,7 +4,7 @@
       {{ displayLikes }}
     </span>
     <button class="music-challenge-btn like" @click="likeSong">
-      <svg class="heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M12 4.435c-1.989-5.399-12-4.597-12 3.568 0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-8.118-10-8.999-12-3.568z"/>
       </svg>
     <span class="like-text">
@@ -73,7 +73,6 @@ export default {
   align-items: center;
   justify-content: center;
   width: 136px;
-  fill: white;
   background: #e44747;
   border-color: #bb2e2e;
 
@@ -82,9 +81,7 @@ export default {
   }
 }
 
-.heart {
-  height: 22px;
-  width: 22px;
+.icon {
   margin-right: 8px;
 }
 </style>
