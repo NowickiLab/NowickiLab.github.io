@@ -17,7 +17,7 @@
       <Song v-for="song in day.songs" :song="song" :key="song.id"/>
     </div>
     <p v-else class="no-songs">
-      <span v-if="day.isPast">Unfortunetly, there are <b>no songs</b> for day {{ day.day }}</span>
+      <span v-if="day.isPast">Unfortunately, there are <b>no songs</b> for day {{ day.day }}.</span>
       <span v-else>There are <b>no songs</b> for day {{ day.day }} yet. Be the first one and send your song!</span>
     </p>
 
@@ -28,7 +28,7 @@
         <svg class="icon left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
         Previous day
       </button>
-      <button class="music-challenge-btn back">Back to days list</button>
+      <button class="music-challenge-btn back">Back to day list</button>
       <button class="music-challenge-btn navigate">
         Next day
         <svg class="icon right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
