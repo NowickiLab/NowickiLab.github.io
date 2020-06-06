@@ -83,8 +83,8 @@ export default {
 }
 
 .heart {
-  height: 24px;
-  width: 24px;
+  height: 22px;
+  width: 22px;
   margin-right: 8px;
 }
 </style>
