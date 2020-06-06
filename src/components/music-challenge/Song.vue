@@ -58,7 +58,7 @@ export default {
 <style lang="scss" scoped>
 .song {
   border-top: 1px solid #ccc;
-  margin-top: 30px;
+  margin: 30px 0;
 }
 
 .title {
