@@ -4,11 +4,23 @@
   </div>
   <div v-else>
     <div class="title-wrap">
-      <h2 class="title">{{ title }}</h2>
+      <h2 class="title">Day {{ day.day }}: {{ day.theme }}</h2>
     </div>
-    <AddSong @songAdded="songAdded"/>
-    <Song v-for="song in sortedSongs" :song="song" :key="song.id"/>
-    
+
+    <div v-if="day.isPast" class="past">
+      <p>Past</p>
+    </div>
+    <AddSong v-else @songAdded="songAdded"/>
+
+
+    <div v-if="day.songs.length > 0" class="songs">
+      <Song v-for="song in day.songs" :song="song" :key="song.id"/>
+    </div>
+    <p v-else class="no-songs">
+      <span v-if="day.isPast">Unfortunetly, there are <b>no songs</b> for day {{ day.day }}</span>
+      <span v-else>There are <b>no songs</b> for day {{ day.day }} yet. Be the first one and send your song!</span>
+    </p>
+
     <hr>
 
     <div class="buttons">
@@ -22,6 +34,7 @@
         <svg class="icon right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
       </button>
     </div>
+
   </div>
 </template>
 
@@ -47,38 +60,28 @@ export default {
     return {
       isLoading: true,
       title: '',
-      songs: []
+      day: null,
     }
   },
-  computed: {
-    sortedSongs () {
-      return this.songs.sort((a, b) => new Date(a.date) - new Date(b.date) < 0 ? 1 : -1)
-    }
-  },
-  async mounted () {
+  mounted () {
     if (!localStorage.getItem('likedSongs')) {
       localStorage.setItem('likedSongs', JSON.stringify([]))
     }
 
-    const inRange = (min, nr, max) => nr >= min && nr <= max
     const nr = window.parseFloat(this.$route.query.nr)
 
-    if (!inRange(1, nr, 30) || nr !== Math.floor(nr)) {
+    if (nr < 1 || nr !== Math.floor(nr)) {
       this.$router.replace('/music-challenge/')
       return
     }
 
-    const { availableDays } = await axios.get('/available-days').then(res => res.data)
-
-    if (nr > availableDays) {
+    axios.get(`/day/${nr}`).then(res => {
+      this.day = res.data
+    }).catch(err => {
       this.$router.replace('/music-challenge/')
-      return
-    }
-
-    const { data } = await axios.get(`/songs/${ nr }`)
-    this.songs = data
-    this.title = daysInfo[nr]
-    this.isLoading = false
+    }).finally(() => {
+      this.isLoading = false
+    })
   },
   methods: {
     songAdded (song) {
@@ -104,8 +107,17 @@ export default {
   .title {
     max-width: $max-width;
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 10px 15px;
     font-size: 22px;
+  }
+
+  .no-songs {
+    text-align: center;
+    margin: 80px 0 40px;
+  }
+
+  .past {
+    padding-top: 30px;
   }
 }
 

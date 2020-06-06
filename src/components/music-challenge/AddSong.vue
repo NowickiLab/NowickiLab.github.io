@@ -67,8 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .form {
-  padding: 10px 0;
-  margin: 110px 0 10px;
+  padding: 40px 0 10px;
   color: #494949;
 
   @include mq($until: tablet) {
