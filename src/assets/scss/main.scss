@@ -60,10 +60,15 @@ ul {
   border-radius: 4px;
   background: #166fa3;
   color: white;
+  text-decoration: none !important;
 
   &:hover {
     cursor: pointer;
     background: #214f69;
+  }
+
+  &:visited {
+    color: white;
   }
 
   &--with-icon {

@@ -21,14 +21,15 @@
       <span v-else>There are <b>no songs</b> for day {{ day.day }} yet. Be the first one and send your song!</span>
     </p>
 
-    <hr>
 
     <div class="buttons">
-      <button class="music-challenge-btn navigate">
+      <a :href="prevLink" class="music-challenge-btn navigate">
         <svg class="icon left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
         Previous day
-      </button>
-      <button class="music-challenge-btn back">Back to days list</button>
+      </a>
+      <router-link to="/music-challenge" class="music-challenge-btn back">
+        Back to days list
+      </router-link>
       <button class="music-challenge-btn navigate">
         Next day
         <svg class="icon right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
@@ -63,29 +64,42 @@ export default {
       day: null,
     }
   },
+  computed: {
+    prevLink () {
+      return `/music-challenge/day?nr=${this.$route.query.nr - 1}`
+    }
+  },
   mounted () {
     if (!localStorage.getItem('likedSongs')) {
       localStorage.setItem('likedSongs', JSON.stringify([]))
     }
 
-    const nr = window.parseFloat(this.$route.query.nr)
-
-    if (nr < 1 || nr !== Math.floor(nr)) {
-      this.$router.replace('/music-challenge/')
-      return
+    this.fetchData()
+  },
+  watch: {
+    '$route.query.nr' () {
+      this.fetchData()
     }
-
-    axios.get(`/day/${nr}`).then(res => {
-      this.day = res.data
-    }).catch(err => {
-      this.$router.replace('/music-challenge/')
-    }).finally(() => {
-      this.isLoading = false
-    })
   },
   methods: {
     songAdded (song) {
       this.songs.push(song)
+    },
+    fetchData () {
+      const nr = window.parseFloat(this.$route.query.nr)
+
+      if (nr < 1 || nr !== Math.floor(nr)) {
+        this.$router.replace('/music-challenge/')
+        return
+      }
+
+      axios.get(`/day/${nr}`).then(res => {
+        this.day = res.data
+      }).catch(err => {
+        this.$router.replace('/music-challenge/')
+      }).finally(() => {
+        this.isLoading = false
+      })
     }
   }
 }
@@ -113,7 +127,7 @@ export default {
 
   .no-songs {
     text-align: center;
-    margin: 80px 0 40px;
+    margin: 80px 0;
   }
 
   .past {
@@ -132,6 +146,10 @@ export default {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+
   @include mq($until: tablet) {
     flex-wrap: wrap;
   }
