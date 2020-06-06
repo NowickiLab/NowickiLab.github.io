@@ -10,7 +10,7 @@
       Ideas on the further topics in this challenge are very welcome at mnowicki(at)utk.edu
     </p>
 
-    <h4>Rules to observe</h4>
+    <h2 class="subtitle">Rules to observe</h2>
 
     <ol>
       <li>Posting for each day takes place between <b>00:00 AM</b> and <b>23:59 PM</b> (Memphis time).</li>
@@ -28,22 +28,25 @@
 
     <p>Bring your SOs, family, friends, UTK community... The more the marrier!</p>
 
-    <div class="days">
+    <p v-if="isLoading">Loading songs...</p>
+    <div v-else class="days">
+      <h2 class="subtitle">Challenge</h2>
       <router-link
-        v-for="day in days"
+        v-for="(day, i) in days"
         :key="day.day"
         class="day"
+        :class="{ 'day--active': isToday(day.dateFrom) }"
         :to="`/music-challenge/day?nr=${day.day}`"
       >
         <div>
           <span class="day-nr">Day {{ day.day }} </span>
-          <span class="date">From: {{ dateFrom(day) }}</span>
+          <span class="date"> | From: {{ dateFrom(day) }} | To: {{ dateTo(day) }}</span>
         </div>
         <div class="theme">
           {{ day.theme }}
         </div>
         <div class="social">
-          {{ day.songsNumber }} songs, {{ day.commentsNumber }} comments
+          {{ plurar(day.songsNumber, 'song') }}, {{ plurar(day.commentsNumber, 'comment') }}
         </div>
       </router-link>
     </div>
@@ -60,18 +63,39 @@ export default {
   },
   data () {
     return {
-      days: []
+      days: [],
+      isLoading: true
     }
   },
   computed: {
     dateFrom () {
       return day => new Date(day.dateFrom).toLocaleString()
+    },
+    dateTo () {
+      return day => {
+        const d1 = new Date(day.dateFrom).getTime()
+        return new Date(d1 + (1000 * 60 * 60 * 24 - 1000)).toLocaleString()
+      }
+    },
+    plurar () {
+      return (i, word) => `${i} ${word}${i === 1 ? '' : 's'}`
     }
   },
   mounted () {
     axios.get('/days').then(res => {
       this.days = res.data
+    }).finally(() => {
+      this.isLoading = false
     })
+  },
+  methods: {
+    isToday (isoDate) {
+      const d1 = new Date(isoDate)
+      const d2 = new Date('2020-06-12T08:00:00.000Z')
+      return d1.getFullYear() === d2.getFullYear() &&
+        d1.getMonth() === d2.getMonth() &&
+        d1.getDate() === d2.getDate()
+    }
   }
 }
 </script>
@@ -86,8 +110,23 @@ export default {
   color: #58595B;
   text-decoration: none;
   margin: 10px 0;
-  border: 2px solid #ddd;
-  padding: 10px;
+  border: 2px solid #ccc;
+  padding: 15px 20px;
+
+  transition: border-color 0.15s;
+
+  &:hover, &:focus {
+    outline: none;
+    border-color: #888;
+  }
+
+  &--active {
+    border-color: #86dd04;
+    
+    &:hover, &:focus {
+      border-color: #819c57;
+    }
+  }
 }
 
 .day-nr {
@@ -95,16 +134,16 @@ export default {
   font-weight: bold;
 }
 
-.date {
-  font-size: 14px;
-}
-
 .theme {
   margin: 10px 0;
 }
 
-.social {
-  // font-size: 12px;
-  font-size: 14px;
+.social .date {
+  font-size: 13px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
 }
 </style>
