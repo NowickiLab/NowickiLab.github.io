@@ -12,7 +12,6 @@
     </div>
     <AddSong v-else @songAdded="songAdded"/>
 
-
     <div v-if="day.songs.length > 0" class="songs">
       <Song v-for="song in day.songs" :song="song" :key="song.id"/>
     </div>
@@ -21,10 +20,9 @@
       <span v-else>There are <b>no songs</b> for day {{ day.day }} yet. Be the first one and send your song!</span>
     </p>
 
-
     <div class="buttons">
       <a :href="prevLink" class="music-challenge-btn navigate">
-        <svg class="icon left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
         Previous day
       </a>
       <router-link to="/music-challenge" class="music-challenge-btn back">
@@ -32,7 +30,7 @@
       </router-link>
       <button class="music-challenge-btn navigate">
         Next day
-        <svg class="icon right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
       </button>
     </div>
 
@@ -137,7 +135,7 @@ export default {
 
 .music-challenge-btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 31%;
 }
@@ -164,15 +162,7 @@ export default {
   .navigate {
     width: 49%;
     margin-bottom: 8px;
+    padding: 0 5px;
   }
 }
-
-.left {
-  margin-right: 20px;
-}
-
-.right {
-  margin-left: 20px;
-}
-
 </style>
