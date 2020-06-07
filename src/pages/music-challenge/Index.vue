@@ -46,7 +46,7 @@
           {{ day.theme }}
         </div>
         <div class="social">
-          {{ plurar(day.songsNumber, 'song') }}, {{ plurar(day.commentsNumber, 'comment') }}
+          <b>{{ plurar(day.songsNumber, 'song') }}</b>, {{ plurar(day.commentsNumber, 'comment') }}
         </div>
       </router-link>
     </div>
@@ -91,7 +91,7 @@ export default {
   methods: {
     isToday (isoDate) {
       const d1 = new Date(isoDate)
-      const d2 = new Date('2020-06-12T08:00:00.000Z')
+      const d2 = new Date()
       return d1.getFullYear() === d2.getFullYear() &&
         d1.getMonth() === d2.getMonth() &&
         d1.getDate() === d2.getDate()
@@ -138,7 +138,7 @@ export default {
   margin: 10px 0;
 }
 
-.social .date {
+.social, .date {
   font-size: 13px;
 }
 
