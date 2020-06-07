@@ -1,28 +1,40 @@
 <template lang="html">
-  <form class="form" @submit.prevent="onSubmit">
-    <label class="label">
-      Song title:
-      <input class="input" type="text" required min="3" v-model="title" placeholder="Enter song's title"> <br>
-    </label>
-    <label class="label">
-      YouTube link to song:
-      <input class="input" type="url" v-model="link" placeholder="Add a YouTube link to your song"> <br>
-    </label>
-    <label class="label">
-      Why did you choose this song?
-      <textarea class="input " v-model="description" cols="40" rows="5" placeholder="Provide a short explanation"/> <br>
-    </label>
-    <label class="label">
-      Your name:
-      <input class="input" type="text" v-model="$store.state.yourName" required min="3" placeholder="Your name"> <br>
-    </label>
+  <div>
+    <form class="form" @submit.prevent="onSubmit">
+      <label class="label">
+        Song title:
+        <input class="input" type="text" required min="3" v-model="title" placeholder="Enter song's title"> <br>
+      </label>
+      <label class="label">
+        YouTube link to song:
+        <input class="input" type="url" v-model="link" placeholder="Add a YouTube link to your song"> <br>
+      </label>
+      <label class="label">
+        Why did you choose this song?
+        <textarea class="input " v-model="description" cols="40" rows="5" placeholder="Provide a short explanation"/> <br>
+      </label>
+      <label class="label">
+        Your name:
+        <input class="input" type="text" v-model="$store.state.yourName" required min="3" placeholder="Your name"> <br>
+      </label>
 
-    <div class="btn-wrap">
-      <button class="music-challenge-btn" type="submit">
-        Send your song
-      </button>
+      <div class="btn-wrap">
+        <button class="music-challenge-btn" type="submit">
+          Send your song
+        </button>
+      </div>
+    </form>
+
+    <div class="status">
+      <div v-if="isLoading">
+        Sending...
+      </div>
+      <div v-else-if="isSent">
+        Thank you for submitting your song for today's challenge! If you wish, you may
+        submit one more. Otherwise, feel free to browse and interact with other entries.
+      </div>
     </div>
-  </form>
+  </div>
 </template>
 
 <script>
@@ -35,12 +47,14 @@ export default {
       isLoading: false,
       title: '',
       description: '',
-      link: ''
+      link: '',
+      isSent: false
     }
   },
   methods: {
     onSubmit () {
       if (this.isLoading) return
+      this.isLoading = true
 
       fetchToken().then(token => {
         return axios.post('/songs', {
@@ -54,6 +68,7 @@ export default {
       }).then(res => {
         const song = res.data
         this.$emit('songAdded', song)
+        this.isSent = true
       }).finally(() => {
         this.isLoading = false
         this.title = ''
@@ -66,14 +81,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.status {
+  margin-top: 20px;
+}
+
 .form {
   padding: 40px 0 10px;
   color: #494949;
 
   @include mq($until: tablet) {
-    margin: 10px 0;
+    padding: 10px 0;
   }
 }
+
 
 .label {
   display: block;
