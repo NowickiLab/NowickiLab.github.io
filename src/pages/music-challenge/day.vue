@@ -76,6 +76,14 @@ export default {
     }
 
     this.fetchData()
+
+    const timeoutId = setTimeout(() => {
+      this.fetchData()
+    }, 1000 * 60)
+
+    this.$once('hook:beforeDestroy', () => {
+      clearInterval(timeoutId)
+    })
   },
   watch: {
     '$route.query.nr' () {
@@ -84,7 +92,7 @@ export default {
   },
   methods: {
     songAdded (song) {
-      this.songs.push(song)
+      this.day.songs.unshift(song)
     },
     fetchData () {
       const nr = window.parseFloat(this.$route.query.nr)
