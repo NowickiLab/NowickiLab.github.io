@@ -75,6 +75,12 @@ ul {
     display: flex;
     align-items: center;
   }
+
+  &--disabled {
+    background: #777;
+    border-color: #555;
+    pointer-events: none;
+  }
 }
 
 .icon {

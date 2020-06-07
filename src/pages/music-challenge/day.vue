@@ -21,17 +21,17 @@
     </p>
 
     <div class="buttons">
-      <a :href="prevLink" class="music-challenge-btn navigate">
+      <a :href="prevLink" class="music-challenge-btn navigate" :class="{ 'music-challenge-btn--disabled': day.day === 1 }">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
         Previous day
       </a>
       <router-link to="/music-challenge" class="music-challenge-btn back">
         Back to day list
       </router-link>
-      <button class="music-challenge-btn navigate">
+      <a :href="nextLink" class="music-challenge-btn navigate" :class="{ 'music-challenge-btn--disabled': !day.isNextDayAvailable }">
         Next day
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
-      </button>
+      </a>
     </div>
 
   </div>
@@ -65,6 +65,9 @@ export default {
   computed: {
     prevLink () {
       return `/music-challenge/day?nr=${this.$route.query.nr - 1}`
+    },
+    nextLink () {
+      return `/music-challenge/day?nr=${+this.$route.query.nr + 1}`
     }
   },
   mounted () {
