@@ -4,7 +4,7 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Tue, 09 Jun 2020 15:46:14 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Jun 2020 15:49:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <item>
@@ -12,7 +12,7 @@
             <link>https://nowickilab.science/news/epp-music-challenge/</link>
             <guid>https://nowickilab.science/news/epp-music-challenge/</guid>
             <pubDate>Mon, 08 Jun 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Join us for music and stories!]]></description>
+            <description><![CDATA[Join us for music and stories]]></description>
         </item>
         <item>
             <title><![CDATA[In vitro propagation of an endangered Helianthus verticillatus by axillary bud proliferation]]></title>
