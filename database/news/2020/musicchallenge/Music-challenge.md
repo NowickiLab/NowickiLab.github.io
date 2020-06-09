@@ -2,7 +2,7 @@
 title: Departmental activity for the COVID19 times
 slug: epp-music-challenge
 date: 2020-06-08
-summary: Join us for music and stories!
+summary: Join us for music and stories
 tags: ['EPP', 'social committee', 'music challenge', 'COVID19']
 img:
 ---
