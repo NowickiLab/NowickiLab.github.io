@@ -17,7 +17,7 @@
     "@gridsome/vue-remark": "^0.1.10",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
-    "gridsome": "^0.7.16",
+    "gridsome": "^0.7.17",
     "gridsome-plugin-feed": "^1.0.2",
     "gridsome-plugin-remark-prismjs-all": "^0.3.5",
     "lodash.groupby": "^4.6.0",
