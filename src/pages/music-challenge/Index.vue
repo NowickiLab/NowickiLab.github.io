@@ -26,7 +26,7 @@
       <!-- <li>The website works both on computers and cellphones. Some experience may vary.</li> -->
     </ol>
 
-    <p>Bring your SOs, family, friends, UTK community... The more the marrier!</p>
+    <p>Bring your SOs, family, friends, UTK community... The more the merrier!</p>
 
     <p v-if="isLoading">Loading songs...</p>
     <div v-else class="days">

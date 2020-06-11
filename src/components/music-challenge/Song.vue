@@ -41,7 +41,8 @@ export default {
   },
   computed: {
     videoId () {
-      return (this.song.link.match(/v=([^&|$|#]+)/) || [])[1]
+      return ((this.song.link.match(/v=([^&|$|#]+)/) || [])[1]) ||
+        ((this.song.link.match(/https\:\/\/youtu\.be\/(.*)/) || [])[1])
     },
     date () {
       return new Date(this.song.date).toLocaleString()
