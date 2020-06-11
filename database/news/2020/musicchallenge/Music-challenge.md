@@ -9,7 +9,7 @@ img:
 
 ## Social (Distancing) Committee presents
 
-On behalf of our Social Committee, it is my pleasure to introduce the [EPP Music Challenge](https://https://nowickilab.science/music-challenge/). This activity is intended to bring [our department](https://epp.tennessee.edu) together during the Jumanji version 2020.
+On behalf of our Social Committee, it is my pleasure to introduce the [EPP Music Challenge](https://nowickilab.science/music-challenge/). This activity is intended to bring [our department](https://epp.tennessee.edu) together during the Jumanji version 2020.
 
  We play Mon-Fri (no weekends or holidays). The next day challenges is revealed as the midnight strikes in West TN.
  
