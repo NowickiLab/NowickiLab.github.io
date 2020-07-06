@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <form @submit.prevent="submit" ref="form">
-      <input type="file" name="file">
+      <input type="file" name="file" accept=".csv" @change="loadTextFromFile">
       <input type="email" name="mail" value="adrian.wieprzkowicz@gmail.com" required placeholder="Your email address">
       <br>
       <div v-if="errors.length > 0">
@@ -39,6 +39,15 @@ export default {
       //   .finally(() => {
       //     this.isLoading = false
       //   })
+    },
+    loadTextFromFile (ev) {
+      const file = ev.target.files[0]
+      const reader = new FileReader()
+
+      reader.onload = e => {
+        this.csv = e.target.result.trim()
+        }
+      reader.readAsText(file)
     }
   },
   watch: {
@@ -48,14 +57,13 @@ export default {
       const isAlphaNumeric = str => str.match(/^(\w|\d|\,|\n)*$/)
 
       if (!isAlphaNumeric(csv)) {
-        this.errors.push('Data can contains only alpha-numeric, _, chars')
+        this.errors.push('Data must contain only alphanumeric symbols, _, chars')
       }
 
       const rows = csv.split('\n')
       const headers = rows[2]
 
-      console.log(headers)
-
+      // console.log(headers)
       // console.log(csv)
     }
   }
