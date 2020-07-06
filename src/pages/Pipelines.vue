@@ -44,9 +44,7 @@ export default {
       const file = ev.target.files[0]
       const reader = new FileReader()
 
-      reader.onload = e => {
-        this.csv = e.target.result.trim()
-        }
+      reader.onload = e => this.csv = e.target.result.trim()
       reader.readAsText(file)
     }
   },
@@ -60,11 +58,14 @@ export default {
         this.errors.push('Data must contain only alphanumeric symbols, _, chars')
       }
 
-      const rows = csv.split('\n')
-      const headers = rows[2]
+      const data = csv.split('\n').map(row => row.split(','))
+      const headers = data[2]
 
-      // console.log(headers)
-      // console.log(csv)
+      const isNatural = data.slice(3).map(row => row.slice(2, row.length - 3).every(element => parseInt(element) >= 0))
+      const firstValues = data.slice(3).map(row => row[0])
+
+      if (!isNatural.every(Boolean)) this.errors.push('Every value must be a number >= 0')
+      if ([...new Set(firstValues)].length !== firstValues.length) this.errors.push('Each value in the first column must be unique')
     }
   }
 }
