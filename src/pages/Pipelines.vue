@@ -39,6 +39,13 @@ export default {
       //   .finally(() => {
       //     this.isLoading = false
       //   })
+      
+      axios.post('http://localhost:3000/', { csv: this.csv })
+        .then(console.log)
+        .catch(console.error)
+        .finally(() => {
+          this.isLoading = false
+        })
     },
     loadTextFromFile (ev) {
       const file = ev.target.files[0]
