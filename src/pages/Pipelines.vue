@@ -2,7 +2,7 @@
   <div>
     <form @submit.prevent="submit" ref="form">
       <input type="file" name="file" accept=".csv" @change="loadTextFromFile">
-      <input type="email" name="mail" value="adrian.wieprzkowicz@gmail.com" required placeholder="Your email address">
+      <input type="email" name="mail" v-model="mail" required placeholder="Your email address">
       <br>
       <div v-if="errors.length > 0">
         {{ errors }}
@@ -22,25 +22,16 @@ export default {
     return {
       isLoading: false,
       csv: '',
-      errors: []
+      errors: [],
+      mail: ''
     }
   },
   methods: {
     submit () {
       if (this.isLoading) return
       this.isLoading = true
-
-      // const config = { headers: { 'Content-Type': 'multipart/form-data' } }
-      // const formData = new FormData(this.$refs.form)
-
-      // axios.post('http://localhost:3000/', formData, config)
-      //   .then(console.log)
-      //   .catch(console.error)
-      //   .finally(() => {
-      //     this.isLoading = false
-      //   })
       
-      axios.post('http://localhost:3000/', { csv: this.csv })
+      axios.post('http://localhost:3000/', { email: this.mail, csv: this.csv })
         .then(console.log)
         .catch(console.error)
         .finally(() => {
@@ -59,18 +50,14 @@ export default {
     csv (csv) {
       this.errors = []
 
-      const isAlphaNumeric = str => str.match(/^(\w|\d|\,|\n)*$/)
-
-      if (!isAlphaNumeric(csv)) {
-        this.errors.push('Data must contain only alphanumeric symbols, _, chars')
-      }
-
       const data = csv.split('\n').map(row => row.split(','))
       const headers = data[2]
 
+      const isAlphaNumeric = str => str.match(/^(\w|\d|\,|\n)*$/)
       const isNatural = data.slice(3).map(row => row.slice(2, row.length - 3).every(element => parseInt(element) >= 0))
       const firstValues = data.slice(3).map(row => row[0])
 
+      if (!isAlphaNumeric(csv)) this.errors.push('Data must contain only alphanumeric symbols, _, chars')
       if (!isNatural.every(Boolean)) this.errors.push('Every value must be a number >= 0')
       if ([...new Set(firstValues)].length !== firstValues.length) this.errors.push('Each value in the first column must be unique')
     }
