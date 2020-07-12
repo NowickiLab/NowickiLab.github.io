@@ -13,7 +13,7 @@ In our just-accepted-as-is paper, we investigate species diversity and phylogeog
 
 This is the first detailed report on _C. kousa_ species diversity and evolutionary history inference. Asian dogwood is an east-Asia native tree, the most economically important species of the dogwood genus, owing to its desirable horticultural traits and ability to hybridize with North America-native dogwoods.
 
- To assess the species genetic diversity and to better inform the ongoing and future breeding efforts, we assembled an herbarium and arboretum collection of 131 non-cultivated _C. kousa_ specimens. This is better then a collection trip across Asia - especially this days... This also indicates the strength of the current living and preserved plant collections.
+ To assess the species genetic diversity and to better inform the ongoing and future breeding efforts, we assembled an herbarium and arboretum collection of 131 non-cultivated _C. kousa_ specimens. This is better then a collection trip across Asia - especially these days... This also indicates the strength of the current living and preserved plant collections.
 
  For genotyping and downstream analyses of our _C. kousa_ collection, we developed genic eSSRs and also used published nuclear genomic gSSRs. After a blackbox of analyses, the study yielded insights into the tree diversity. The data pointed to the species distinct genetic pools related to the plant country of origin. This can be helpful in the development of the commercial cultivars for this important ornamental crop with increased pyramided utility traits. 
  
