@@ -17,7 +17,7 @@
     "@gridsome/vue-remark": "^0.1.10",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
-    "gridsome": "^0.7.17",
+    "gridsome": "^0.7.19",
     "gridsome-plugin-feed": "^1.0.2",
     "gridsome-plugin-remark-prismjs-all": "^0.3.5",
     "lodash.groupby": "^4.6.0",
@@ -27,7 +27,7 @@
     "sass-mq": "^5.0.1",
     "vue-fuse": "^2.2.1",
     "vue-scrollto": "^2.18.1",
-    "vuex": "^3.4.0"
+    "vuex": "^3.5.1"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
