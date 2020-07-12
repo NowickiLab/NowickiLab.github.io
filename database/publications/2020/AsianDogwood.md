@@ -1,7 +1,7 @@
 ---
 title: Species diversity of Asian dogwood, Cornus kousa 
 slug: cornus-kousa
-date: 2020-07-12
+date: 2020-07-11
 summary: Our paper on Asian dogwood species diversity published in Ecology and Evolution.
 tags: ['dogwoods', 'plant species diversity', 'population genetics', 'evolutionary history']
 img:
