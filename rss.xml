@@ -4,9 +4,16 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sun, 12 Jul 2020 20:26:22 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Aug 2020 20:41:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
+        <item>
+            <title><![CDATA[Invited to MDPI-Plants Reviewer Board]]></title>
+            <link>https://nowickilab.science/news/plants-reviewer/</link>
+            <guid>https://nowickilab.science/news/plants-reviewer/</guid>
+            <pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[Peer-review service, part of faculty job, has its perks.]]></description>
+        </item>
         <item>
             <title><![CDATA[Species diversity of Asian dogwood, Cornus kousa]]></title>
             <link>https://nowickilab.science/publications/cornus-kousa/</link>
