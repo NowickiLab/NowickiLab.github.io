@@ -3,7 +3,7 @@ title: PI in the University of Tennessee Faculty Spotlight
 slug: newsletter-spotlight
 date: 2020-11-05
 summary: Internal UTIA newsletter featured the PI in the Faculty Spotlight section.
-tags: ['UTIA', 'outreach', 'Universtiy of Tennessee']
+tags: ['UTIA', 'outreach', 'University of Tennessee']
 img:
 ---
 
