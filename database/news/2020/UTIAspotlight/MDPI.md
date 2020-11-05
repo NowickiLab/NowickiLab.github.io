@@ -15,4 +15,4 @@ It's a humbling news, it is, but publicity is great for outreach and networking,
 
 This is a great honor to be recognized in this way, but also motivates me to work even harder - so as to keep the good momentum going. So far, things are looking great in this regard, as 2020 turned out a very productive year We still have several more impactful research stories that we're working on towards publication. 
 
- ![listed](./newsletter.png "Yours truly in the Faculty Spotlight")
+ ![listed](./newsletter.jpg "Yours truly in the Faculty Spotlight")
