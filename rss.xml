@@ -4,13 +4,13 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Thu, 05 Nov 2020 19:22:52 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Nov 2020 19:29:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <item>
             <title><![CDATA[PI in the University of Tennessee Faculty Spotlight]]></title>
-            <link>https://nowickilab.science/news/utia-newsletter/</link>
-            <guid>https://nowickilab.science/news/utia-newsletter/</guid>
+            <link>https://nowickilab.science/news/newsletter-spotlight/</link>
+            <guid>https://nowickilab.science/news/newsletter-spotlight/</guid>
             <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Internal UTIA newsletter featured the PI in the Faculty Spotlight section.]]></description>
         </item>
