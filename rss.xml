@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 31 Mar 2021 16:33:48 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Mar 2021 16:37:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
+        <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Month of Equality]]></title>
             <link>https://nowickilab.science/news/equality/</link>
