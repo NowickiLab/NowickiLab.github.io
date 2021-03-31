@@ -4,9 +4,16 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 06 Mar 2021 21:32:50 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 31 Mar 2021 16:33:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
+        <item>
+            <title><![CDATA[Month of Equality]]></title>
+            <link>https://nowickilab.science/news/equality/</link>
+            <guid>https://nowickilab.science/news/equality/</guid>
+            <pubDate>Wed, 31 Mar 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[A tribute and a reminder]]></description>
+        </item>
         <item>
             <title><![CDATA[Microsatellites of Viburnum farreri]]></title>
             <link>https://nowickilab.science/publications/viburnum01/</link>
