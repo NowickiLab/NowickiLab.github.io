@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 31 Mar 2021 16:37:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 09 May 2021 15:47:48 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Droning the Dogwoods]]></title>
+            <link>https://nowickilab.science/news/drone/</link>
+            <guid>https://nowickilab.science/news/drone/</guid>
+            <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[New technologies help the classical tree breeding]]></description>
+        </item>
         <item>
             <title><![CDATA[Month of Equality]]></title>
             <link>https://nowickilab.science/news/equality/</link>
