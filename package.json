@@ -24,7 +24,7 @@
     "lodash.groupby": "^4.6.0",
     "lodash.pick": "^4.4.0",
     "normalize.css": "^8.0.1",
-    "prismjs": "^1.22.0",
+    "prismjs": "^1.23.0",
     "sass-mq": "^5.0.1",
     "vue": "^2.6.12",
     "vue-fuse": "^2.2.1",
