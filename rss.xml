@@ -4,16 +4,30 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sun, 06 Jun 2021 22:02:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 06 Jun 2021 22:04:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Species diversity of the invasice Callery pear, _Pyrus calleryana_ (part 1)]]></title>
+            <link>https://nowickilab.science/publications/py-c01/</link>
+            <guid>https://nowickilab.science/publications/py-c01/</guid>
+            <pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Our paper on species diversity of Callery pear (invasive in US) to be published in MDPI Life.]]></description>
+        </item>
         <item>
             <title><![CDATA[Droning the Dogwoods]]></title>
             <link>https://nowickilab.science/news/drone/</link>
             <guid>https://nowickilab.science/news/drone/</guid>
             <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[New technologies help the classical tree breeding]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Evolutionary history of _Peronospora tabacina_ (tobacco downy mildew)]]></title>
+            <link>https://nowickilab.science/publications/ptabacina/</link>
+            <guid>https://nowickilab.science/publications/ptabacina/</guid>
+            <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Our paper on diversity and history of _Peronospora tabacina_ published in APS Phytopathology.]]></description>
         </item>
         <item>
             <title><![CDATA[Month of Equality]]></title>
@@ -168,20 +182,6 @@
             <guid>https://nowickilab.science/projects/redbud-chlorotyping/</guid>
             <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Shiwani Sapkota]]></title>
-            <link>https://nowickilab.science/people/shiwani-sapkota/</link>
-            <guid>https://nowickilab.science/people/shiwani-sapkota/</guid>
-            <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Short introduction about my 1st MS student.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Diversity of Eastern Redbud, Cercis canadensis, native to US]]></title>
-            <link>https://nowickilab.science/projects/redbud-diversity/</link>
-            <guid>https://nowickilab.science/projects/redbud-diversity/</guid>
-            <pubDate>Wed, 01 Aug 2018 00:00:00 GMT</pubDate>
-            <description><![CDATA[MS thesis project of Meher A. Ony. Includes two major objectives, (1) gSSR selection and redbud fine-scale study, and (2) genetic diversity assessment across the species native range.]]></description>
         </item>
     </channel>
 </rss>
