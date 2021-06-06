@@ -1,8 +1,8 @@
 ---
-title: Evolutionary history of _Peronospora tabacina_ (tobacco downy mildew)
+title: Evolutionary history of Peronospora tabacina, tobacco downy mildew
 slug: Ptabacina
 date: 2021-05-31
-summary: Our paper on diversity and history of _Peronospora tabacina_ published in APS Phytopathology.
+summary: Our paper on diversity and history of Peronospora tabacina published in APS Phytopathology.
 tags: ['tobacco', 'pathogen diversity', 'microsatellites', 'evolutionary history']
 img:
 ---
