@@ -1,8 +1,8 @@
 ---
-title: Species diversity of the invasice Callery pear, Pyrus calleryana (part 1)
+title: Species diversity of the invasive Callery pear, Pyrus calleryana, part 1
 slug: PyC01
 date: 2021-06-04
-summary: Our paper on species diversity of Callery pear (invasive in US) to be published in MDPI Life.
+summary: Our paper on species diversity of Callery pear invasive in US to be featured in MDPI Life.
 tags: ['invasive species', 'diversity', 'microsatellites', 'ornamental escapes']
 img:
 ---
