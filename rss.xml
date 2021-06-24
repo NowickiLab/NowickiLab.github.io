@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Mon, 07 Jun 2021 11:35:19 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Jun 2021 18:38:55 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[MS Student Defended]]></title>
+            <link>https://nowickilab.science/news/shiwani/</link>
+            <guid>https://nowickilab.science/news/shiwani/</guid>
+            <pubDate>Tue, 15 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[First MS student nears the finish line]]></description>
+        </item>
         <item>
             <title><![CDATA[Species diversity of the invasive Callery pear, Pyrus calleryana, part 1]]></title>
             <link>https://nowickilab.science/publications/pyc/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/publications/redbud-big-scale-poster/</guid>
             <pubDate>Wed, 07 Aug 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Genetic diversity study of Eastern redbud indicates two distinct genetic clusters across the species native range in the US.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Eastern Redbud chlorotyping and diversity assessment]]></title>
-            <link>https://nowickilab.science/projects/redbud-chlorotyping/</link>
-            <guid>https://nowickilab.science/projects/redbud-chlorotyping/</guid>
-            <pubDate>Thu, 01 Aug 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Chloroplast DNA haplotying of redbuds is expected to provide lineage and spread data, inaccessible with nuclear DNA SSRs.]]></description>
         </item>
     </channel>
 </rss>
