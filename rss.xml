@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Thu, 24 Jun 2021 18:38:55 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Aug 2021 13:45:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Species disctinction of cucurbits and hops downy mildews]]></title>
+            <link>https://nowickilab.science/publications/pseudoperonospora/</link>
+            <guid>https://nowickilab.science/publications/pseudoperonospora/</guid>
+            <pubDate>Wed, 14 Jul 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[A story of two pathogens - published in Frontiers in Microbiology]]></description>
+        </item>
         <item>
             <title><![CDATA[MS Student Defended]]></title>
             <link>https://nowickilab.science/news/shiwani/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/projects/asian-callery-pear/</guid>
             <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[In this endeavor, Shiwani (MS student) is evaluating species diversity using de novo gSSRs. We accrued samples of non-cultivated P.&nbsp;calleryana from Asia. Molecular markers will be tested for cross-amplification to related species as well.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Road trips for redbuds; An assessment of the genetic diversity and spatial distribution of Cercis canadensis in the US]]></title>
-            <link>https://nowickilab.science/publications/redbud-big-scale-poster/</link>
-            <guid>https://nowickilab.science/publications/redbud-big-scale-poster/</guid>
-            <pubDate>Wed, 07 Aug 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Genetic diversity study of Eastern redbud indicates two distinct genetic clusters across the species native range in the US.]]></description>
         </item>
     </channel>
 </rss>
