@@ -19,4 +19,4 @@ In our [just-published paper](https://www.frontiersin.org/articles/10.3389/fmicb
 Work on this paper was challenging, owing to its multi-layer character, dearth of data and analyses, and number of co-authors whose pertinent comments and advice needed to be implemented. Overall, I'm very pleased with the outcome, and so seems the whole team of Authors. More to follow, for sure!
 
 ![published](./FiM.jpg "Our *P. cubensis* paper is out!!!")
-![published2](./IMa3PTmap.jpg "Evolutionary scenarios for SSR (A,B) and sequence data (C)")
+![published2](./diyabc.jpg "Evolutionary scenarios for SSR (A,B) and sequence data (C)")
