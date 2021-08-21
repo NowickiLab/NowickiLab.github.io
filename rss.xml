@@ -4,16 +4,16 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 21 Aug 2021 14:08:16 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Aug 2021 14:12:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[Anotehr MS Student Defended]]></title>
+            <title><![CDATA[Another MS Student Defended]]></title>
             <link>https://nowickilab.science/news/trinity/</link>
             <guid>https://nowickilab.science/news/trinity/</guid>
             <pubDate>Wed, 14 Jul 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Proudle presenting, Trinity P. Hamm MS]]></description>
+            <description><![CDATA[Proudly presenting, Trinity P. Hamm MS]]></description>
         </item>
         <item>
             <title><![CDATA[Species disctinction of cucurbits and hops downy mildews]]></title>
