@@ -1,8 +1,8 @@
 ---
-title: Anotehr MS Student Defended
+title: Another MS Student Defended
 slug: trinity
 date: 2021-07-14
-summary: Proudle presenting, Trinity P. Hamm MS
+summary: Proudly presenting, Trinity P. Hamm MS
 tags: ['research', 'viburnums', 'academic life']
 img:
 ---
