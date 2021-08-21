@@ -11,9 +11,9 @@ img:
 
 Last year, we were very fortunate to attend a professional meeting right before it hit the world.
 
-This year, with vaxxinations and masks, travel to Denver, CO, was not much more difficult than it usually is.
+This year, with vaccinations and masks, travel to Denver, CO, was not much more difficult than it usually is.
 
-With Trinity and Shiwani, we attended the annual ASHS meeting. Both students presented a poster and a podium item, several times (#StudentCompetitions). I was fortunate to summarize the results from our upcoming _Helianthus_ project.
+With Trinity and Shiwani, we attended the annual [ASHS meeting](https://ashs.confex.com/ashs/2021/meetingapp.cgi). Both students presented a poster and a podium item, several times (#StudentCompetitions). I was fortunate to summarize the results from our upcoming _Helianthus_ project. I was asked to judge student poster presentations, 3min talks, and was responsible for Best 2020 Ornamental Publication committee work.
 
 Shiwani spoke about her data on the invasive Callery pear. In the poster, she briefed the audience on the fine-scale genetics implications and future steps. In her talk, she presented the first part of her MS, the develpment of SSRs.
 
