@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 21 Aug 2021 14:12:32 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Aug 2021 14:57:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Annual ASHS conference]]></title>
+            <link>https://nowickilab.science/news/ashs/</link>
+            <guid>https://nowickilab.science/news/ashs/</guid>
+            <pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Group attendaning the ASHS caps the MS students graduation]]></description>
+        </item>
         <item>
             <title><![CDATA[Another MS Student Defended]]></title>
             <link>https://nowickilab.science/news/trinity/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/people/marcin-nowicki/</guid>
             <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Short introduction about the PI]]></description>
-        </item>
-        <item>
-            <title><![CDATA[The effect of habitat fragmentation on genetic diversity and differentiation; fine-scale population structure of Cercis canadensis (Eastern Redbud)]]></title>
-            <link>https://nowickilab.science/publications/redbud-fine-scale/</link>
-            <guid>https://nowickilab.science/publications/redbud-fine-scale/</guid>
-            <pubDate>Wed, 19 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Fine-scale genetic diversity study of Eastern redbud indicates two distinct genetic clusters in the Southern Appalachia.]]></description>
         </item>
     </channel>
 </rss>
