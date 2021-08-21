@@ -11,7 +11,7 @@ img:
 
 Yours truly is at it again!
 
-In our recent BIG paper (seems there are no others for me...!), we deploy microsatellite markers to analyze global diversity and evolutionary fates of tobacco downy mildew pathogen. This Oomycete was difficult to track down its origin, owing to its obligat character, and despite the economic impacts. 
+In our recent BIG paper (seems there are no others for me...!), we deploy microsatellite markers to analyze global diversity and evolutionary fates of tobacco downy mildew pathogen. This Oomycete was difficult to track down its origin, owing to its obligate character, and despite the economic impacts. 
 
 In our [just-published paper](https://apsjournals.apsnet.org/doi/10.1094/PHYTO-03-21-0092-R), we analyze the biggest-yet collection of _P. tabacina_, coming to some illuminating conclusions. Of course we call for more data to validate our conclusions, but what we present and what we found is already quite a story!
 
