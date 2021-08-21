@@ -9,7 +9,7 @@ img:
 
 ## 1st paper out in 2021
 
-Remember [Trinity](database\news\2020\Trinity-proposal-seminar\Trinity-proposal-seminar.md)? Sure you do! She did a marvelous job!
+Remember [Trinity](/projects/redbud-chlorotyping/)? Sure you do! She did a marvelous job!
 
 In our [just-published paper](https://www.mdpi.com/2223-7747/10/3/487/htm), Trinity developed and deployed molecular markers for fragrant viburnum, [_Viburnum farreri_](https://en.wikipedia.org/wiki/Viburnum_farreri). This is the first report on SSRs for this ornamental tree, based on _de novo_ sequencing.
 

@@ -11,9 +11,9 @@ img:
 
 As the MS thesis / projects go, Trinity's wasn't an easy one at all!
 
-After MANY attempts to tackle the redbud plastome diversity, she switched to SSR cross-amplification in _Viburbum_, the Viburnaceae, and Caprifoliaceae. Using this molecular toolbox can help cultivar identification, species delimitation, phylogeny/taxonomy of this HUGE genus, and many similar tasks.
+After MANY attempts to tackle the [redbud plastome diversity](/projects/redbud-chlorotyping/), she switched to SSR cross-amplification in _Viburbum_, the Viburnaceae, and Caprifoliaceae. Using this molecular toolbox can help cultivar identification, species delimitation, phylogeny/taxonomy of this HUGE genus, and many similar tasks.
 
-Trinity championed this project to some great results and cool insights. First step was, to develop SSRs to the final clade of _Viburnum_ not yet covered. That clade was represented by Asia-native _V. farreri_, with samples of that exotic species generously provided by our dependable Herbaria and Arboreta collaborators. This leg of Trinity's research was published in [MDPI Plants](https://www.mdpi.com/2223-7747/10/3/487/htm).
+Trinity championed this project to some great results and cool insights. First step was, to develop SSRs to the final clade of _Viburnum_ not yet covered. That clade was represented by Asia-native _V. farreri_, with samples of that exotic species generously provided by our dependable Herbaria and Arboreta collaborators. This leg of Trinity's research was [published](/publications/viburnum01/) in [MDPI Plants](https://www.mdpi.com/2223-7747/10/3/487/htm).
 
 Once that was done, Trinity analyzed cross-amplification of the entire 4 sets of SSRs (from 4 major clades of _Viburnum_). Here, she used samples of 46 _Viburnum_ species, other Viburnaceae, and even two genera from Caprifoliaceae (_Lonicera_, _Weigela_). Altogether, ~50 markers across 230+ samples.
 
