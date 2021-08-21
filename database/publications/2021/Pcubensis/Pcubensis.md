@@ -1,5 +1,5 @@
 ---
-title: Species disctinction of cucurbits and hops downy mildews
+title: Species disctinction of cucurbits and hop downy mildews
 slug: pseudoperonospora
 date: 2021-07-14
 summary: A story of two pathogens - published in Frontiers in Microbiology
