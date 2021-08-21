@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 21 Aug 2021 14:57:22 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 21 Aug 2021 15:23:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Visit to Hidden Hollow nursery]]></title>
+            <link>https://nowickilab.science/news/nursery/</link>
+            <guid>https://nowickilab.science/news/nursery/</guid>
+            <pubDate>Fri, 20 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Visit to collaborating nursery in TN]]></description>
+        </item>
         <item>
             <title><![CDATA[Annual ASHS conference]]></title>
             <link>https://nowickilab.science/news/ashs/</link>
@@ -23,7 +30,7 @@
             <description><![CDATA[Proudly presenting, Trinity P. Hamm MS]]></description>
         </item>
         <item>
-            <title><![CDATA[Species disctinction of cucurbits and hops downy mildews]]></title>
+            <title><![CDATA[Species disctinction of cucurbits and hop downy mildews]]></title>
             <link>https://nowickilab.science/publications/pseudoperonospora/</link>
             <guid>https://nowickilab.science/publications/pseudoperonospora/</guid>
             <pubDate>Wed, 14 Jul 2021 00:00:00 GMT</pubDate>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/invasive-species-forum/</guid>
             <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Marcin Nowicki]]></title>
-            <link>https://nowickilab.science/people/marcin-nowicki/</link>
-            <guid>https://nowickilab.science/people/marcin-nowicki/</guid>
-            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Short introduction about the PI]]></description>
         </item>
     </channel>
 </rss>
