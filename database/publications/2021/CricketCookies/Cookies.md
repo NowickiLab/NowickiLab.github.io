@@ -16,6 +16,6 @@ Growing human population makes scientists look for protein of the future in unus
 
 Consumer acceptance ratings for reference and 2% cookies were comparable, but higher levels of replacement scored worse. Such a small change in the recipe resulted in nutritionally desirable enhancements in the biscuits:  increase in the protein content, including essential amino acids, as well as minerals and fat. This also affected the physical properties of the biscuits, including hardness, and water molecular dynamics analyzed by 1H NMR.
 
-Cricket powder-augmented biscuits join the line of enhanced, functionally superior food products. This and similar food augmentation provide a viable scenario to meet the human food demands in the future.
+Cricket powder-augmented biscuits join the line of enhanced, functionally superior food products. That and similar food augmentation provide a viable scenario to meet the human food demands in the future.
 
 ![published](./cookies.jpg "Subtle visual changes are accompanied by vast nutritional and molecular properties in enhanced cookies")
