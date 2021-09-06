@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 21 Aug 2021 15:39:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Sep 2021 13:45:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Wheat flour replacement in popular snack]]></title>
+            <link>https://nowickilab.science/publications/cookies/</link>
+            <guid>https://nowickilab.science/publications/cookies/</guid>
+            <pubDate>Mon, 06 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Finally a snack break! We're talking cookies.]]></description>
+        </item>
         <item>
             <title><![CDATA[Visit to Hidden Hollow nursery]]></title>
             <link>https://nowickilab.science/news/nursery/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/trinity-cpdna-seminar/</guid>
             <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[30th USDA Interagency Research Forum on Invasive Species]]></title>
-            <link>https://nowickilab.science/news/invasive-species-forum/</link>
-            <guid>https://nowickilab.science/news/invasive-species-forum/</guid>
-            <pubDate>Thu, 20 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[With my student Shiwnai Sapkota, we attended the exciting Forum on Invasive Species in Annapolis, MD.]]></description>
         </item>
     </channel>
 </rss>
