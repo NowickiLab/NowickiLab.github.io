@@ -13,7 +13,7 @@ I've been outside once. Hated it.
 
 (not really)
 
-But, not every day do i stand the chance to beat my lifelong record of the longest bike trail completed. Following the great idea of [Dr. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/) and [Dr. Hadziabdic](https://epp.tennessee.edu/people/directory/dr-denita-hadziabdic-guerry/), we ventured on a day-long biking. Started [Fri evening](https://www.vikingalchemist.com) to get there, and after a VERY early Cracker Barrel breakfast, we hit [the Silver Comet Trail](https://www.silvercometga.com/silver-comet-map/silver-comet-map.shtml).
+But, not every day do I stand the chance to beat my lifelong record of the longest bike trail completed. Following the great idea of [Dr. Trigiano](https://epp.tennessee.edu/people/directory/dr-robert-trigiano/) and [Dr. Hadziabdic](https://epp.tennessee.edu/people/directory/dr-denita-hadziabdic-guerry/), we ventured on a day-long biking. Started [Fri evening](https://www.vikingalchemist.com) to get there, and after a VERY early Cracker Barrel breakfast, we hit [the Silver Comet Trail](https://www.silvercometga.com/silver-comet-map/silver-comet-map.shtml).
 
 It was SO not what I expected!!! The thrill, the sun, the open air, were all a real thing. Of course, trail was densely used at locations around bigger towns, but in general pretty empty. We definitely took advantage of that. 61.25miles or 98.0 km later, I beat my 94km from 2000 by a fair amount.
 
