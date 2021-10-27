@@ -21,6 +21,8 @@ For the curious Georges out there, we did touch on science, but we mostly just h
 
 On the way back, it was only proper to award ourselves with a feast at a [fantastic Bosnian restaurant](http://www.tatasgrill.com). Also, by far I would not be as cheerful as I am about that experience, were it not for the steady and generous helpings of [great supplements](https://www.hammernutrition.com/endurolytes-fizz). #ProductPlacement
 
+Therefore, I am proud to introduce the founding members of **The Cranksters** (cranky + gansters).
+
  ![Bridge](./MidPoint.jpg "...and they're off!")
  ![RockmartGA](./RockmartGA.jpg "The trail is at the heart of many towns along it")
  ![trail](./trail.jpg "The trail is in EXCELLENT condition, and with EXCELLENT nature around")
