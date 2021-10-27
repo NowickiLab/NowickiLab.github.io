@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Mon, 06 Sep 2021 13:51:18 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Oct 2021 23:02:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[There IS life beyond lab... maybe]]></title>
+            <link>https://nowickilab.science/news/biking/</link>
+            <guid>https://nowickilab.science/news/biking/</guid>
+            <pubDate>Sat, 23 Oct 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[The PIs enjoy a group bikeride in GA, AL]]></description>
+        </item>
         <item>
             <title><![CDATA[Wheat flour replacement in popular snack]]></title>
             <link>https://nowickilab.science/publications/cookies/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/callery-pear-proposal-seminar/</guid>
             <pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Shiwani Sapkota delivered her MS proposal seminar at the EPP Department.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Redbud haplotyping - Trinity Hamm proposal seminar]]></title>
-            <link>https://nowickilab.science/news/trinity-cpdna-seminar/</link>
-            <guid>https://nowickilab.science/news/trinity-cpdna-seminar/</guid>
-            <pubDate>Fri, 21 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Trinity, MS student in the Trigiano lab (I'm her MS committee member), had her Dpt Proposal Seminar.]]></description>
         </item>
     </channel>
 </rss>
