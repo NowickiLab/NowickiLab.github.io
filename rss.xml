@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 27 Oct 2021 23:28:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Nov 2021 21:23:32 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Eastern redbud diversity across antive range]]></title>
+            <link>https://nowickilab.science/publications/redbudbigscale/</link>
+            <guid>https://nowickilab.science/publications/redbudbigscale/</guid>
+            <pubDate>Mon, 08 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Sampling across native range illuminates redbud's evolutionary history]]></description>
+        </item>
         <item>
             <title><![CDATA[There IS life beyond lab... maybe]]></title>
             <link>https://nowickilab.science/news/biking/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/redbud-meher-paper/</guid>
             <pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Meher Ony MS publishes her thesis research on redbud diversity.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Shiwani Sapkota's MS proposal seminar]]></title>
-            <link>https://nowickilab.science/news/callery-pear-proposal-seminar/</link>
-            <guid>https://nowickilab.science/news/callery-pear-proposal-seminar/</guid>
-            <pubDate>Fri, 28 Feb 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Shiwani Sapkota delivered her MS proposal seminar at the EPP Department.]]></description>
         </item>
     </channel>
 </rss>
