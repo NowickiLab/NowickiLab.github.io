@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 20 Nov 2021 21:36:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Nov 2021 22:00:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Proudly representing]]></title>
+            <link>https://nowickilab.science/news/seantor/</link>
+            <guid>https://nowickilab.science/news/seantor/</guid>
+            <pubDate>Sat, 20 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[PI elected for the UT Faculty Senate]]></description>
+        </item>
         <item>
             <title><![CDATA[Eastern redbud diversity across native range]]></title>
             <link>https://nowickilab.science/publications/redbudbigscale/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/publications/barley-mortars/</guid>
             <pubDate>Tue, 19 May 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Collaborative paper with Poznan University of Life Sciences (Poland).]]></description>
-        </item>
-        <item>
-            <title><![CDATA[New papers about Eastern Redbud, Cercis canadensis L.]]></title>
-            <link>https://nowickilab.science/news/redbud-meher-paper/</link>
-            <guid>https://nowickilab.science/news/redbud-meher-paper/</guid>
-            <pubDate>Fri, 01 May 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Meher Ony MS publishes her thesis research on redbud diversity.]]></description>
         </item>
     </channel>
 </rss>
