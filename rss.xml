@@ -4,7 +4,7 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sun, 21 Nov 2021 00:04:21 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Nov 2021 00:05:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
@@ -35,6 +35,13 @@
             <guid>https://nowickilab.science/publications/cookies/</guid>
             <pubDate>Mon, 06 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Finally a snack break! We're talking cookies.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Aerial detection of invasive callery pear]]></title>
+            <link>https://nowickilab.science/projects/callery-lasr/</link>
+            <guid>https://nowickilab.science/projects/callery-lasr/</guid>
+            <pubDate>Wed, 01 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[In this endeavor, researchers from SE U.S. will collaborate on aerial detection of invasive Callery pear.]]></description>
         </item>
         <item>
             <title><![CDATA[Visit to Hidden Hollow nursery]]></title>
@@ -126,13 +133,6 @@
             <guid>https://nowickilab.science/news/newsletter-spotlight/</guid>
             <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Internal UTIA newsletter featured the PI in the Faculty Spotlight section.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Aerial detection of invasive callery pear]]></title>
-            <link>https://nowickilab.science/projects/callery-lasr/</link>
-            <guid>https://nowickilab.science/projects/callery-lasr/</guid>
-            <pubDate>Thu, 10 Sep 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[In this endeavor, researchers from SE U.S. will collaborate on aerial detection of invasive Callery pear.]]></description>
         </item>
         <item>
             <title><![CDATA[Invited to MDPI-Plants Reviewer Board]]></title>
