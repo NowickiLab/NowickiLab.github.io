@@ -2,7 +2,7 @@
 title: 5-Year Service at UT
 slug: plaque
 date: 2022-02-02
-summary: Times fly, when you're sciencing
+summary: Time flies, when you're sciencing
 tags: ['academic life', 'everyday life', 'lat rats are humans too']
 img:
 ---
