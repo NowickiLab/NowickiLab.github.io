@@ -17,6 +17,6 @@ Using the [previously developed markers], we assessed the diversity and evolutio
 
 Further, we found that the spread to the North of Appalachia was secondary, as the initial invasion happened on the Eastern (=Southern; Atlantic) side of the mountains.
 
-All together - a chilling realization of we're dealing with. Further developments will follow.
+All together - a chilling realization of what we're dealing with. Further developments will follow.
 
 ![published](./map.jpg "Sampled escape populations of P.calleryana")
