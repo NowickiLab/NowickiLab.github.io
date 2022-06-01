@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 01 Jun 2022 00:43:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jun 2022 00:45:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Species diversity of the invasive Callery pear, Pyrus calleryana, part 2 - Fine Scale in SE USA]]></title>
+            <link>https://nowickilab.science/publications/pyc/</link>
+            <guid>https://nowickilab.science/publications/pyc/</guid>
+            <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Our paper on  diversity of US-invasive Callery pear in Frontiers in Genetics.]]></description>
+        </item>
         <item>
             <title><![CDATA[5-Year Service at UT]]></title>
             <link>https://nowickilab.science/news/plaque/</link>
@@ -84,13 +91,6 @@
             <guid>https://nowickilab.science/news/shiwani/</guid>
             <pubDate>Tue, 15 Jun 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[First MS student nears the finish line]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Species diversity of the invasive Callery pear, Pyrus calleryana, part 1]]></title>
-            <link>https://nowickilab.science/publications/pyc/</link>
-            <guid>https://nowickilab.science/publications/pyc/</guid>
-            <pubDate>Fri, 04 Jun 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our paper on species diversity of Callery pear invasive in US to be featured in MDPI Life.]]></description>
         </item>
         <item>
             <title><![CDATA[Droning the Dogwoods]]></title>
