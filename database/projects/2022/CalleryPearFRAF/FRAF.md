@@ -1,7 +1,8 @@
 ---
 title: Undergrad Student summer research project
 slug: pyc4fraf
-date: 2022-05-31
+startDate: 2022-06-01
+endDate: 2022-08-31
 summary: Why did Callery pear escape?
 tags: ['invasive species', 'diversity', 'incompatibility', 'ornamental escapes']
 img:
