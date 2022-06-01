@@ -1,6 +1,6 @@
 ---
 title: Species diversity of the invasive Callery pear, Pyrus calleryana, part 2 - Fine Scale in SE USA
-slug: pyc
+slug: pyc2
 date: 2022-04-06
 summary: Our paper on  diversity of US-invasive Callery pear in Frontiers in Genetics.
 tags: ['invasive species', 'diversity', 'microsatellites', 'ornamental escapes']
