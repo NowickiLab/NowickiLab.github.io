@@ -4,16 +4,30 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 01 Jun 2022 00:53:46 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 01 Jun 2022 01:24:58 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[SSR markers of Wegela spp.]]></title>
+            <link>https://nowickilab.science/publications/weigela/</link>
+            <guid>https://nowickilab.science/publications/weigela/</guid>
+            <pubDate>Sun, 29 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Trinity is at it AGAIN.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Chloroplast genome of the invasive Pyrus calleryana]]></title>
+            <link>https://nowickilab.science/publications/pyc3/</link>
+            <guid>https://nowickilab.science/publications/pyc3/</guid>
+            <pubDate>Mon, 02 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[My first stab at comparative genomics.]]></description>
+        </item>
         <item>
             <title><![CDATA[Species diversity of the invasive Callery pear, Pyrus calleryana, part 2 - Fine Scale in SE USA]]></title>
             <link>https://nowickilab.science/publications/pyc2/</link>
             <guid>https://nowickilab.science/publications/pyc2/</guid>
             <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our paper on  diversity of US-invasive Callery pear in Frontiers in Genetics.]]></description>
+            <description><![CDATA[Our paper on diversity of US-invasive Callery pear in Frontiers in Genetics.]]></description>
         </item>
         <item>
             <title><![CDATA[5-Year Service at UT]]></title>
@@ -168,20 +182,6 @@
             <guid>https://nowickilab.science/news/cornus-kousa/</guid>
             <pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Our paper on Asian dogwood species diversity accepted in Ecology and Evolution.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Departmental activity for the COVID19 times]]></title>
-            <link>https://nowickilab.science/news/epp-music-challenge/</link>
-            <guid>https://nowickilab.science/news/epp-music-challenge/</guid>
-            <pubDate>Mon, 08 Jun 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Join us for music and stories]]></description>
-        </item>
-        <item>
-            <title><![CDATA[In vitro propagation of an endangered Helianthus verticillatus by axillary bud proliferation]]></title>
-            <link>https://nowickilab.science/publications/hverttc01/</link>
-            <guid>https://nowickilab.science/publications/hverttc01/</guid>
-            <pubDate>Wed, 03 Jun 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Simple tissue culture protocol for clonal multiplication of an endangered sunflower.]]></description>
         </item>
     </channel>
 </rss>
