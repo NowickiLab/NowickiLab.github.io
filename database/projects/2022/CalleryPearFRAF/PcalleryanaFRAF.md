@@ -11,7 +11,7 @@ img:
 
 This Spring/Summer, I was fortunate to come up with an attractive research idea. We want, in a very simple way, to try explain how *P. calleryana* was able to escape cultivation.
 
-As other species of the rose family, Callery pear is self-incomaptible. This means, that the pollen of a given tree will not result in a fruit with viable seed on that same tree.
+As other species of the rose family, Callery pear is self-incomaptible. This means that the pollen of a given tree will not result in a fruit with viable seed on that same tree.
 
 To genotype the historical (confirmed) and the current specimens of cultivated *P. calleryana*, we tapped the preserved (herbaria) and live plant collections (arboreta). We also used [our previously collected specimens](/publications/pyc/), see the picture below. We will use the genotyping system established for many other pear species, including PCR, gel fragment analysis, sequencing, and downstream analytics.
 

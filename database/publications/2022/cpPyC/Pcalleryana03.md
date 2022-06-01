@@ -15,6 +15,6 @@ Chloroplast genomes typically have a four-part architecture, and this one was no
 
 But, when compared within 4 genomes of _P. calleryana_, generated from [4 availables NCBI read archives](https://www.ncbi.nlm.nih.gov/sra/?term="Pyrus+calleryana"+AND+"green+plants"%5Borgn%3A__txid33090%5D), we detected higher within-species molecular variablility (Suppl.Fig.2) than reported in other studies, in agreement with our [other](/publications/pyc/) [studies](/publications/pyc2/).
 
-This paper marks my long-awaited break into genomics, another dimension of my bioinformatics skill repertoire. I'm very grateful to the Co-Authors for help and guidance, and looking forward to further developments (on which we're working hard!)
+This paper marks my long-awaited break into genomics, another dimension of my bioinformatics skill repertoire. I'm very grateful to the Co-Authors for help and guidance, and looking forward to further developments (on which we're working hard!).
 
 ![published](./Fig1AB.jpg "cp Genome and its phylogentic context")
