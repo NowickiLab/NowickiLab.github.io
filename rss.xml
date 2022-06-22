@@ -4,7 +4,7 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 01 Jun 2022 02:26:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Jun 2022 01:29:17 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
@@ -21,6 +21,13 @@
             <guid>https://nowickilab.science/publications/weigela/</guid>
             <pubDate>Sun, 29 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Trinity is at it AGAIN.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Invited talk to Harvard - Arnold Arboretum]]></title>
+            <link>https://nowickilab.science/news/harvard/</link>
+            <guid>https://nowickilab.science/news/harvard/</guid>
+            <pubDate>Mon, 23 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Networking makes friends]]></description>
         </item>
         <item>
             <title><![CDATA[Chloroplast genome of the invasive Pyrus calleryana]]></title>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/plants-reviewer/</guid>
             <pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Peer-review service, part of faculty job, has its perks.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Species diversity of Asian dogwood, Cornus kousa]]></title>
-            <link>https://nowickilab.science/publications/cornus-kousa/</link>
-            <guid>https://nowickilab.science/publications/cornus-kousa/</guid>
-            <pubDate>Sat, 11 Jul 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our paper on Asian dogwood species diversity published in Ecology and Evolution.]]></description>
         </item>
     </channel>
 </rss>
