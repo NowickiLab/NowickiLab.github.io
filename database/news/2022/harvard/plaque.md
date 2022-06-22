@@ -19,5 +19,5 @@ Below are some snippets of the talk and the arboretum; all around a terrific exp
 
  ![talk](./talk.jpg "The opening slide of my presentation")
  ![3d](./3d.jpg "An bird-view of the Arnold Arboretum grounds")
- ![arboretum](./arboretum.jpg "Boston panorama from the Peters Hill")
+ ![arboretum](./arboretum.png "Boston panorama from the Peters Hill")
  ![entrance](./entrance.jpg "I have arrived!")
