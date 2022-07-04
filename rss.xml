@@ -4,10 +4,24 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Wed, 22 Jun 2022 01:29:17 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Jul 2022 16:58:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[A freshly-minted US Permanent Resident]]></title>
+            <link>https://nowickilab.science/news/greencard/</link>
+            <guid>https://nowickilab.science/news/greencard/</guid>
+            <pubDate>Mon, 27 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Perks, more perks, and coupons]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Working visit to USDA National Arboretum Herbarium]]></title>
+            <link>https://nowickilab.science/news/usdanatarb/</link>
+            <guid>https://nowickilab.science/news/usdanatarb/</guid>
+            <pubDate>Thu, 23 Jun 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Collaborations meet life]]></description>
+        </item>
         <item>
             <title><![CDATA[Undergrad Student summer research project]]></title>
             <link>https://nowickilab.science/projects/pyc4fraf/</link>
@@ -168,20 +182,6 @@
             <guid>https://nowickilab.science/news/journal-editor/</guid>
             <pubDate>Mon, 28 Dec 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[Journal editorial service - another part of scientist's job.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[PI in the University of Tennessee Faculty Spotlight]]></title>
-            <link>https://nowickilab.science/news/newsletter-spotlight/</link>
-            <guid>https://nowickilab.science/news/newsletter-spotlight/</guid>
-            <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Internal UTIA newsletter featured the PI in the Faculty Spotlight section.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Invited to MDPI-Plants Reviewer Board]]></title>
-            <link>https://nowickilab.science/news/plants-reviewer/</link>
-            <guid>https://nowickilab.science/news/plants-reviewer/</guid>
-            <pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Peer-review service, part of faculty job, has its perks.]]></description>
         </item>
     </channel>
 </rss>
