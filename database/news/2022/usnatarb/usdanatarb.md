@@ -17,7 +17,7 @@ The recent example was the visit to the great [Arnold Arboretum](/news/harvard).
 
 After that awesome visit, despite uncooperative weather, I took a walk around the grounds. All sorts fo wonderful collections are there, including the balance-restoring, zen-like bonsais. The oldest was from 1600s!
 
-Thank you for the opportunity to visit, to talk all directions of science, and for finally brining this long=lasting collaboration to life. Here's to future common prospects! (yes; plural!)
+Thank you for the opportunity to visit, to talk all sorts of science, and for finally brining this long-lasting collaboration to life. Here's to future common prospects! (yes; plural!)
 
  ![compactors](./compactors.jpg "Rows and rows of specimens")
  ![insideComp](./insideComp.jpg "Thousands and thousands of plant specimens")
