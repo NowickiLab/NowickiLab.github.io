@@ -15,7 +15,7 @@ It "only" took 16 months of nail biting since submission (March 2021), and count
 
 To see just how much work goes into the application itself (after collecting and collating __TONS__ of other documents, letters of support from around the globe, etc.) - see the picture. The only advice that can be drawn from all this is: **START EARLY**. This helps with the -unnecessary, extra- stress when waiting for the decision, but also permits time to go through the records more thoroughly, finding otherwise overseen docs, etc.
 
-So, many 1000s of $ later, and 2,5 years since the start of the entire deed, it is done. I can breath now - and apply for a 'regular' driving license. Can also start a side business, take second job, among MANY other opportunities now open to me. Highly recommend!
+So, many 1000s of $ later, and 2,5 years since the start of the entire deed, it is done. I can breath now - and apply for a 'regular' driver's license. Can also start a side business, take a second job, among MANY other opportunities now open to me. Highly recommend!
 
 
  ![docs](./docs.jpg "So many trees died for my application!")
