@@ -1,7 +1,7 @@
 ---
 title: Basil under distraught
 slug: basil
-date: 2022-05-02
+date: 2023-01-17
 summary: So much stress around!
 tags: ['organic fertilizer', 'photosynthesis', 'chlorophyll fluorescence', 'polyphenols', 'antioxidant activity', 'minerals', 'plant physiology', 'collaboration', 'abiotic stress']
 img:
