@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sat, 15 Jul 2023 21:46:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Jul 2023 00:33:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Wheat can get stressed, too!!!]]></title>
+            <link>https://nowickilab.science/publications/wheat/</link>
+            <guid>https://nowickilab.science/publications/wheat/</guid>
+            <pubDate>Sat, 31 Dec 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're at it AGAIN.]]></description>
+        </item>
         <item>
             <title><![CDATA[Drought impacts and where to find them]]></title>
             <link>https://nowickilab.science/publications/sdhi/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/publications/viburnum01/</guid>
             <pubDate>Sat, 06 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Our paper on SSRs in fragrant virunum published in MDPI Plants.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Year summary]]></title>
-            <link>https://nowickilab.science/news/end-of-year/</link>
-            <guid>https://nowickilab.science/news/end-of-year/</guid>
-            <pubDate>Wed, 06 Jan 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[What a year!!!]]></description>
         </item>
     </channel>
 </rss>
