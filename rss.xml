@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sun, 16 Jul 2023 00:36:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Jul 2023 01:00:33 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[The beautiful Viburnums]]></title>
+            <link>https://nowickilab.science/publications/viburnumctd/</link>
+            <guid>https://nowickilab.science/publications/viburnumctd/</guid>
+            <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pretty, pretty Viburnum]]></description>
+        </item>
         <item>
             <title><![CDATA[Wheat can get stressed, too!!!]]></title>
             <link>https://nowickilab.science/publications/wheat/</link>
@@ -63,6 +70,13 @@
             <guid>https://nowickilab.science/publications/pyc3/</guid>
             <pubDate>Mon, 02 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[My first stab at comparative genomics.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Basil under distraught]]></title>
+            <link>https://nowickilab.science/publications/basil/</link>
+            <guid>https://nowickilab.science/publications/basil/</guid>
+            <pubDate>Mon, 02 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[So much stress around!]]></description>
         </item>
         <item>
             <title><![CDATA[Species diversity of the invasive Callery pear, Pyrus calleryana, part 2 - Fine Scale in SE USA]]></title>
@@ -168,20 +182,6 @@
             <guid>https://nowickilab.science/publications/ptabacina/</guid>
             <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Our paper on diversity and history of Peronospora tabacina published in APS Phytopathology.]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Month of Equality]]></title>
-            <link>https://nowickilab.science/news/equality/</link>
-            <guid>https://nowickilab.science/news/equality/</guid>
-            <pubDate>Wed, 31 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[A tribute and a reminder]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Microsatellites of Viburnum farreri]]></title>
-            <link>https://nowickilab.science/publications/viburnum01/</link>
-            <guid>https://nowickilab.science/publications/viburnum01/</guid>
-            <pubDate>Sat, 06 Mar 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our paper on SSRs in fragrant virunum published in MDPI Plants.]]></description>
         </item>
     </channel>
 </rss>
