@@ -4,10 +4,17 @@
         <title>Nowicki Lab</title>
         <link>https://nowickilab.science/</link>
         <description>In the Nowicki Lab, we utilize the molecular genetics approach to uncover important processes that drive species diversity, evolutionary history, and explain important traits in plants and their pathogens</description>
-        <lastBuildDate>Sun, 16 Jul 2023 01:06:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Jul 2023 01:16:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
         <atom:link href="https://nowickilab.science/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Endangered species and their secondary metabolites]]></title>
+            <link>https://nowickilab.science/publications/terpenes/</link>
+            <guid>https://nowickilab.science/publications/terpenes/</guid>
+            <pubDate>Fri, 23 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[That smells!]]></description>
+        </item>
         <item>
             <title><![CDATA[The beautiful Viburnums]]></title>
             <link>https://nowickilab.science/publications/viburnumctd/</link>
@@ -175,13 +182,6 @@
             <guid>https://nowickilab.science/news/drone/</guid>
             <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[New technologies help the classical tree breeding]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Evolutionary history of Peronospora tabacina, tobacco downy mildew]]></title>
-            <link>https://nowickilab.science/publications/ptabacina/</link>
-            <guid>https://nowickilab.science/publications/ptabacina/</guid>
-            <pubDate>Mon, 31 May 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Our paper on diversity and history of Peronospora tabacina published in APS Phytopathology.]]></description>
         </item>
     </channel>
 </rss>
