@@ -1,0 +1,46 @@
+---
+title: Intercontinental impacts
+slug: portspain
+date: 2022-09-19
+summary: Forestry connections
+tags: ['academic life', 'networking', 'societal meeting', 'forestry']
+img:
+---
+
+## New friends, new places, new IUFRO congress
+
+Science will take you places!
+For instance - to Lisbon (Portugal), or Pontevedra and Madrid (Spain).
+
+Joined by the fantastic team of [Dr. Hadziabdic](https://hadziabdiclab.utk.edu/welcome/people/) and our magnificent technician Sarah Boggess (and her mom in tow), we explored what the Iberian Peninsula had to offer. The reason was the back-to-back meetings in our field: the [IUFRO congress](https://iufro-lisbon2022.com/) and the comparably much smaller, cameral [IUFRO workshop](https://www.gtpi2022.csic.es/) on forest pathology.
+
+Dr. Hadziabdic attended both meetings; but Sarah and yours truly only the second one, where we presented progress on molecular detection and dogwood genetics genomics in the context of powdery mildew. This presented us with great opportunity to explore Lisbon and the greater area. What a treasure trove! 
+
+Both Portugal and Spain remain in our collective opinion, a tourist paradise - if only you venture off the beaten track a little bit. We enjoyed the vistas, the sunsets over the ocean, fresh seafood, bread and wine... TONS of culture to absorb, TONS of wonderful memories made, TONS of new scientific friendships and opportunities explored.
+
+We would be remiss if failed to mention the extraordinary hospitality of the IUFRO organizers with the above-and-beyond chief, [Dr. Luis Sampedro](https://www.researchgate.net/profile/Luis-Sampedro). Science REALLY thrived those several days in Pontevedra. Our geeky hearts and souls were full.
+
+ ![airtrip](./lisbonAIR.jpg "First attraction - right during first walk around")
+ ![hotel](./lisbonARThotel.jpg "We stayed in a fancy artsy hotel")
+ ![area](./lisbonARTSarea.jpg "Lisbon greater area has plenty of greens to offer")
+ ![graffitti](./lisbonARTSgraffitti.jpg "...whereas the underground remains just as lively")
+ ![graffitti2](./lisbonARTSgraffitti2.jpg "...to our thorough enjoyment!")
+ ![port1](./lisbonARTSport.jpg "Terreiro do Paco goes beyond just a ferry stop")
+ ![port2](./lisbonARTSpots.jpg "...for instance, there's a lovely goft shop with some real finds!")
+![port3](./lisbonARTSrlighthouse.jpg "...and many other small and large attractions.")
+![port4](./lisbonBplaza.jpg "Praca do Comercio")
+![port5](./lisbonBumbrella.jpg "...was our entry gate to the oldest part of the city - Alfama.")
+![port6](./lisbonBview.jpg "TONS of fantastic views from every which direction.")
+![port7](./lisbonCBelem.jpg "Belem, in Lisbon area, greeted us with the magnificent monument park")
+![port8](./lisbonCTorre.jpg "....before allowing us into the REAL deal - Torre de Belem")
+![sintra1](./lisbonDsintra.jpg "After work part was completed - it was time to play. In Sintra.")
+![sintra2](./lisbonDsintra2.jpg "Palacio Nacional de Sintra was a true gem to visit")
+![sintra3](./lisbonDsintra3.jpg "...as were the truly fantastic gardens, with Well of Initiation and many other treasures.")
+![sintra4](./lisbonDsintra.jpg "After full day of walking, we said good-bye on our last night in Portugal in an only-fitting way.")
+![sintra5](./lisbonDsintra2.jpg "...and Portugal amazed us by responding in kind.")
+![pont1](./ponte1.jpg "After an ordeal of 500km move to Pontevedra, we FIANLLY got to work.")
+![pont2](./ponte1sarah.jpg "Sarah made the honors to represent UT with their poster.")
+![pont3](./ponte3vineyard.jpg "Organizers bent-over backwards to provide us with tons of opportunities to network.")
+![pont4](./ponte3viw.jpg "...and sighsee")
+![pont5](./ponte3viw2.jpg "...and sightsee more.")
+![pont6](./ponteMADRID.jpg "We then moved to madrid (international flight back), but also to explore that vibrant city.")
