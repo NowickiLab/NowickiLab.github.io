@@ -17,7 +17,8 @@ The recent example was the visit to the great [Arnold Arboretum](/news/harvard).
 
 After that awesome visit, despite uncooperative weather, I took a walk around the grounds. All sorts of wonderful collections are there, including the balance-restoring, zen-like bonsais. The oldest was from the 1600s!
 
-Thank you for the opportunity to visit, to talk all sorts of science, and for finally brining this long-lasting collaboration to life. Here's to future common prospects! (yes; plural!)
+Thank you for the oppogit commit
+rtunity to visit, to talk all sorts of science, and for finally brining this long-lasting collaboration to life. Here's to future common prospects! (yes; plural!)
 
  ![compactors](./compactors.jpg "Rows and rows of specimens")
  ![insideComp](./insideComp.jpg "Thousands and thousands of plant specimens")
@@ -25,4 +26,4 @@ Thank you for the opportunity to visit, to talk all sorts of science, and for fi
  ![seed](./seed.jpg "The largest seed herbarium in the country!")
  ![bonsai](./bonsai.jpg "My moment of Zen")
  ![panorama](./panorama.jpg "Herb garden with a view on the Column Hill")
- ![columns](./columns.jpg "Despite poor weather - great views and great time!")
+ ![columns](./columns.jpg "Despite poor weather - greatig com views and great time!")
