@@ -1,6 +1,6 @@
 ---
 title: Alina Pokhrel - awarded with Departmental Annual Mention
-slug: alinaepp
+slug: alina_epp
 date: 2023-12-06
 summary: MS student  - recognized
 tags: ['academic life', 'students', 'award', 'master']
@@ -17,4 +17,4 @@ The 2023 edition was special. We enjoyed the rare presence of all 3 [UTIA](https
 
 Among other notable mentions, Alina was recognized as the 2023 receipient of the EPP Charles Wheeler Most Outstanding M.S. Student Award in Plant Pathology. 
 
- ![awards](./awardees.jpg "The EPP 2023 - best of the best!")
+ ![awards](./awardees2.jpg "The EPP 2023 - best of the best!")
