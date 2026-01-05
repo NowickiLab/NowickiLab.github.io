@@ -7,10 +7,18 @@
           {{ $page.article.date }}
         </time>
         <tags :tags="$page.article.tags"/>
-        <p v-html="$page.article.summary"/>
+-        <p v-html="$page.article.summary"/>
++        <!-- TEMP: avoid HTML rendering which may include images/HTML that triggers transforms -->
++        <!-- <p v-html="$page.article.summary"/> -->
++        <p>{{ $page.article.summary }}</p>
+
       </header>
 
-      <div ref="content" v-html="$page.article.content"/>
+-      <div ref="content" v-html="$page.article.content"/>
++      <!-- TEMP: disable Markdown/HTML content rendering to avoid remark image transforms -->
++      <!-- <div ref="content" v-html="$page.article.content"/> -->
++      <div class="content--placeholder">Content temporarily disabled while fixing images.</div>
+
     </article>
 
     <div id="disqus_thread" class="disqus"/>
@@ -23,15 +31,18 @@ query News ($path: String!) {
     title
     date (format: "DD MMMM YYYY")
     validDateString: date
-    content
-    summary
+-   content
+-   summary
+
++   # TEMP: remove fields that cause remark/sharp to process images during build
++   # content
++   # summary
     img
     tags {
       title
       path
     }
   }
-}
 </page-query>
 
 <script>
