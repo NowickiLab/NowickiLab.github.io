@@ -1,0 +1,678 @@
+>> # 1) See what's outdated
+>> npm outdatedissues possible (including breaking changes), run:
+>> pm audit fix --force
+>> # 2) Update to newest versions that still fit your current semver ranges
+>> npm updateeed review, and may require choosing
+>> ifferent dependency.
+>> # 3) Apply non-breaking security fixes
+>> npm audit fixfor details.
+>> C:\Users\ja03\NowickiLab.github.io>
+Package                             Current  Wanted   Latest  Location                                         Depended by
+@fullhuman/postcss-purgecss           3.1.3   3.1.3    7.0.2  node_modules/@fullhuman/postcss-purgecss         NowickiLab.github.io
+@gridsome/plugin-sitemap              0.2.3   0.2.3    0.4.0  node_modules/@gridsome/plugin-sitemap            NowickiLab.github.io
+@gridsome/transformer-remark          0.0.3   0.0.3    0.6.4  node_modules/@gridsome/transformer-remark        NowickiLab.github.io
+@gridsome/vue-remark                 0.1.10  0.1.10    0.2.6  node_modules/@gridsome/vue-remark                NowickiLab.github.io
+@vue/component-compiler-utils         3.2.0   3.2.0    3.3.0  node_modules/@vue/component-compiler-utils       NowickiLab.github.io
+autoprefixer                          9.8.8   9.8.8  10.4.23  node_modules/autoprefixer                        NowickiLab.github.io
+chart.js                              2.9.4   2.9.4    4.5.1  node_modules/chart.js                            NowickiLab.github.io
+fuse.js                               6.6.2   6.6.2    7.1.0  node_modules/fuse.js                             NowickiLab.github.io
+gridsome-plugin-remark-prismjs-all    0.3.5   0.3.5    0.4.8  node_modules/gridsome-plugin-remark-prismjs-all  NowickiLab.github.io
+loader-runner                         2.4.0   2.4.0    4.3.1  node_modules/loader-runner                       NowickiLab.github.io
+lodash.pick                           3.1.0   3.1.0    4.4.0  node_modules/lodash.pick                         NowickiLab.github.io
+postcss                              7.0.39  7.0.39    8.5.6  node_modules/postcss                             NowickiLab.github.io
+postcss-loader                        4.2.0   4.2.0    8.2.0  node_modules/postcss-loader                      NowickiLab.github.io
+sass-loader                           8.0.2   8.0.2   16.0.6  node_modules/sass-loader                         NowickiLab.github.io
+sass-mq                               5.0.1   5.0.1    7.0.0  node_modules/sass-mq                             NowickiLab.github.io
+sharp                                0.32.6  0.32.6   0.34.5  node_modules/sharp                               NowickiLab.github.io
+sharp-cli                             4.2.0   4.2.0    5.2.0  node_modules/sharp-cli                           NowickiLab.github.io
+vue                                  2.6.14  2.6.14   3.5.26  node_modules/vue                                 NowickiLab.github.io
+vue-fuse                              3.0.2   3.0.2    4.1.1  node_modules/vue-fuse                            NowickiLab.github.io
+vue-loader                           15.9.8  15.9.8   17.4.2  node_modules/vue-loader                          NowickiLab.github.io
+vue-server-renderer                  2.6.14  2.6.14   2.7.16  node_modules/vue-server-renderer                 NowickiLab.github.io
+vue-template-compiler                2.6.14  2.6.14   2.7.16  node_modules/vue-template-compiler               NowickiLab.github.io
+vuex                                  3.6.2   3.6.2    4.1.0  node_modules/vuex                                NowickiLab.github.io
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: postcss-load-config@3.1.4
+npm warn Found: postcss@7.0.39
+npm warn node_modules/postcss
+npm warn   dev postcss@"7.0.39" from the root project
+npm warn   9 more (@vue/component-compiler-utils, autoprefixer, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peerOptional postcss@">=8.0.9" from postcss-load-config@3.1.4
+npm warn node_modules/postcss-load-config
+npm warn   postcss-load-config@"^3.1.0" from tailwindcss@2.2.17
+npm warn   node_modules/tailwindcss
+npm warn
+npm warn Conflicting peer dependency: postcss@8.5.6
+npm warn node_modules/postcss
+npm warn   peerOptional postcss@">=8.0.9" from postcss-load-config@3.1.4
+npm warn   node_modules/postcss-load-config
+npm warn     postcss-load-config@"^3.1.0" from tailwindcss@2.2.17
+npm warn     node_modules/tailwindcss
+
+up to date, audited 1872 packages in 1m
+
+218 packages are looking for funding
+  run `npm fund` for details
+
+129 vulnerabilities (7 low, 65 moderate, 46 high, 11 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+npm warn ERESOLVE overriding peer dependency
+npm warn While resolving: postcss-load-config@3.1.4
+npm warn Found: postcss@7.0.39
+npm warn node_modules/postcss
+npm warn   dev postcss@"7.0.39" from the root project
+npm warn   47 more (@vue/component-compiler-utils, autoprefixer, ...)
+npm warn
+npm warn Could not resolve dependency:
+npm warn peerOptional postcss@">=8.0.9" from postcss-load-config@3.1.4
+npm warn node_modules/postcss-load-config
+npm warn   postcss-load-config@"^3.1.0" from tailwindcss@2.2.17
+npm warn   node_modules/tailwindcss
+npm warn
+npm warn Conflicting peer dependency: postcss@8.5.6
+npm warn node_modules/postcss
+npm warn   peerOptional postcss@">=8.0.9" from postcss-load-config@3.1.4
+npm warn   node_modules/postcss-load-config
+npm warn     postcss-load-config@"^3.1.0" from tailwindcss@2.2.17
+npm warn     node_modules/tailwindcss
+
+up to date, audited 1872 packages in 21s
+
+218 packages are looking for funding
+  run `npm fund` for details
+
+# npm audit report
+
+braces  <3.0.3
+Severity: high
+Uncontrolled resource consumption in braces - https://github.com/advisories/GHSA-grv7-fg5c-xmjg
+No fix available
+node_modules/braces
+  chokidar  1.3.0 - 2.1.8
+  Depends on vulnerable versions of anymatch
+  Depends on vulnerable versions of braces
+  Depends on vulnerable versions of readdirp
+  node_modules/chokidar
+    @gridsome/source-filesystem  *
+    Depends on vulnerable versions of chokidar
+    Depends on vulnerable versions of globby
+    node_modules/@gridsome/source-filesystem
+    watchpack-chokidar2  *
+    Depends on vulnerable versions of chokidar
+    node_modules/watchpack-chokidar2
+      watchpack  1.7.2 - 1.7.5
+      Depends on vulnerable versions of watchpack-chokidar2
+      node_modules/gridsome/node_modules/watchpack
+        webpack  2.0.0-beta - 5.0.0-rc.6
+        Depends on vulnerable versions of micromatch
+        Depends on vulnerable versions of node-libs-browser
+        Depends on vulnerable versions of terser-webpack-plugin
+        Depends on vulnerable versions of watchpack
+        node_modules/gridsome/node_modules/webpack
+          cache-loader  >=2.0.0
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/cache-loader
+          css-loader  0.15.0 - 4.3.0
+          Depends on vulnerable versions of icss-utils
+          Depends on vulnerable versions of postcss
+          Depends on vulnerable versions of postcss-modules-extract-imports
+          Depends on vulnerable versions of postcss-modules-local-by-default
+          Depends on vulnerable versions of postcss-modules-scope
+          Depends on vulnerable versions of postcss-modules-values
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/css-loader
+          file-loader  3.0.0 - 4.3.0
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/file-loader
+            gridsome  *
+            Depends on vulnerable versions of @gridsome/cli
+            Depends on vulnerable versions of @vue/component-compiler-utils
+            Depends on vulnerable versions of autoprefixer
+            Depends on vulnerable versions of cache-loader
+            Depends on vulnerable versions of chokidar
+            Depends on vulnerable versions of css-loader
+            Depends on vulnerable versions of file-loader
+            Depends on vulnerable versions of globby
+            Depends on vulnerable versions of html-webpack-plugin
+            Depends on vulnerable versions of imagemin
+            Depends on vulnerable versions of imagemin-mozjpeg
+            Depends on vulnerable versions of imagemin-pngquant
+            Depends on vulnerable versions of imagemin-webp
+            Depends on vulnerable versions of mini-css-extract-plugin
+            Depends on vulnerable versions of optimize-css-assets-webpack-plugin
+            Depends on vulnerable versions of path-to-regexp
+            Depends on vulnerable versions of postcss-loader
+            Depends on vulnerable versions of probe-image-size
+            Depends on vulnerable versions of vue
+            Depends on vulnerable versions of vue-loader
+            Depends on vulnerable versions of vue-server-renderer
+            Depends on vulnerable versions of vue-template-compiler
+            Depends on vulnerable versions of webpack
+            Depends on vulnerable versions of webpack-dev-middleware
+            node_modules/gridsome
+          mini-css-extract-plugin  <=0.9.0
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/mini-css-extract-plugin
+          optimize-css-assets-webpack-plugin  <=1.3.2 || >=3.0.0
+          Depends on vulnerable versions of cssnano
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/optimize-css-assets-webpack-plugin
+          terser-webpack-plugin  <=2.2.1
+          Depends on vulnerable versions of webpack
+          node_modules/gridsome/node_modules/terser-webpack-plugin
+  micromatch  <=4.0.7
+  Depends on vulnerable versions of braces
+  node_modules/micromatch
+    @gridsome/plugin-sitemap  *
+    Depends on vulnerable versions of micromatch
+    node_modules/@gridsome/plugin-sitemap
+    anymatch  1.2.0 - 2.0.0
+    Depends on vulnerable versions of micromatch
+    node_modules/anymatch
+    fast-glob  <=2.2.7
+    Depends on vulnerable versions of micromatch
+    node_modules/fast-glob
+      globby  8.0.0 - 9.2.0
+      Depends on vulnerable versions of fast-glob
+      node_modules/globby
+      node_modules/gridsome/node_modules/globby
+        imagemin  6.0.0 - 6.1.0
+        Depends on vulnerable versions of globby
+        node_modules/imagemin
+    readdirp  2.2.0 - 2.2.1
+    Depends on vulnerable versions of micromatch
+    node_modules/readdirp
+
+cross-spawn  <6.0.6
+Severity: high
+Regular Expression Denial of Service (ReDoS) in cross-spawn - https://github.com/advisories/GHSA-3xgq-45jj-v275
+fix available via `npm audit fix`
+node_modules/bin-build/node_modules/cross-spawn
+node_modules/bin-check/node_modules/cross-spawn
+node_modules/exec-buffer/node_modules/cross-spawn
+  execa  0.5.0 - 0.9.0
+  Depends on vulnerable versions of cross-spawn
+  node_modules/bin-build/node_modules/execa
+  node_modules/bin-check/node_modules/execa
+  node_modules/exec-buffer/node_modules/execa
+    bin-build  >=2.1.2
+    Depends on vulnerable versions of download
+    Depends on vulnerable versions of execa
+    node_modules/bin-build
+      cwebp-bin  >=3.0.0
+      Depends on vulnerable versions of bin-build
+      Depends on vulnerable versions of bin-wrapper
+      node_modules/cwebp-bin
+        imagemin-webp  >=5.0.0
+        Depends on vulnerable versions of cwebp-bin
+        node_modules/imagemin-webp
+      mozjpeg  >=4.0.0
+      Depends on vulnerable versions of bin-build
+      Depends on vulnerable versions of bin-wrapper
+      node_modules/mozjpeg
+        imagemin-mozjpeg  >=8.0.0
+        Depends on vulnerable versions of mozjpeg
+        node_modules/imagemin-mozjpeg
+      pngquant-bin  >=3.0.0
+      Depends on vulnerable versions of bin-build
+      Depends on vulnerable versions of bin-wrapper
+      node_modules/pngquant-bin
+        imagemin-pngquant  >=5.1.0
+        Depends on vulnerable versions of pngquant-bin
+        node_modules/imagemin-pngquant
+    bin-check  >=4.1.0
+    Depends on vulnerable versions of execa
+    node_modules/bin-check
+      bin-wrapper  >=0.4.0
+      Depends on vulnerable versions of bin-check
+      Depends on vulnerable versions of bin-version-check
+      Depends on vulnerable versions of download
+      node_modules/bin-wrapper
+    exec-buffer  >=3.1.0
+    Depends on vulnerable versions of execa
+    node_modules/exec-buffer
+
+elliptic  *
+Elliptic Uses a Cryptographic Primitive with a Risky Implementation - https://github.com/advisories/GHSA-848j-6mx2-7j84
+No fix available
+node_modules/elliptic
+  browserify-sign  >=2.4.0
+  Depends on vulnerable versions of elliptic
+  node_modules/browserify-sign
+    crypto-browserify  >=3.4.0
+    Depends on vulnerable versions of browserify-sign
+    Depends on vulnerable versions of create-ecdh
+    node_modules/crypto-browserify
+      node-libs-browser  0.4.2 || >=1.0.0
+      Depends on vulnerable versions of crypto-browserify
+      node_modules/node-libs-browser
+  create-ecdh  *
+  Depends on vulnerable versions of elliptic
+  node_modules/create-ecdh
+
+form-data  <2.5.4
+Severity: critical
+form-data uses unsafe random function in form-data for choosing boundary - https://github.com/advisories/GHSA-fjxv-7rqg-78g4
+fix available via `npm audit fix`
+node_modules/request/node_modules/form-data
+  request  *
+  Depends on vulnerable versions of form-data
+  Depends on vulnerable versions of qs
+  Depends on vulnerable versions of tough-cookie
+  node_modules/request
+    probe-image-size  <=2.2.0 || 4.0.0 - 5.0.0
+    Depends on vulnerable versions of request
+    node_modules/probe-image-size
+
+got  <=11.8.3
+Severity: high
+Got allows a redirect to a UNIX socket - https://github.com/advisories/GHSA-pfrx-2q88-qq97
+Depends on vulnerable versions of cacheable-request
+No fix available
+node_modules/bin-wrapper/node_modules/got
+node_modules/got
+node_modules/package-json/node_modules/got
+  download  >=4.0.0
+  Depends on vulnerable versions of got
+  node_modules/bin-wrapper/node_modules/download
+  node_modules/download
+  package-json  <=6.5.0
+  Depends on vulnerable versions of got
+  node_modules/package-json
+    latest-version  0.2.0 - 5.1.0
+    Depends on vulnerable versions of package-json
+    node_modules/latest-version
+      update-notifier  0.2.0 - 5.1.0
+      Depends on vulnerable versions of latest-version
+      node_modules/update-notifier
+        @gridsome/cli  >=0.2.3
+        Depends on vulnerable versions of update-notifier
+        node_modules/@gridsome/cli
+
+html-minifier  *
+Severity: high
+kangax html-minifier REDoS vulnerability - https://github.com/advisories/GHSA-pfq8-rq6v-vf5m
+fix available via `npm audit fix`
+node_modules/html-minifier
+  html-webpack-plugin  1.4.0 - 4.0.0-beta.14
+  Depends on vulnerable versions of html-minifier
+  Depends on vulnerable versions of loader-utils
+  node_modules/gridsome/node_modules/html-webpack-plugin
+
+http-cache-semantics  <4.1.1
+Severity: high
+http-cache-semantics vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-rc47-6667-2j5j
+No fix available
+node_modules/http-cache-semantics
+  cacheable-request  0.1.0 - 2.1.4
+  Depends on vulnerable versions of http-cache-semantics
+  node_modules/cacheable-request
+
+json5  <1.0.2
+Severity: high
+Prototype Pollution in JSON5 via Parse Method - https://github.com/advisories/GHSA-9c47-m6qq-7p4h
+fix available via `npm audit fix`
+node_modules/gridsome/node_modules/json5
+  loader-utils  <=1.4.0
+  Depends on vulnerable versions of json5
+  node_modules/gridsome/node_modules/html-webpack-plugin/node_modules/loader-utils
+
+
+lodash.pick  >=4.0.0
+Severity: high
+Prototype Pollution in lodash - https://github.com/advisories/GHSA-p6mc-m468-83gw
+fix available via `npm audit fix --force`
+Will install sharp-cli@5.2.0, which is a breaking change
+node_modules/sharp-cli/node_modules/lodash.pick
+  sharp-cli  4.0.0 - 4.2.0
+  Depends on vulnerable versions of lodash.pick
+  node_modules/sharp-cli
+
+lodash.template  *
+Severity: high
+Command Injection in lodash - https://github.com/advisories/GHSA-35jh-r3h4-6jhm
+fix available via `npm audit fix --force`
+Will install vue-server-renderer@2.2.6, which is a breaking change
+node_modules/lodash.template
+  vue-server-renderer  >=2.3.0-beta.1
+  Depends on vulnerable versions of lodash.template
+  node_modules/vue-server-renderer
+
+
+minimist  <=0.2.3
+Severity: critical
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-vh95-rmgr-6w4m
+Prototype Pollution in minimist - https://github.com/advisories/GHSA-xvch-5gv4-984h
+No fix available
+node_modules/optimist/node_modules/minimist
+  optimist  >=0.6.0
+  Depends on vulnerable versions of minimist
+  node_modules/optimist
+    html-to-text  2.0.0 - 5.0.0
+    Depends on vulnerable versions of optimist
+    node_modules/html-to-text
+      @gridsome/transformer-remark  *
+      Depends on vulnerable versions of gridsome
+      Depends on vulnerable versions of html-to-text
+      Depends on vulnerable versions of mdast-util-to-hast
+      Depends on vulnerable versions of remark
+      Depends on vulnerable versions of remark-html
+      Depends on vulnerable versions of remark-parse
+      Depends on vulnerable versions of sanitize-html
+      node_modules/@gridsome/transformer-remark
+      node_modules/@gridsome/vue-remark/node_modules/@gridsome/transformer-remark
+        @gridsome/vue-remark  *
+        Depends on vulnerable versions of @gridsome/source-filesystem
+        Depends on vulnerable versions of @gridsome/transformer-remark
+        Depends on vulnerable versions of mdast-util-to-hast
+        node_modules/@gridsome/vue-remark
+
+nth-check  <2.0.1
+Severity: high
+Inefficient Regular Expression Complexity in nth-check - https://github.com/advisories/GHSA-rp65-9cf3-cjxr
+fix available via `npm audit fix`
+node_modules/svgo/node_modules/nth-check
+  css-select  <=3.1.0
+  Depends on vulnerable versions of nth-check
+  node_modules/svgo/node_modules/css-select
+    svgo  1.0.0 - 1.3.2
+    Depends on vulnerable versions of css-select
+    node_modules/svgo
+      postcss-svgo  <=5.0.0-rc.2
+      Depends on vulnerable versions of postcss
+      Depends on vulnerable versions of svgo
+      node_modules/postcss-svgo
+
+path-to-regexp  2.0.0 - 3.2.0
+Severity: high
+path-to-regexp outputs backtracking regular expressions - https://github.com/advisories/GHSA-9wv6-86v2-598j
+No fix available
+node_modules/gridsome/node_modules/path-to-regexp
+
+postcss  <=8.4.30
+Severity: moderate
+Regular Expression Denial of Service in postcss - https://github.com/advisories/GHSA-566m-qj78-rww5
+PostCSS line return parsing error - https://github.com/advisories/GHSA-7fh5-64p2-3v2j
+No fix available
+node_modules/postcss
+node_modules/postcss-functions/node_modules/postcss
+  @tailwindcss/postcss7-compat  *
+  Depends on vulnerable versions of autoprefixer
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of postcss-functions
+  Depends on vulnerable versions of postcss-js
+  Depends on vulnerable versions of postcss-nested
+  node_modules/tailwindcss
+  @vue/component-compiler-utils  *
+  Depends on vulnerable versions of postcss
+  node_modules/@vue/component-compiler-utils
+  node_modules/gridsome/node_modules/@vue/component-compiler-utils
+    vue-loader  15.0.0-beta.1 - 15.11.1
+    Depends on vulnerable versions of @vue/component-compiler-utils
+    node_modules/vue-loader
+  autoprefixer  1.0.20131222 - 9.8.8
+  Depends on vulnerable versions of postcss
+  node_modules/autoprefixer
+  css-declaration-sorter  <=5.1.2
+  Depends on vulnerable versions of postcss
+  node_modules/css-declaration-sorter
+  cssnano  <=4.1.11
+  Depends on vulnerable versions of cssnano-preset-default
+  Depends on vulnerable versions of postcss
+  node_modules/cssnano
+  cssnano-preset-default  <=4.0.8
+  Depends on vulnerable versions of css-declaration-sorter
+  Depends on vulnerable versions of cssnano-util-raw-cache
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of postcss-calc
+  Depends on vulnerable versions of postcss-colormin
+  Depends on vulnerable versions of postcss-convert-values
+  Depends on vulnerable versions of postcss-discard-comments
+  Depends on vulnerable versions of postcss-discard-duplicates
+  Depends on vulnerable versions of postcss-discard-empty
+  Depends on vulnerable versions of postcss-discard-overridden
+  Depends on vulnerable versions of postcss-merge-longhand
+  Depends on vulnerable versions of postcss-merge-rules
+  Depends on vulnerable versions of postcss-minify-font-values
+  Depends on vulnerable versions of postcss-minify-gradients
+  Depends on vulnerable versions of postcss-minify-params
+  Depends on vulnerable versions of postcss-minify-selectors
+  Depends on vulnerable versions of postcss-normalize-charset
+  Depends on vulnerable versions of postcss-normalize-display-values
+  Depends on vulnerable versions of postcss-normalize-positions
+  Depends on vulnerable versions of postcss-normalize-repeat-style
+  Depends on vulnerable versions of postcss-normalize-string
+  Depends on vulnerable versions of postcss-normalize-timing-functions
+  Depends on vulnerable versions of postcss-normalize-unicode
+  Depends on vulnerable versions of postcss-normalize-url
+  Depends on vulnerable versions of postcss-normalize-whitespace
+  Depends on vulnerable versions of postcss-ordered-values
+  Depends on vulnerable versions of postcss-reduce-initial
+  Depends on vulnerable versions of postcss-reduce-transforms
+  Depends on vulnerable versions of postcss-svgo
+  Depends on vulnerable versions of postcss-unique-selectors
+  node_modules/cssnano-preset-default
+  cssnano-util-raw-cache  *
+  Depends on vulnerable versions of postcss
+  node_modules/cssnano-util-raw-cache
+  icss-utils  <=4.1.1
+  Depends on vulnerable versions of postcss
+  node_modules/icss-utils
+  postcss-calc  4.1.0 - 7.0.5
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-calc
+  postcss-colormin  <=4.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-colormin
+  postcss-convert-values  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-convert-values
+  postcss-discard-comments  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-discard-comments
+  postcss-discard-duplicates  1.1.0 - 4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-discard-duplicates
+  postcss-discard-empty  1.1.0 - 4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-discard-empty
+  postcss-discard-overridden  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-discard-overridden
+  postcss-functions  <=3.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-functions
+  postcss-js  <=2.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-js
+  postcss-loader  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/gridsome/node_modules/postcss-loader
+  postcss-merge-longhand  <=4.0.11
+  Depends on vulnerable versions of postcss
+  Depends on vulnerable versions of stylehacks
+  node_modules/postcss-merge-longhand
+  postcss-merge-rules  <=4.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-merge-rules
+  postcss-minify-font-values  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-minify-font-values
+  postcss-minify-gradients  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-minify-gradients
+  postcss-minify-params  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-minify-params
+  postcss-minify-selectors  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-minify-selectors
+  postcss-modules-extract-imports  <=2.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-modules-extract-imports
+  postcss-modules-local-by-default  <=3.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-modules-local-by-default
+  postcss-modules-scope  <=2.2.0
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-modules-scope
+  postcss-modules-values  <=3.0.0
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-modules-values
+  postcss-nested  <=4.2.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-nested
+  postcss-normalize-charset  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-charset
+  postcss-normalize-display-values  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-display-values
+  postcss-normalize-positions  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-positions
+  postcss-normalize-repeat-style  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-repeat-style
+  postcss-normalize-string  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-string
+  postcss-normalize-timing-functions  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-timing-functions
+  postcss-normalize-unicode  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-unicode
+  postcss-normalize-url  1.1.0 - 4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-url
+  postcss-normalize-whitespace  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-normalize-whitespace
+  postcss-ordered-values  <=4.1.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-ordered-values
+  postcss-reduce-initial  <=4.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-reduce-initial
+  postcss-reduce-transforms  <=4.0.2
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-reduce-transforms
+  postcss-unique-selectors  <=4.0.1
+  Depends on vulnerable versions of postcss
+  node_modules/postcss-unique-selectors
+  sanitize-html  <=2.12.0
+  Depends on vulnerable versions of postcss
+  node_modules/sanitize-html
+  stylehacks  <=4.0.3
+  Depends on vulnerable versions of postcss
+  node_modules/stylehacks
+
+qs  <6.14.1
+Severity: high
+qs's arrayLimit bypass in its bracket notation allows DoS via memory exhaustion - https://github.com/advisories/GHSA-6rw7-vpxm-498p
+fix available via `npm audit fix`
+node_modules/request/node_modules/qs
+
+remark-html  <=13.0.1
+Severity: critical
+Unsafe defaults in `remark-html` - https://github.com/advisories/GHSA-9q5w-79cv-947m
+Depends on vulnerable versions of mdast-util-to-hast
+No fix available
+node_modules/remark-html
+
+
+
+semver-regex  <=3.1.3
+Severity: high
+semver-regex Regular Expression Denial of Service (ReDOS) - https://github.com/advisories/GHSA-44c6-4v22-4mhx
+Regular expression denial of service in semver-regex - https://github.com/advisories/GHSA-4x5v-gmq8-25ch
+fix available via `npm audit fix`
+node_modules/semver-regex
+  find-versions  <=3.2.0
+  Depends on vulnerable versions of semver-regex
+  node_modules/find-versions
+    bin-version  <=4.0.0
+    Depends on vulnerable versions of find-versions
+    node_modules/bin-version
+      bin-version-check  <=4.0.0
+      Depends on vulnerable versions of bin-version
+      node_modules/bin-version-check
+
+tough-cookie  <4.1.3
+Severity: moderate
+tough-cookie Prototype Pollution vulnerability - https://github.com/advisories/GHSA-72xf-g2v4-qvf3
+fix available via `npm audit fix`
+node_modules/tough-cookie
+
+trim  <0.0.3
+Severity: high
+Regular Expression Denial of Service in trim - https://github.com/advisories/GHSA-w5p7-h5w8-2hfq
+No fix available
+node_modules/trim
+  mdast-util-to-hast  <=6.0.2
+  Depends on vulnerable versions of trim
+  node_modules/@gridsome/vue-remark/node_modules/mdast-util-to-hast
+  node_modules/mdast-util-to-hast
+  remark-parse  <=8.0.3
+  Depends on vulnerable versions of trim
+  node_modules/@gridsome/vue-remark/node_modules/remark-parse
+  node_modules/remark-parse
+    remark  5.0.0 - 12.0.1
+    Depends on vulnerable versions of remark-parse
+    node_modules/remark
+
+trim-newlines  <3.0.1
+Severity: high
+Uncontrolled Resource Consumption in trim-newlines - https://github.com/advisories/GHSA-7p7h-4mm5-852v
+fix available via `npm audit fix`
+node_modules/trim-newlines
+  meow  3.4.0 - 5.0.0
+  Depends on vulnerable versions of trim-newlines
+  node_modules/meow
+
+vue  2.0.0-alpha.1 - 2.7.16
+ReDoS vulnerability in vue package that is exploitable through inefficient regex evaluation in the parseHTML function - https://github.com/advisories/GHSA-5j4c-8p2g-v4jx
+fix available via `npm audit fix --force`
+Will install vue@3.5.26, which is a breaking change
+node_modules/vue
+  vuex  3.1.3 - 3.6.2
+  Depends on vulnerable versions of vue
+  node_modules/vuex
+
+vue-template-compiler  >=2.0.0
+Severity: moderate
+vue-template-compiler vulnerable to client-side Cross-Site Scripting (XSS) - https://github.com/advisories/GHSA-g3ch-rx76-35fx
+fix available via `npm audit fix --force`
+Will install vue-template-compiler@0.1.0, which is a breaking change
+node_modules/vue-template-compiler
+
+webpack-dev-middleware  <=5.3.3
+Severity: high
+Path traversal in webpack-dev-middleware - https://github.com/advisories/GHSA-wr3j-pwj9-hqq6
+fix available via `npm audit fix`
+node_modules/webpack-dev-middleware
+
+129 vulnerabilities (7 low, 65 moderate, 46 high, 11 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+PS C:\Users\ja03\NowickiLab.github.io>

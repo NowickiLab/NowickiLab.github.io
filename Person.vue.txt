@@ -17,7 +17,6 @@
 query Person ($path: String!) {
   article: person (path: $path) {
     title
-    date (format: "MMMM D, Y")
     content
     summary
     img

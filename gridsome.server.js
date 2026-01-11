@@ -1,76 +1,28 @@
-// Server API makes it possible to hook into various parts of Gridsome
-// on server-side and add custom data to the GraphQL data layer.
-// Learn more: https://gridsome.org/docs/server-api
 
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
+// gridsome.server.js
+module.exports = function (api) {
+  // Mutate webpack for both server & client builds
+  api.chainWebpack((config, { isServer, isClient }) => {
+    const js = config.module.rule('js')
+    if (js) {
+      // 1) Ensure exclude is valid (replace null/{} with a normal regex)
+      try { js.exclude.clear() } catch (e) {}
+      js.exclude.add(/node_modules/)
 
-const fs = require('fs');
-const path = require('path');
-const pick = require('lodash.pick');
-const { pathPrefix } = require('./gridsome.config')
-
-module.exports = function (api, options) {
-  api.loadSource(store => {
-    /*
-    Clean the pathPrefix
-    ====================
-    not used =>  '/'
-    ''       =>  '/'
-    '/'      =>  '/'
-    '/path'  =>  '/path'
-    'path'   =>  '/path'
-    'path/'  =>  '/path'
-    '/path/' =>  '/path'
-    */
-    const cleanedPathPrefix = `${pathPrefix ? ['', ...pathPrefix.split('/').filter(dir=>dir.length)].join('/') : ''}`
-
-    /*
-    Query
-    =====
-    <static-query>        <!-- or a page-query -->
-    {
-      metaData{
-        pathPrefix
+      // 2) Remove cache-loader from JS rule to prevent odd merged rule states
+      if (js.uses && js.uses.has && js.uses.has('cache-loader')) {
+        js.uses.delete('cache-loader')
       }
-    }
-    </static-query>
 
-    Requests for static files should look like this:
-    ===============================================
-    Using static-queries: axios( this.$static.metaData.pathPrefix + "/fileName" )
-    Using page-queries,   axios( this.$page.metaData.pathPrefix   + "/fileName" )
-    */
-    store.addMetadata('pathPrefix', cleanedPathPrefix)
+      // 3) (Safety) Normalize babel-loader options to plain object
+      if (js.uses && js.uses.has && js.uses.has('babel-loader')) {
+        js.use('babel-loader').tap(opts => {
+          return (opts && typeof opts === 'object') ? opts : {}
+        })
+      }
+
+      // 4) Ensure the test explicitly matches JS
+      js.test(/\.m?js$/)
+    }
   })
-
-  api.loadSource(actions => {
-    const pickValues = post => pick(post, ['title', 'path', 'summary'])
-
-    const posts = [
-      ...actions.getCollection('News').collection.data.map(pickValues),
-      ...actions.getCollection('Person').collection.data.map(pickValues),
-      ...actions.getCollection('Publication').collection.data.map(pickValues),
-      ...actions.getCollection('Project').collection.data.map(pickValues)
-    ];
-
-    const output = {
-      dir: './static/',
-      name: 'search.json',
-      ...options.output
-    }
-
-    const outputPath = path.resolve(process.cwd(), output.dir)
-    const outputPathExists = fs.existsSync(outputPath)
-    const fileName = output.name.endsWith('.json')
-      ? output.name
-      : `${output.name}.json`
-
-    if (outputPathExists) {
-      fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
-    } else {
-      fs.mkdirSync(outputPath)
-      fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(posts))
-    }
-  });
 }

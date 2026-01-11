@@ -1,0 +1,207 @@
+PS C:\Users\ja03\NowickiLab.github.io>
+>> Remove-Item -Recurse -Force .\node_modules
+>> Remove-Item -Force .\package-lock.json
+>> npm install --legacy-peer-deps
+>> npm run build
+>>
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated lodash.pick@3.1.0: This package is deprecated. Use destructuring assignment syntax instead.
+npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+npm warn deprecated lodash.pick@4.4.0: This package is deprecated. Use destructuring assignment syntax instead.
+npm warn deprecated lodash.template@4.5.0: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
+npm warn deprecated move-concurrently@1.0.1: This package is no longer supported.
+npm warn deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+npm warn deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm warn deprecated figgy-pudding@3.5.2: This module is no longer supported.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+npm warn deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+npm warn deprecated consolidate@0.15.1: Please upgrade to consolidate v1.0.0+ as it has been modernized with several long-awaited fixes implemented. Maintenance is supported by Forward Email at https://forwardemail.net ; follow/watch https://github.com/ladjs/consolidate for updates and release changelog
+npm warn deprecated copy-concurrently@1.0.5: This package is no longer supported.
+npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated vue-analytics@5.22.1: Sorry but vue-analytics is no longer maintained. I would suggest you switch to vue-gtag, with love, the guy who made the package.
+npm warn deprecated glob@8.0.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated trim@0.0.1: Use String.prototype.trim() instead
+npm warn deprecated q@1.5.1: You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+npm warn deprecated
+npm warn deprecated (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
+npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm warn deprecated html-webpack-plugin@3.2.0: 3.x is no longer supported
+npm warn deprecated fs-write-stream-atomic@1.0.10: This package is no longer supported.
+npm warn deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm warn deprecated webpack-chain@5.2.4: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+npm warn deprecated express-graphql@0.9.0: This package is no longer maintained. We recommend using `graphql-http` instead. Please consult the migration document https://github.com/graphql/graphql-http#migrating-express-grpahql.
+npm warn deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+npm warn deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+npm warn deprecated vue@2.6.14: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
+npm warn deprecated graphql@14.7.0: No longer supported; please update to a newer version. Details: https://github.com/graphql/graphql-js#version-support
+
+added 1804 packages, and audited 1805 packages in 1m
+
+209 packages are looking for funding
+  run `npm fund` for details
+
+124 vulnerabilities (6 low, 61 moderate, 46 high, 11 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+
+> build
+> gridsome build
+
+Gridsome v0.7.23
+
+Initializing plugins...
+Load sources - 0.2s
+Create GraphQL schema - 0.11s
+Create pages and templates - 0.06s
+Generate temporary code - 0.02s
+Bootstrap finish - 4.97s
+33% building 198/240 modules 42 active ...dex.js??vue-loader-options!C:\Users\ja03\NowickiLab.github.io\src\components\SearchInput.vueDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './md';
+  │         ^^^^^^
+  ╵
+    stdin 2:9  root stylesheet
+
+Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+3 │ @import './prism';
+  │         ^^^^^^^^^
+  ╵
+    stdin 3:9  root stylesheet
+
+36% building 218/244 modules 26 active C:\Users\ja03\NowickiLab.github.io\node_modules\axios\lib\utils.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+Deprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+46% building 308/348 modules 40 active C:\Users\ja03\NowickiLab.github.io\node_modules\core-js\internals\own-keys.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+47% building 310/348 modules 38 active C:\Users\ja03\NowickiLab.github.io\node_modules\core-js\internals\own-keys.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+47% building 311/348 modules 37 active C:\Users\ja03\NowickiLab.github.io\node_modules\core-js\internals\own-keys.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+47% building 312/348 modules 36 active C:\Users\ja03\NowickiLab.github.io\node_modules\core-js\internals\own-keys.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+48% building 321/349 modules 28 active C:\Users\ja03\NowickiLab.github.io\node_modules\axios\lib\platform\node\classes\FormData.jsDeprecation Warning [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+SyntaxError: Unexpected token (31:57)
+    at pp$4.raise (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2825:15)
+    at pp.unexpected (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:689:10)
+    at pp$3.parseExprAtom (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2270:12)
+    at pp$3.parseExprSubscripts (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2089:21)
+    at pp$3.parseMaybeUnary (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2066:19)
+    at pp$3.parseExprOps (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2010:21)
+    at pp$3.parseMaybeConditional (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:1993:21)
+    at pp$3.parseMaybeAssign (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:1968:21)
+    at pp$3.parseMaybeConditional (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:1998:30)
+    at pp$3.parseMaybeAssign (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:1968:21)
+    at pp$3.parseParenAndDistinguishExpression (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2321:30)
+    at pp$3.parseExprAtom (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2230:43)
+    at pp$3.parseExprSubscripts (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2089:21)
+    at pp$3.parseMaybeUnary (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2066:19)
+    at pp$3.parseExprOps (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:2010:21)
+    at pp$3.parseMaybeConditional (C:\Users\ja03\NowickiLab.github.io\node_modules\webpack\node_modules\acorn\dist\acorn.js:1993:21)
+PS C:\Users\ja03\NowickiLab.github.io>
